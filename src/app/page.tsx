@@ -5,19 +5,15 @@ export default function Home() {
   return (
     <main className="max-w-5xl mx-auto px-4 py-10 flex flex-col gap-15">
 
+      <h1 className="text-3xl font-bold">Hello👋! My name is Ricky.</h1>
+
       {/* About Section (truncated) */}
-      <h2 className="text-4xl font-bold">Hello👋! I'm Ricky.</h2>
       <section className="mb-8">
-        <h1 className="text-2xl font-semibold mb-8">Welcome to my studio of pixels, projects, and passion</h1>
-        <p className="mb-4">
-          I’m an incoming Software Engineering student at the University of Waterloo with a passion for full-stack development and human-computer interaction. I love building things that make life simpler and more meaningful.
-        </p>
-        <p className="mb-4">
-          I’m always learning something new and turning ideas into real, usable projects. Whether it's a hackathon or a personal tool, I’m driven by curiosity and the hope to make a difference.  
-        </p>
-        <p className="mb-4">
-          Feel free to reach out!
-        </p>
+        <h2 className="text-xl font-semibold mb-4">(Welcome to my world) or some slogan or some subtitle help me write this</h2>
+        <p className="mb-4">I am an incoming software engineering student at the University of Waterloo.</p>
+        <p className="mb-4">I am an aspiring software developer aspiring in full stack development and human-machine interaction for the purpose of enhancing human lives and dreaming big.</p>
+        <p className="mb-4">I am interested in building products that help people live simple lives to focus on chasing their passions and what matters most.</p>
+        <p className="mb-4">I enjoy learning new stuff every day and try using them ASAP to reinforce my learning.</p>
         <div className="flex gap-4 mb-2">
           <a href={externalLinks.github} className="btn btn-sm btn-outline">GitHub</a>
           <a href={externalLinks.linkedin} className="btn btn-sm btn-outline">LinkedIn</a>

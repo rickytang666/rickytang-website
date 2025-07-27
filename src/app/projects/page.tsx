@@ -12,7 +12,7 @@ export default function ProjectsPage() {
       const project = projects.find(p => p.id === projectId);
       if (!project) return prev;
       const total = project.images.length;
-      let next = (current + dir + total) % total;
+      const next = (current + dir + total) % total;
       return { ...prev, [projectId]: next };
     });
   };

@@ -19,7 +19,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   useEffect(() => {
     if (!containerRef.current) return;
     const observer = new ResizeObserver(entries => {
-      for (let entry of entries) {
+      for (const entry of entries) {
         setContainerWidth(entry.contentRect.width);
       }
     });
@@ -28,7 +28,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   }, []);
 
   let imgStyle: React.CSSProperties = { width: '100%', height: 'auto', position: 'absolute', left: 0 };
-  let wrapperStyle: React.CSSProperties = { height: containerHeight, position: 'relative', background: 'black', borderTopLeftRadius: '0.75rem', borderTopRightRadius: '0.75rem', overflow: 'hidden' };
+  const wrapperStyle: React.CSSProperties = { height: containerHeight, position: 'relative', background: 'black', borderTopLeftRadius: '0.75rem', borderTopRightRadius: '0.75rem', overflow: 'hidden' };
 
   if (natural && containerWidth) {
     const scaledHeight = containerWidth * (natural.height / natural.width);
