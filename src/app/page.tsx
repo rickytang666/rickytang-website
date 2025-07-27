@@ -1,14 +1,23 @@
 import { externalLinks } from "@/data/links";
+import ProjectPreviewSection from './ProjectPreviewSection';
 
 export default function Home() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-10 flex flex-col gap-20">
-      <h1 className="text-3xl font-bold mb-8">Ricky Tang</h1>
+    <main className="max-w-5xl mx-auto px-4 py-10 flex flex-col gap-15">
 
       {/* About Section (truncated) */}
+      <h2 className="text-4xl font-bold">Hello👋! I'm Ricky.</h2>
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">About</h2>
-        <p className="mb-4">I am a software engineering student at the University of Waterloo</p>
+        <h1 className="text-2xl font-semibold mb-8">Welcome to my studio of pixels, projects, and passion</h1>
+        <p className="mb-4">
+          I’m an incoming Software Engineering student at the University of Waterloo with a passion for full-stack development and human-computer interaction. I love building things that make life simpler and more meaningful.
+        </p>
+        <p className="mb-4">
+          I’m always learning something new and turning ideas into real, usable projects. Whether it's a hackathon or a personal tool, I’m driven by curiosity and the hope to make a difference.  
+        </p>
+        <p className="mb-4">
+          Feel free to reach out!
+        </p>
         <div className="flex gap-4 mb-2">
           <a href={externalLinks.github} className="btn btn-sm btn-outline">GitHub</a>
           <a href={externalLinks.linkedin} className="btn btn-sm btn-outline">LinkedIn</a>
@@ -18,19 +27,11 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section (truncated) */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">Featured Projects</h2>
-        <ul className="list-disc pl-6 mb-2">
-          <li>Project 1 <span className="italic">(Placeholder)</span></li>
-          <li>Project 2 <span className="italic">(Placeholder)</span></li>
-          <li>Project 3 <span className="italic">(Placeholder)</span></li>
-        </ul>
-        <a href="/projects" className="text-blue-500 underline ml-2">View more</a>
-      </section>
+      <ProjectPreviewSection />
 
       {/* Tech Skills Section (full) */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">Tech Skills</h2>
+        <h2 className="text-2xl font-bold mb-4">Tech Skills</h2>
         <div className="flex flex-col gap-4">
           <div>
             <h3 className="font-medium mb-2">Programming Languages</h3>
@@ -58,7 +59,7 @@ export default function Home() {
 
       {/* Awards Section (full) */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">Awards</h2>
+        <h2 className="text-2xl font-bold mb-4">Awards</h2>
         <ul className="list-disc pl-6">
           <li>Award 1 <span className="italic">(Placeholder)</span></li>
           <li>Award 2 <span className="italic">(Placeholder)</span></li>

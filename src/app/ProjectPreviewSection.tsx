@@ -1,15 +1,17 @@
 "use client";
 import React, { useState } from 'react';
-import { projects } from '../../data/projects';
-import ProjectCard from '../ProjectCard';
+import { projects } from '../data/projects';
+import ProjectCard from '../app/ProjectCard';
+import Link from 'next/link';
 
-export default function ProjectsPage() {
+export default function ProjectPreviewSection() {
+  const previewProjects = projects.slice(0, 2);
   const [imageIndexes, setImageIndexes] = useState<{ [id: string]: number }>({});
 
   const handleImageClick = (projectId: string, dir: 1 | -1) => {
     setImageIndexes(prev => {
       const current = prev[projectId] || 0;
-      const project = projects.find(p => p.id === projectId);
+      const project = previewProjects.find(p => p.id === projectId);
       if (!project) return prev;
       const total = project.images.length;
       let next = (current + dir + total) % total;
@@ -18,10 +20,10 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-12">Projects</h1>
+    <section className="w-full">
+      <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
       <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
-        {projects.map(project => (
+        {previewProjects.map(project => (
           <ProjectCard
             key={project.id}
             project={project}
@@ -30,6 +32,9 @@ export default function ProjectsPage() {
           />
         ))}
       </div>
-    </div>
+      <div className="flex justify-center mt-8">
+        <Link href="/projects" className="btn btn-primary btn-lg">View more projects</Link>
+      </div>
+    </section>
   );
-}
+} 
