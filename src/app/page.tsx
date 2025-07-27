@@ -9,11 +9,18 @@ export default function Home() {
 
       {/* About Section (truncated) */}
       <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4">(Welcome to my world) or some slogan or some subtitle help me write this</h2>
-        <p className="mb-4">I am an incoming software engineering student at the University of Waterloo.</p>
-        <p className="mb-4">I am an aspiring software developer aspiring in full stack development and human-machine interaction for the purpose of enhancing human lives and dreaming big.</p>
-        <p className="mb-4">I am interested in building products that help people live simple lives to focus on chasing their passions and what matters most.</p>
-        <p className="mb-4">I enjoy learning new stuff every day and try using them ASAP to reinforce my learning.</p>
+        <h2 className="text-xl font-semibold mb-4">
+          Welcome to my studio of pixels, projects, and passion.
+          </h2>
+        <p className="mb-4">
+          I am an incoming Software Engineering student at the University of Waterloo with a passion for full-stack development and human-computer interaction. I love building things that make life simpler and more meaningful.
+        </p>
+        <p className="mb-4">
+          I am always learning something new and turning ideas into real, usable projects. Whether it is a hackathon or a personal tool, I am driven by curiosity and the hope to make a difference.
+        </p>
+        <p className="mb-4">
+          Feel free to reach out!
+        </p>
         <div className="flex gap-4 mb-2">
           <a href={externalLinks.github} className="btn btn-sm btn-outline">GitHub</a>
           <a href={externalLinks.linkedin} className="btn btn-sm btn-outline">LinkedIn</a>
