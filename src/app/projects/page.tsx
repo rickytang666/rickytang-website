@@ -18,9 +18,9 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-12">Projects</h1>
-      <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
+    <div className="container mx-auto px-2 sm:px-4 py-12">
+      <h1 className="text-5xl font-bold mb-12 text-center">My Projects</h1>
+      <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
         {projects.map(project => (
           <ProjectCard
             key={project.id}

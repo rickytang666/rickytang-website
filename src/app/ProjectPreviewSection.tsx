@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { projects } from '../data/projects';
 import ProjectCard from '../app/ProjectCard';
-import Link from 'next/link';
+import ViewMoreButton from '../app/ViewMoreButton';
 
 export default function ProjectPreviewSection() {
   const previewProjects = projects.slice(0, 2);
@@ -20,9 +20,9 @@ export default function ProjectPreviewSection() {
   };
 
   return (
-    <section className="w-full">
-      <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
-      <div className="grid gap-12 grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
+    <section className="w-full mb-8">
+      <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
+      <div className="grid gap-12 grid-cols-1 md:grid-cols-2">
         {previewProjects.map(project => (
           <ProjectCard
             key={project.id}
@@ -33,7 +33,7 @@ export default function ProjectPreviewSection() {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-        <Link href="/projects" className="btn btn-primary btn-lg">View more projects</Link>
+        <ViewMoreButton href="/projects">View more</ViewMoreButton>
       </div>
     </section>
   );

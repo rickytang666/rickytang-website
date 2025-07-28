@@ -14,14 +14,14 @@ export default function Navbar() {
       
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-2">
-          <li><Link href="/" className="px-4 py-2 hover:bg-base-200 rounded-lg">Home</Link></li>
-          <li><Link href="/about" className="px-4 py-2 hover:bg-base-200 rounded-lg">About</Link></li>
-          <li><Link href="/projects" className="px-4 py-2 hover:bg-base-200 rounded-lg">Projects</Link></li>
+          <li><Link href="/" className="btn btn-accent btn-soft rounded-full text-lg">Home</Link></li>
+          <li><Link href="/about" className="btn btn-accent btn-soft rounded-full text-lg">About</Link></li>
+          <li><Link href="/projects" className="btn btn-accent btn-soft rounded-full text-lg">Projects</Link></li>
         </ul>
       </div>
       
       <div className="navbar-end">
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm mr-2">
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-info btn-soft rounded-full">
           Resume
         </a>
         <div className="dropdown dropdown-end">
@@ -30,7 +30,7 @@ export default function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 w-30">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/projects">Projects</Link></li>
