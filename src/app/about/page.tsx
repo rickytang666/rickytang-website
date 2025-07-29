@@ -67,7 +67,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap gap-7 mb-2">
             <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
               <IconBrandGithub stroke={2} className="w-5 h-5" />
-              Github
+              GitHub
             </a>
             <a href={externalLinks.linkedin} target="_blank" className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
               <IconBrandLinkedin stroke={2} className="w-5 h-5" />

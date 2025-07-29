@@ -7,6 +7,12 @@ import "yet-another-react-lightbox/styles.css";
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import { Project } from '../data/projects';
 
+// Icons
+import {
+  IconBrandGithub,
+  IconDeviceDesktop,
+} from '@tabler/icons-react';
+
 interface ProjectCardProps {
   project: Project;
   imgIdx: number;
@@ -67,10 +73,10 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   const slides = project.images.map(src => ({ src }));
 
   return (
-    <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full border-2 border-gray-400/30">
+    <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full rounded-xl border-2 border-gray-300/50">
       <div
         ref={containerRef}
-        className="w-full border-b border-gray-300/50 relative"
+        className="w-full relative border-b border-gray-300/50"
         style={wrapperStyle}
       >
         {project.images.length > 1 ? (
@@ -121,14 +127,14 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
           <p key={idx} className="text-base mb-2 leading-relaxed">{para}</p>
         ))}
         {/* Tech Stack Section */}
-        <div className="flex flex-wrap gap-2 mb-4 align-center">
+        <div className="flex flex-wrap gap-2 mb-4 align-middle">
           {project.id === '1' && (
             <>
               <Image src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width={40} height={40} className="h-10 p-1 rounded-md bg-gray-800" unoptimized />
               <Image src="https://skillicons.dev/icons?i=supabase" alt="supabase" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width={40} height={40} className="w-20 h-10 p-1 bg-gray-300 rounded-md saturate-100" unoptimized />
             </>
           )}
           {project.id === '2' && (
@@ -176,9 +182,15 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
           )}
         </div>
         <div className="card-actions mt-4">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline">GitHub</a>
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-primary rounded-full align-middle">
+            <IconBrandGithub stroke={2} className="w-5 h-5" />
+            GitHub
+          </a>
           {project.website && (
-            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-primary">Website</a>
+            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline btn-info rounded-full align-middle">
+              <IconDeviceDesktop stroke={2} className="w-5 h-5" />
+              Website
+            </a>
           )}
         </div>
       </div>
