@@ -50,10 +50,12 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   }
 
   return (
-    <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full">
+    /* add border to the card*/
+    <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full border-2 border-gray-400/30">
+      {/* add a border between image part and other parts to the card*/}
       <div
         ref={containerRef}
-        className="w-full"
+        className="w-full border-b border-gray-300/50"
         style={wrapperStyle}
         onClick={e => { e.preventDefault(); onImageClick(1); }}
         onContextMenu={e => { e.preventDefault(); onImageClick(-1); }}

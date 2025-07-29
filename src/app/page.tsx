@@ -38,11 +38,11 @@ export default function Home() {
         {/* Contact Buttons - responsive flex */}
         {/* make the icon + text normal text without the btn, on hover change color to light pink */}
         <div className="flex flex-wrap gap-7 mb-2">
-          <a href={externalLinks.github} className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
+          <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             Github
           </a>
-          <a href={externalLinks.linkedin} className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
+          <a href={externalLinks.linkedin} target="_blank" className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
             <IconBrandLinkedin stroke={2} className="w-5 h-5" />
             LinkedIn
           </a>
@@ -113,6 +113,7 @@ export default function Home() {
         </h2>
         <ul className="list-disc pl-6">
           <li>3rd Place in Canadian Team Mathematics Competition</li>
+          <li>Top 5% in the 2025 Euclid Mathematics Contest</li>
           <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>
         </ul>
       </section>
