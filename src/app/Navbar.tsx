@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import './navbar.css';
 
 // Icons
 import {
@@ -32,8 +33,14 @@ export default function Navbar() {
         {/* make the increase blur when hovered */}
         <div className="navbar bg-base-100/80 backdrop-blur-xs fixed top-0 left-0 right-0 z-50 border-b border-base-300/20 group hover:backdrop-blur-md transition-all duration-300">
           <div className="navbar-start">
-            <Link href="/" className="btn btn-ghost px-2">
-              <Image src="/logo_ricfinity.svg" alt="Logo" width={120} height={40} className="h-8 w-auto opacity-70 saturate-80 transition-all duration-300 group-hover:opacity-100 group-hover:saturate-150 group-hover:drop-shadow-lg group-hover:shadow-lg group-hover:shadow-primary/50" />
+            <Link href="/" className="px-2">
+              <Image
+                src="/logo_ricfinity.svg"
+                alt="Logo"
+                width={200}
+                height={200}
+                className="h-10 w-auto opacity-90 saturate-80 transition-all duration-300 neon-mint group-hover:opacity-100 group-hover:saturate-200"
+              />
             </Link>
           </div>
         
@@ -46,18 +53,16 @@ export default function Navbar() {
         </div>
         
         <div className="navbar-end">
-          {/* mobile menu */}
-          {/* include resume in the list */}
-          {/* make the section FULL height animate from the right of the screen,
-           - have a close button in the top right corner,
-           - width ~ 60% of screen, 
-           - background color base-100,
-           - when expanded, make it like a modal,
-           - auto close when clicking on a link
-           - home, about, projects, resume
-           - basically like a google site implementation
-           - that's it
-           */}
+          {/* Desktop resume button */}
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-accent btn-soft rounded-full text-lg hidden lg:flex"
+          >
+            <IconFileCv stroke={2} className="w-5 h-5" />
+            Resume
+          </a>
           
           {/* Mobile menu button */}
           <button 

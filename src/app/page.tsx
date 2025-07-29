@@ -52,7 +52,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex justify-center mt-4">
-          <ViewMoreButton href="/about"/>
+          <ViewMoreButton href="/about" children="More about me" />
         </div>
       </section>
 
@@ -111,7 +111,7 @@ export default function Home() {
           <IconAward stroke={2} className="w-8 h-8" />
           Awards
         </h2>
-        <ul className="list-disc pl-6">
+        <ul className="list-disc pl-6 space-y-2">
           <li>3rd Place in Canadian Team Mathematics Competition</li>
           <li>Top 5% in the 2025 Euclid Mathematics Contest</li>
           <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>

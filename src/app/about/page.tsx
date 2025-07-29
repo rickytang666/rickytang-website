@@ -22,7 +22,7 @@ export default function AboutPage() {
       <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 items-center xl:items-center">
         {/* Image Section */}
         <div className="flex align-center justify-center xl:justify-start w-full xl:w-[400px] xl:flex-shrink-0">
-          <div className="relative w-[375px] h-[375px] md:w-[576px] md:h-[576px] xl:w-[600px] xl:h-[600px] overflow-hidden opacity-80 hover:opacity-100transition-all duration-300">
+          <div className="relative w-[375px] h-[375px] md:w-[500px] md:h-[500px] xl:w-[550px] xl:h-[550px] overflow-hidden opacity-80 hover:opacity-100transition-all duration-300">
             <Image
               src="/about/myself.jpg"
               alt="Ricky Tang"
@@ -36,7 +36,7 @@ export default function AboutPage() {
         {/* Content Section */}
         <div className="space-y-4 md:space-y-6 xl:flex-1">
           {/* About Me - Paragraphs */}
-          <div>
+          <div className="space-y-5 mb-10">
             <p className="leading-relaxed text-base md:text-lg">
               My name is Ricky Tang, an incoming Software Engineering student at the University of Waterloo.
             </p>

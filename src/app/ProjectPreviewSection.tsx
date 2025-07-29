@@ -41,7 +41,7 @@ export default function ProjectPreviewSection() {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-        <ViewMoreButton href="/projects">View more</ViewMoreButton>
+        <ViewMoreButton href="/projects" children="View more projects" />
       </div>
     </section>
   );
