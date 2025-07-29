@@ -1,7 +1,10 @@
 "use client";
 import React, { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { Inline } from "yet-another-react-lightbox/plugins";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import { Project } from '../data/projects';
 
 interface ProjectCardProps {
@@ -15,10 +18,6 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   const [naturalMap, setNaturalMap] = useState<Record<string, { width: number; height: number }>>({});
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [containerWidth, setContainerWidth] = useState<number>(0);
-  const [isSliding, setIsSliding] = useState(false);
-  const [slideDirection, setSlideDirection] = useState<1 | -1 | null>(null);
-  const [displayIdx, setDisplayIdx] = useState(imgIdx);
-  const [lastSlideDirection, setLastSlideDirection] = useState<1 | -1 | null>(null);
 
   // Update container width on resize
   useEffect(() => {
@@ -31,27 +30,6 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
     observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
-
-  // Slide handler
-  const handleSlide = (dir: 1 | -1) => {
-    if (isSliding) return;
-    setSlideDirection(dir);
-    setIsSliding(true);
-    
-    setTimeout(() => {
-      onImageClick(dir);
-      setDisplayIdx(getNextIdx(dir));
-      setIsSliding(false);
-      setSlideDirection(null);
-      setLastSlideDirection(dir);
-    }, 300);
-  };
-
-  // Calculate next index
-  const getNextIdx = (dir: 1 | -1) => {
-    const len = project.images.length;
-    return (displayIdx + dir + len) % len;
-  };
 
   // For vertical centering
   const getImgStyle = (imgNatural: { width: number; height: number } | undefined) => {
@@ -74,45 +52,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
     overflow: 'hidden'
   };
 
-  // Always show [current, next, prev] in track to prevent DOM reordering
-  const currentImg = project.images[displayIdx];
-  const nextImg = project.images[getNextIdx(1)];
-  const prevImg = project.images[getNextIdx(-1)];
-
-  // Determine track order based on recent slide direction
-  let trackImages: string[];
-  if (lastSlideDirection === -1 && !isSliding) {
-    // After prev slide, reorder to [prev, current, next] so prev is in left slot
-    trackImages = [prevImg, currentImg, nextImg];
-  } else {
-    // Normal order: [current, next, prev]
-    trackImages = [currentImg, nextImg, prevImg];
-  }
-
-  // Track transform based on slide direction
-  let trackTransform = 'translateX(0)';
-  if (isSliding) {
-    if (slideDirection === 1) {
-      // Next: animate from 0 to -33.33% (show next image)
-      trackTransform = 'translateX(-33.33%)';
-    } else if (slideDirection === -1) {
-      // Prev: animate from 0 to 33.33% (show prev image)
-      trackTransform = 'translateX(33.33%)';
-    }
-  }
-
-  const trackStyle: React.CSSProperties = {
-    display: 'flex',
-    width: '300%', // 3 images
-    height: '100%',
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    transition: isSliding ? 'transform 0.3s cubic-bezier(.7,0,.3,1)' : 'none',
-    transform: trackTransform
-  };
-
-  // Natural sizes from cache
+  const currentImg = project.images[imgIdx];
   const getNatural = (src: string) => naturalMap[src];
 
   // On image load, cache its natural size
@@ -123,6 +63,9 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
     });
   };
 
+  // Prepare slides for inline carousel
+  const slides = project.images.map(src => ({ src }));
+
   return (
     <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full border-2 border-gray-400/30">
       <div
@@ -130,49 +73,46 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
         className="w-full border-b border-gray-300/50 relative"
         style={wrapperStyle}
       >
-        {/* Carousel track */}
-        <div style={trackStyle}>
-          {trackImages.map((imgSrc, i) => (
-            <div key={imgSrc + '-' + i} style={{ width: '100%', position: 'relative' }}>
-              <Image
-                src={imgSrc}
-                alt={project.title}
-                width={getNatural(imgSrc)?.width || 800}
-                height={getNatural(imgSrc)?.height || containerHeight}
-                style={{ width: '100%', height: 'auto', position: 'absolute', left: 0, right: 0, ...getImgStyle(getNatural(imgSrc)) }}
-                unoptimized
-                onLoadingComplete={handleImgLoad(imgSrc)}
-              />
-            </div>
-          ))}
-        </div>
-        
-        {/* Navigation Arrows */}
-        {project.images.length > 1 && (
-          <>
-            <button
-              onClick={() => handleSlide(-1)}
-              disabled={isSliding}
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed z-10"
-              title="Previous image"
-            >
-              <IconChevronLeft stroke={2} className="w-5 h-5" />
-            </button>
-            <button
-              onClick={() => handleSlide(1)}
-              disabled={isSliding}
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed z-10"
-              title="Next image"
-            >
-              <IconChevronRight stroke={2} className="w-5 h-5" />
-            </button>
-          </>
+        {project.images.length > 1 ? (
+          /* Inline Carousel for multiple images */
+          <Lightbox
+            slides={slides}
+            index={imgIdx}
+            plugins={[Inline]}
+            inline={{
+              style: {
+                width: "100%",
+                height: "100%",
+                maxWidth: "100%",
+              },
+            }}
+            carousel={{
+              finite: false,
+              preload: 1,
+            }}
+            animation={{
+              fade: 300,
+              swipe: 300,
+            }}
+            render={{
+              iconNext: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute right-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowRight stroke={2} className="w-6 h-6 text-teal-400" /></span>,
+              iconPrev: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute left-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowLeft stroke={2} className="w-6 h-6 text-teal-400" /></span>,
+            }}
+          />
+        ) : (
+          /* Simple image for single image */
+          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Image
+              src={currentImg}
+              alt={project.title}
+              width={getNatural(currentImg)?.width || 800}
+              height={getNatural(currentImg)?.height || containerHeight}
+              style={{ width: '100%', height: 'auto', position: 'absolute', left: 0, right: 0, ...getImgStyle(getNatural(currentImg)) }}
+              unoptimized
+              onLoadingComplete={handleImgLoad(currentImg)}
+            />
+          </div>
         )}
-        
-        {/* Image Counter */}
-        <div className="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded z-10">
-          {imgIdx + 1} / {project.images.length}
-        </div>
       </div>
       
       <div className="card-body px-4 sm:px-8 py-6">
