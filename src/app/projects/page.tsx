@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 import { projects } from '../../data/projects';
 import ProjectCard from '../ProjectCard';
 
+// Icons
+import {
+  IconFolders,
+} from "@tabler/icons-react";
+
 export default function ProjectsPage() {
   const [imageIndexes, setImageIndexes] = useState<{ [id: string]: number }>({});
 
@@ -19,7 +24,10 @@ export default function ProjectsPage() {
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-12">
-      <h1 className="text-5xl font-bold mb-12 text-center">My Projects</h1>
+      <h1 className="text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2">
+        <IconFolders stroke={2} className="w-10 h-10" />
+        My Projects
+      </h1>
       <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
         {projects.map(project => (
           <ProjectCard

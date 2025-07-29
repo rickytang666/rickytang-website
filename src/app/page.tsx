@@ -2,6 +2,17 @@ import { externalLinks } from "@/data/links";
 import ProjectPreviewSection from './ProjectPreviewSection';
 import ViewMoreButton from './ViewMoreButton';
 
+// Icons
+import {
+   IconBrandGithub,
+   IconBrandLinkedin,
+   IconFileCv,
+   IconTerminal2,
+   IconCode,
+   IconTool,
+   IconAward,
+} from "@tabler/icons-react";
+
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto px-4 py-12 flex flex-col gap-15">
@@ -13,21 +24,32 @@ export default function Home() {
         <h1 className="text-3xl font-semibold mb-8">
           Welcome to my studio of pixels, projects, and passion.
         </h1>
-        <div className="flex flex-col gap-1 text-lg">
-          <p className="mb-4">
+        <div className="flex flex-col gap-1 mb-4">
+          <p className="mb-4 text-lg">
             I am an incoming Software Engineering student at the University of Waterloo with a passion for full-stack development and human-computer interaction. I love building things that make life simpler and more meaningful.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-lg">
             I am always learning something new and turning ideas into real, usable projects. Whether it is a hackathon or a personal tool, I am driven by curiosity and the hope to make a difference.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-lg">
             Feel free to reach out!
           </p>
         </div>
-        <div className="flex gap-4 mb-2">
-          <a href={externalLinks.github} className="btn btn-sm btn-outline">GitHub</a>
-          <a href={externalLinks.linkedin} className="btn btn-sm btn-outline">LinkedIn</a>
-          <a href="/resume.pdf" target="_blank" className="btn btn-sm btn-outline">Resume</a>
+        {/* Contact Buttons - responsive flex */}
+        {/* make the icon + text normal text without the btn, on hover change color to light pink */}
+        <div className="flex flex-wrap gap-7 mb-2">
+          <a href={externalLinks.github} className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
+            <IconBrandGithub stroke={2} className="w-5 h-5" />
+            Github
+          </a>
+          <a href={externalLinks.linkedin} className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
+            <IconBrandLinkedin stroke={2} className="w-5 h-5" />
+            LinkedIn
+          </a>
+          <a href="/resume.pdf" target="_blank" className="text-base sm:text-lg flex items-center gap-1 hover:text-pink-300">
+            <IconFileCv stroke={2} className="w-5 h-5" />
+            Resume
+          </a>
         </div>
         <div className="flex justify-center mt-4">
           <ViewMoreButton href="/about"/>
@@ -39,10 +61,16 @@ export default function Home() {
 
       {/* Tech Skills Section (full) */}
       <section className="mb-8">
-        <h2 className="text-3xl font-bold mb-8">Tech Skills</h2>
+        <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
+          <IconTerminal2 stroke={2} className="w-8 h-8" />
+          Tech Skills
+        </h2>
         <div className="flex flex-col gap-4">
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4">Programming Languages</h3>
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+              <IconCode stroke={2} className="w-5 h-5" />
+              Programming Languages
+            </h3>
             <div className="flex flex-wrap gap-2">
               <img src="https://skillicons.dev/icons?i=cpp" className="w-10 h-10" alt="c++" />
               <img src="https://skillicons.dev/icons?i=python" className="w-10 h-10" alt="python" />
@@ -52,7 +80,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4">Tools / Technologies</h3>
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+              <IconTool stroke={2} className="w-5 h-5" />
+              Tools / Technologies
+            </h3>
             <div className="flex flex-wrap gap-2">
               <img src="https://skillicons.dev/icons?i=html" className="w-10 h-10" alt="html" />
               <img src="https://skillicons.dev/icons?i=css" className="w-10 h-10" alt="css" />
@@ -76,7 +107,10 @@ export default function Home() {
 
       {/* Awards Section (full) */}
       <section className="mb-8">
-        <h2 className="text-3xl font-bold mb-8">Awards</h2>
+        <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
+          <IconAward stroke={2} className="w-8 h-8" />
+          Awards
+        </h2>
         <ul className="list-disc pl-6">
           <li>3rd Place in Canadian Team Mathematics Competition</li>
           <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>
