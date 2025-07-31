@@ -52,7 +52,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   const wrapperStyle: React.CSSProperties = {
     height: containerHeight,
     position: 'relative',
-    background: 'black',
+    background: 'var(--color-background)',
     borderTopLeftRadius: '0.75rem',
     borderTopRightRadius: '0.75rem',
     overflow: 'hidden'
@@ -73,10 +73,10 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
   const slides = project.images.map(src => ({ src }));
 
   return (
-    <div className="card bg-base-100 shadow-lg hover:shadow-2xl transition w-full rounded-xl border-2 border-gray-300/50">
+    <div className="card bg-card shadow-lg hover:shadow-2xl transition w-full rounded-xl border-2 border-border">
       <div
         ref={containerRef}
-        className="w-full relative border-b border-gray-300/50"
+        className="w-full relative border-b border-border"
         style={wrapperStyle}
       >
         {project.images.length > 1 ? (
@@ -101,8 +101,8 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
               swipe: 300,
             }}
             render={{
-              iconNext: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute right-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowRight stroke={2} className="w-6 h-6 text-teal-400" /></span>,
-              iconPrev: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute left-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowLeft stroke={2} className="w-6 h-6 text-teal-400" /></span>,
+              iconNext: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute right-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowRight stroke={2} className="w-6 h-6 text-primary" /></span>,
+              iconPrev: () => <span className="text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center absolute left-1 top-1/2 transform -translate-y-1/2 z-10"><IconArrowLeft stroke={2} className="w-6 h-6 text-primary" /></span>,
             }}
           />
         ) : (
@@ -122,9 +122,9 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
       </div>
       
       <div className="card-body px-4 sm:px-8 py-6">
-        <h3 className="card-title text-2xl mb-2">{project.title}</h3>
+        <h3 className="card-title text-2xl mb-2 text-card-foreground">{project.title}</h3>
         {project.description.map((para, idx) => (
-          <p key={idx} className="text-base mb-2 leading-relaxed">{para}</p>
+          <p key={idx} className="text-base mb-2 leading-relaxed text-foreground">{para}</p>
         ))}
         {/* Tech Stack Section */}
         <div className="flex flex-wrap gap-2 mb-4 align-middle">
@@ -134,7 +134,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
               <Image src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=supabase" alt="supabase" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width={40} height={40} className="w-20 h-10 p-1 bg-gray-300 rounded-md saturate-100" unoptimized />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width={40} height={40} className="w-20 h-10 p-1 bg-muted rounded-md saturate-100" unoptimized />
             </>
           )}
           {project.id === '2' && (
@@ -187,7 +187,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
             GitHub
           </a>
           {project.website && (
-            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline btn-info rounded-full align-middle">
+            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline btn-secondary rounded-full align-middle">
               <IconDeviceDesktop stroke={2} className="w-5 h-5" />
               Website
             </a>

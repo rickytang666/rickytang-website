@@ -24,8 +24,8 @@ export default function ProjectsPage() {
 
   return (
     <div className="container mx-auto px-2 sm:px-4 py-12">
-      <h1 className="text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2">
-        <IconFolders stroke={2} className="w-10 h-10" />
+      <h1 className="text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2 text-foreground">
+        <IconFolders stroke={2} className="w-10 h-10 text-primary" />
         My Projects
       </h1>
       <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">

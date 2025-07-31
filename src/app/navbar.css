@@ -3,10 +3,16 @@
   filter: none;
   transition: filter 0.3s;
 }
+
+/* Light mode - 3D drop shadow effect */
 .group:hover .neon-mint {
-  /* Layered: sharp mint green + subtle wide white glow */
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Dark mode glow - bright white light spread out */
+.dark .group:hover .neon-mint {
   filter:
-    drop-shadow(0 0 1px #4fffd8)
-    drop-shadow(0 0 20px #e6f3f088)
-    drop-shadow(0 0 32px #e6f3f055);
+    drop-shadow(0 0 1px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 30px rgba(255, 255, 255, 0.4));
 } 

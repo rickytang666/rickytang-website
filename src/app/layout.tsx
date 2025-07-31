@@ -1,7 +1,28 @@
 import type { Metadata } from "next";
+import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { ThemeProvider } from "@/components/theme-provider";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const spectral = Spectral({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Ricky Tang",
@@ -14,21 +35,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html 
+      lang="en" 
+      className={`${figtree.variable} ${jetbrainsMono.variable} ${spectral.variable}`} 
+      suppressHydrationWarning
+      style={{ transition: 'background-color 0.5s ease-in-out, color 0.5s ease-in-out' }}
+    >
       <head>
         <link rel="icon" href="/favicon.ico" /> 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
       </head>
-      <body style={{ margin: 0, paddingTop: '6rem' }}>
-        <Navbar />
-        <div className="flex flex-col min-h-screen">
-          <div className="flex-1">
-            {children}
+      <body style={{ margin: 0, paddingTop: '6rem' }} className="flex flex-col justify-center items-center">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+          <Navbar />
+          <div className="flex flex-col min-h-screen">
+            <div className="flex-1">
+              {children}
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );
