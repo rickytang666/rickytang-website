@@ -1,16 +1,16 @@
 /* Neon mint glow for logo */
-.neon-mint {
+.neon {
   filter: none;
   transition: filter 0.3s;
 }
 
 /* Light mode - 3D drop shadow effect */
-.group:hover .neon-mint {
+.group:hover .neon {
   filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 /* Dark mode glow - bright white light spread out */
-.dark .group:hover .neon-mint {
+.dark .group:hover .neon {
   filter:
     drop-shadow(0 0 1px rgba(255, 255, 255, 0.7))
     drop-shadow(0 0 20px rgba(255, 255, 255, 0.7))

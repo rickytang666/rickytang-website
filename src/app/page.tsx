@@ -15,7 +15,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-4 py-12 flex flex-col gap-15">
+    <main className="max-w-5xl mx-auto px-4 py-20 flex flex-col gap-15">
 
       <h1 className="text-5xl font-bold text-center mb-12 text-foreground">Hello! 👋 I&apos;m Ricky.</h1>
 

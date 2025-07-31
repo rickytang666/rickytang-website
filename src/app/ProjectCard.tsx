@@ -182,12 +182,13 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
           )}
         </div>
         <div className="card-actions mt-4">
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-primary rounded-full align-middle">
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline border-primary text-foreground hover:bg-primary hover:text-primary-foreground rounded-full align-middle">
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
           </a>
+          {/* what color is suitable for website? */}
           {project.website && (
-            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline btn-secondary rounded-full align-middle">
+            <a href={project.website} target="_blank" rel="noopener noreferrer" className="btn btn-md btn-outline border-fuchsia-500 text-foreground hover:bg-fuchsia-500 hover:text-white rounded-full align-middle">
               <IconDeviceDesktop stroke={2} className="w-5 h-5" />
               Website
             </a>

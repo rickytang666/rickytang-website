@@ -34,7 +34,7 @@ export default function Navbar() {
         {/* make the increase blur when hovered */}
         <div className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5">
           <div className="lg:mx-auto lg:w-[85%]">
-            <div className="navbar h-20 bg-sidebar/50 backdrop-blur-xs group hover:bg-sidebar/85 hover:backdrop-blur-xl transition-all duration-300 lg:rounded-full lg:px-10 dark:drop-shadow-lg dark:drop-shadow-white/20 drop-shadow-lg drop-shadow-black/20">
+            <div className="navbar z-[3] h-20 bg-sidebar/50 backdrop-blur-xs group hover:bg-sidebar/70 hover:backdrop-blur-lg transition-all duration-300 lg:rounded-full lg:px-10 dark:drop-shadow-xl dark:drop-shadow-white/30 dark:hover:drop-shadow-white/50 drop-shadow-xl drop-shadow-black/30 hover:drop-shadow-black/50">
               <div className="navbar-start">
                 <Link href="/" className="px-2">
                   <Image
@@ -42,7 +42,7 @@ export default function Navbar() {
                     alt="Logo"
                     width={200}
                     height={200}
-                    className="h-10 lg:h-12 w-auto opacity-90 saturate-80 transition-all duration-300 neon-mint group-hover:opacity-100 group-hover:saturate-200"
+                    className="h-10 lg:h-12 w-auto opacity-90 saturate-80 transition-all duration-300 neon group-hover:opacity-100 group-hover:saturate-200"
                   />
                 </Link>
               </div>
