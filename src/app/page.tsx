@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* About Section (truncated) */}
       <section className="mb-8">
-        <h1 className="text-3xl font-semibold mb-8 text-foreground">
+        <h1 className="text-3xl font-bold mb-8 text-foreground">
           Welcome to my studio of pixels, projects, and passion.
         </h1>
         <div className="flex flex-col gap-1 mb-4">

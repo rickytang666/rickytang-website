@@ -187,24 +187,4 @@ body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
-  
-  /* Smooth theme transitions */
-  html {
-    transition: background-color 0.5s ease-in-out;
-  }
-  
-  body {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-  }
-  
-  /* Theme-aware transitions for key elements */
-  .bg-background,
-  .bg-card,
-  .bg-sidebar,
-  .text-foreground,
-  .text-muted-foreground,
-  .text-primary,
-  .border-border {
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
-  }
 }
