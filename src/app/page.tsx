@@ -69,14 +69,16 @@ export default function Home() {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-foreground">
               <IconCode stroke={2} className="w-5 h-5 text-primary" />
-              Programming Languages
+              Languages
             </h3>
             <div className="flex flex-wrap gap-2">
-              <img src="https://skillicons.dev/icons?i=cpp" className="w-10 h-10" alt="c++" />
-              <img src="https://skillicons.dev/icons?i=python" className="w-10 h-10" alt="python" />
-              <img src="https://skillicons.dev/icons?i=processing" className="w-10 h-10" alt="processing" />
-              <img src="https://skillicons.dev/icons?i=javascript" className="w-10 h-10" alt="javascript" />
-              <img src="https://skillicons.dev/icons?i=typescript" className="w-10 h-10" alt="typescript" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=cpp&theme=dark" className="w-10 h-10" alt="c++" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=dark" className="w-10 h-10" alt="python" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark" className="w-10 h-10" alt="processing" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=javascript&theme=dark" className="w-10 h-10" alt="javascript" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark" className="w-10 h-10" alt="typescript" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark" className="w-10 h-10" alt="html" />
+              <img src="https://skillicons.dev/icons?i=css" className="w-10 h-10" alt="css" />
             </div>
           </div>
           <div className="mb-8">
@@ -85,21 +87,20 @@ export default function Home() {
               Tools / Technologies
             </h3>
             <div className="flex flex-wrap gap-2">
-              <img src="https://skillicons.dev/icons?i=html" className="w-10 h-10" alt="html" />
-              <img src="https://skillicons.dev/icons?i=css" className="w-10 h-10" alt="css" />
-              <img src="https://skillicons.dev/icons?i=tailwind" className="w-10 h-10" alt="tailwind" />
-              <img src="https://skillicons.dev/icons?i=react" className="w-10 h-10" alt="react" />
-              <img src="https://skillicons.dev/icons?i=nextjs" className="w-10 h-10" alt="nextjs" />
-              <img src="https://skillicons.dev/icons?i=nodejs" className="w-10 h-10" alt="nodejs" />
-              <img src="https://skillicons.dev/icons?i=express" className="w-10 h-10" alt="express" />
-              <img src="https://skillicons.dev/icons?i=postgresql" className="w-10 h-10" alt="postgresql" />
-              <img src="https://skillicons.dev/icons?i=supabase" className="w-10 h-10" alt="supabase" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=daisyui" className="w-10 h-10" alt="daisyui" />
-              <img src="https://skillicons.dev/icons?i=git" className="w-10 h-10" alt="git" />
-              <img src="https://skillicons.dev/icons?i=github" className="w-10 h-10" alt="github" />
-              <img src="https://skillicons.dev/icons?i=vercel" className="w-10 h-10" alt="vercel" />
-              <img src="https://skillicons.dev/icons?i=figma" className="w-10 h-10" alt="figma" />
-              <img src="https://skillicons.dev/icons?i=latex" className="w-10 h-10" alt="latex" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=react&theme=dark" className="w-10 h-10" alt="react" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark" className="w-10 h-10" alt="nextjs" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=nodejs&theme=dark" className="w-10 h-10" alt="nodejs" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=express&theme=dark" className="w-10 h-10" alt="express" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=dark" className="w-10 h-10" alt="postgresql" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=supabase&theme=dark" className="w-10 h-10" alt="supabase" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark" className="w-10 h-10" alt="tailwind" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=daisyui&theme=dark" className="w-10 h-10" alt="daisyui" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=shadcn&theme=dark" className="w-10 h-10" alt="shadcn" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=git&theme=dark" className="w-10 h-10" alt="git" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=github&theme=dark" className="w-10 h-10" alt="github" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark" className="w-10 h-10" alt="vercel" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=figma&theme=dark" className="w-10 h-10" alt="figma" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=latex&theme=dark" className="w-10 h-10" alt="latex" />
             </div>
           </div>
         </div>
@@ -112,7 +113,7 @@ export default function Home() {
           Awards
         </h2>
         <ul className="list-disc pl-6 space-y-2 text-foreground">
-          <li>3rd Place in Canadian Team Mathematics Competition</li>
+          <li>3rd Place in the 2025 Canadian Team Mathematics Competition</li>
           <li>Top 5% in the 2025 Euclid Mathematics Contest</li>
           <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>
         </ul>

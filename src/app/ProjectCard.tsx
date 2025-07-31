@@ -134,7 +134,7 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
               <Image src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=supabase" alt="supabase" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini" width={40} height={40} className="w-20 h-10 p-1 bg-muted rounded-md saturate-100" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" alt="Gemini" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '2' && (

@@ -16,7 +16,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={handleThemeChange}
-      className="btn btn-lg btn-circle bg-sidebar text-sidebar-foreground border-gray-400 hover:bg-sidebar-primary hover:text-sidebar-primary-foreground transition-all duration-500 ease-in-out"
+      className="btn btn-lg btn-circle bg-sidebar text-sidebar-foreground border-gray-400 hover:bg-primary hover:text-sidebar-primary-foreground transition-all duration-200 ease-in-out"
       aria-label="Toggle theme"
     >
       <IconSun className="h-7 w-7 rotate-0 scale-100 transition-all duration-500 ease-in-out dark:-rotate-90 dark:scale-0" />

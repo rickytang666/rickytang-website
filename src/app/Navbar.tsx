@@ -42,7 +42,7 @@ export default function Navbar() {
                     alt="Logo"
                     width={200}
                     height={200}
-                    className="h-12 w-auto opacity-90 saturate-80 transition-all duration-300 neon-mint group-hover:opacity-100 group-hover:saturate-200"
+                    className="h-10 lg:h-12 w-auto opacity-90 saturate-80 transition-all duration-300 neon-mint group-hover:opacity-100 group-hover:saturate-200"
                   />
                 </Link>
               </div>
