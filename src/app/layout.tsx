@@ -43,12 +43,41 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" /> 
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function updateTheme() {
+                  try {
+                    var theme = sessionStorage.getItem('rickytang-theme');
+                    if (theme === 'system' || !theme) {
+                      var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                      document.documentElement.classList.toggle('dark', systemTheme === 'dark');
+                    } else {
+                      document.documentElement.classList.toggle('dark', theme === 'dark');
+                    }
+                  } catch (e) {
+                    console.log('Theme detection failed:', e);
+                  }
+                }
+                
+                // Initial theme setup
+                updateTheme();
+                
+                // Listen for system theme changes
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
+              })();
+            `,
+          }}
+        />
       </head>
       <body style={{ margin: 0, paddingTop: '6rem' }} className="flex flex-col justify-center items-center">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
+          disableTransitionOnChange={false}
+          storageKey="rickytang-theme"
         >
           <Navbar />
           <div className="flex flex-col min-h-screen w-full">
