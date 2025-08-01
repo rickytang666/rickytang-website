@@ -23,6 +23,18 @@ export default function Navbar() {
     setIsMounted(true);
   }, []);
 
+  // Close mobile menu when window resizes to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) { // lg breakpoint
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };

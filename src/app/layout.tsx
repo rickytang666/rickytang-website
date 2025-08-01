@@ -46,9 +46,18 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                // Detect system theme on initial load only
-                var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                document.documentElement.classList.toggle('dark', systemTheme === 'dark');
+                // Check for saved theme preference
+                var savedTheme = localStorage.getItem('rickytang-theme');
+                
+                if (savedTheme === 'light') {
+                  document.documentElement.classList.remove('dark');
+                } else if (savedTheme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  // Default to system theme
+                  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  document.documentElement.classList.toggle('dark', systemTheme === 'dark');
+                }
               })();
             `,
           }}
