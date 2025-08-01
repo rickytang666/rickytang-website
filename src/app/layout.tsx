@@ -3,7 +3,6 @@ import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -47,46 +46,22 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                function updateTheme() {
-                  try {
-                    var theme = sessionStorage.getItem('rickytang-theme');
-                    if (theme === 'system' || !theme) {
-                      var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                      document.documentElement.classList.toggle('dark', systemTheme === 'dark');
-                    } else {
-                      document.documentElement.classList.toggle('dark', theme === 'dark');
-                    }
-                  } catch (e) {
-                    console.log('Theme detection failed:', e);
-                  }
-                }
-                
-                // Initial theme setup
-                updateTheme();
-                
-                // Listen for system theme changes
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
+                // Detect system theme on initial load only
+                var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.classList.toggle('dark', systemTheme === 'dark');
               })();
             `,
           }}
         />
       </head>
       <body style={{ margin: 0, paddingTop: '6rem' }} className="flex flex-col justify-center items-center">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange={false}
-          storageKey="rickytang-theme"
-        >
-          <Navbar />
-          <div className="flex flex-col min-h-screen w-full">
-            <div className="flex-1">
-              {children}
-            </div>
-            <Footer />
+        <Navbar />
+        <div className="flex flex-col min-h-screen w-full">
+          <div className="flex-1">
+            {children}
           </div>
-        </ThemeProvider>
+          <Footer />
+        </div>
       </body>
     </html>
   );
