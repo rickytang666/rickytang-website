@@ -78,7 +78,7 @@ export default function Home() {
               <img src="https://go-skill-icons.vercel.app/api/icons?i=javascript&theme=dark" className="w-10 h-10" alt="javascript" />
               <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark" className="w-10 h-10" alt="typescript" />
               <img src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark" className="w-10 h-10" alt="html" />
-              <img src="https://skillicons.dev/icons?i=css" className="w-10 h-10" alt="css" />
+              <img src="https://go-skill-icons.vercel.app/api/icons?i=css&theme=dark" className="w-10 h-10" alt="css" />
             </div>
           </div>
           <div className="mb-8">
@@ -116,6 +116,7 @@ export default function Home() {
           <li>3rd Place in the 2025 Canadian Team Mathematics Competition</li>
           <li>Top 5% in the 2025 Euclid Mathematics Contest</li>
           <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>
+          <li>Top 2% in the 2024 Fermat Mathematics Contest (Honour Roll)</li>
         </ul>
       </section>
     </main>
