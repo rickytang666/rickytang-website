@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://rickyt.tech"><h1>Ricky Tang's Personal Website</h1></a>
+    <h1>Ricky Tang's Personal Website</h1>
     <p>My portfolio showcasing my projects and journey</p>
     <a href="https://rickyt.tech">
         <strong>🌐 Visit the site</strong>
@@ -9,25 +9,6 @@
 ## About
 
 Welcome to my personal website! This is where I showcase my projects, share my journey, and connect with fellow developers. This site focuses on a modern design, smooth animations, and intuitive navigation.
-
-## Features
-
-- **Responsive Design** - Optimized for all devices and screen sizes
-- **Dark/Light Mode** - Seamless theme switching with system preference detection
-- **Project Showcase** - Interactive gallery featuring my latest work
-- **Smooth Animations** - Engaging micro-interactions and transitions
-- **Fast Performance** - Built with Next.js for optimal loading speeds
-- **Accessible** - WCAG compliant design for all users
-
-## Projects Featured
-
-- **FitSage** - AI-powered fitness tracking web app
-- **CheFlow** - Smart meal planning and recipe management
-- **EcoHub** - Gamified sustainability challenges platform
-- **SwiftNotes** - Secure note-taking app with productivity rewards
-- **Vanilla Flashcards** - Lightweight study tool with spaced repetition
-- **2-Player Tank Battle** - Python-based multiplayer game
-- **Movie Review Station** - Community-driven film review platform
 
 ## Tech Stack
 
