@@ -29,30 +29,6 @@ Welcome to my personal website! This is where I showcase my projects, share my j
 - **Tabler Icons** - Beautiful open-source icons
 - **Yet Another React Lightbox (YARL)** - Image gallery component
 
-## Getting Started
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/rickytang-website.git
-   cd rickytang-website
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000) to view the site
-
 ## License
 
 MIT Licensed
