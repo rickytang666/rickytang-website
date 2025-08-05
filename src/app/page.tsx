@@ -67,20 +67,20 @@ export default function Home() {
           <IconTerminal2 stroke={2} className="w-8 h-8 text-primary" />
           Tech Skills
         </h2>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold mb-6 flex items-center gap-2 text-foreground">
-              <IconCode stroke={2} className="w-5 h-5 text-primary" />
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex-1 flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+              <IconCode stroke={2} className="w-6 h-6 text-primary" />
               Languages
             </h3>
-            <TechWheelPicker skills={languages} className="w-100 h-200" />
+            <TechWheelPicker skills={languages} />
           </div>
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold mb-6 flex items-center gap-2 text-foreground">
-              <IconTool stroke={2} className="w-5 h-5 text-primary" />
+          <div className="flex-1 flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+              <IconTool stroke={2} className="w-6 h-6 text-primary" />
               Tools / Technologies
             </h3>
-            <TechWheelPicker skills={tools} className="w-100 h-200" />
+            <TechWheelPicker skills={tools} />
           </div>
         </div>
       </section>

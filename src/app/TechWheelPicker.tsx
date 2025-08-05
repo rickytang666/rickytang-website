@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { WheelPicker, WheelPickerWrapper } from '@/components/wheel-picker';
+import { cn } from '@/lib/utils';
 
 interface TechSkill {
   name: string;
@@ -38,15 +39,15 @@ export default function TechWheelPicker({ skills, className }: TechWheelPickerPr
   }
 
   return (
-    <div className={className}>
+    <div className={cn("w-1/2 md:w-3/4", className)}>
       <WheelPickerWrapper>
         <WheelPicker 
           options={options} 
           value={selectedValue} 
           onValueChange={setSelectedValue}
-          visibleCount={12}
+          visibleCount={16}
           dragSensitivity={8}
-          optionItemHeight={70}
+          optionItemHeight={65}
         />
       </WheelPickerWrapper>
     </div>
