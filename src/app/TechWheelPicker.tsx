@@ -39,7 +39,7 @@ export default function TechWheelPicker({ skills, className }: TechWheelPickerPr
   }
 
   return (
-    <div className={cn("w-1/2 md:w-3/4", className)}>
+    <div className={cn("w-7/10 sm:w-1/2 md:w-3/4", className)}>
       <WheelPickerWrapper>
         <WheelPicker 
           options={options} 
