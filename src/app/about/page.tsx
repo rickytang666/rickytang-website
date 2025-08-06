@@ -19,10 +19,10 @@ export default function AboutPage() {
         About Me
       </h1>
       
-      <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 items-center xl:items-center">
+      <div className="flex flex-col xl:flex-row gap-6 items-center">
         {/* Image Section */}
-        <div className="flex align-center justify-center xl:justify-start w-full xl:w-[400px] xl:flex-shrink-0">
-          <div className="relative w-[375px] h-[375px] md:w-[500px] md:h-[500px] xl:w-[550px] xl:h-[550px] overflow-hidden opacity-80 hover:opacity-100 transition-all duration-300">
+        <div className="flex xl:flex-shrink-0 items-center justify-center w-full xl:w-auto">
+          <div className="relative w-full aspect-square max-w-[300px] sm:max-w-[400px] md:max-w-[500px] xl:w-[550px] xl:h-[550px] overflow-hidden opacity-80 hover:opacity-100 transition-all duration-300">
             <Image
               src="/about/myself.jpg"
               alt="Ricky Tang"
@@ -34,44 +34,32 @@ export default function AboutPage() {
         </div>
 
         {/* Content Section */}
-        <div className="space-y-4 md:space-y-6 xl:flex-1">
+        <div className="flex-1 space-y-6 md:space-y-8 xl:ml-8">
           {/* About Me - Paragraphs */}
-          <div className="space-y-5 mb-10">
+          <div className="space-y-5">
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              My name is Ricky Tang, an incoming Software Engineering student at the University of Waterloo.
+              My name is Ricky Tang — an incoming Software Engineering student at the University of Waterloo who builds <strong>full-stack applications</strong> that solve real problems.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I build apps that solve real problems. Whether it's a smart culinary app that adapts to your lifestyle or an AI-powered fitness companion that keeps you motivated, I want to create things that people actually use and enjoy.
+              I focus on creating tools that people use and enjoy, whether it's a smart culinary app that adapts to your lifestyle, or an AI-powered fitness companion that keeps you motivated.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I love building meaningful projects — the kind I genuinely enjoy making, and that just might help someone along the way. Whether it's at a hackathon or in my free time, I find joy in turning ideas into products that solve real problems.
+              I've participated in multiple hackathons, each time pushing myself to touch something entirely new and learning to turn ideas into working products in dozens of hours. I love the challenge of rapid shipping and seeing projects come to life.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Improving day by day, even if it's tiny, is something I truly value. There's always something new to discover in tech, and I enjoy staying curious about how things work and how they could work better.
+              Outside of coding, I love playing table tennis, watching track & field and analyzing its statistics, and solving Rubik's cubes. I enjoy running, biking, and exploring the city — there's something about the rhythm of movement that helps me think through complex problems.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I've participated in multiple hackathons, and each time I try to build something entirely new. It's not just about the end result — it's about growing creatively, technically, and personally through the challenge.
-            </p>
-            
-            <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Outside of coding, I love playing table tennis, watching track and field events (I've become so obsessed with it that I have been analyzing the data on my own for years), and playing Rubik's cubes. I've never been short of touching grass, whether it's running, biking, or just a walk in a nearby forest, I enjoy the persistence and enjoyment of the process, rather than chasing the perfection.
-            </p>
-            
-            <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I'm also a hobbyist video editor and graphic designer. I enjoy creating digital artworks freely using different software and tools, contributing to my school community, and producing something meaningful along the way.
-            </p>
-            
-            <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I'm always excited for opportunities to connect and learn. Feel free to reach out! Let's work on something amazing together.
+              I'm also a hobbyist video editor and graphic designer, creating digital artworks and contributing to my school community. Feel free to reach out if you'd like to connect!
             </p>
           </div>
           
           {/* Contact Buttons */}
-          <div className="flex flex-wrap gap-7 mb-2">
+          <div className="flex flex-wrap gap-7 pt-4">
             <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
               <IconBrandGithub stroke={2} className="w-5 h-5" />
               GitHub

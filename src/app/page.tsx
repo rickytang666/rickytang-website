@@ -28,13 +28,10 @@ export default function Home() {
         </h1>
         <div className="flex flex-col gap-1 mb-4">
           <p className="mb-4 text-lg text-foreground">
-            I'm an incoming Software Engineering student at the University of Waterloo who builds full-stack applications that solve real problems. I believe that great software comes from understanding both the technical challenges and the human needs behind them.
+            I'm an incoming Software Engineering student at the University of Waterloo who builds <strong>full-stack applications</strong> that solve real problems.
           </p>
           <p className="mb-4 text-lg text-foreground">
-            I love learning new things every day, even if it's just a small improvement. When I'm not coding, you'll find me playing table tennis, watching track and field events, or running/biking in the city roads.
-          </p>
-          <p className="mb-4 text-lg text-foreground">
-            I'm always up for meaningful tech chats and new challenges!
+            I focus on user experience and creating tools that people actually want to use. I believe in chasing small improvements day by day is the key to thrive in this tech-driven world, and I truly value persistence in everything I do.
           </p>
         </div>
         {/* Contact Buttons */}
