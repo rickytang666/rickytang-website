@@ -24,21 +24,20 @@ export default function Home() {
       {/* About Section (truncated) */}
       <section className="mb-8">
         <h1 className="text-3xl font-bold mb-8 text-foreground">
-          Welcome to my studio of pixels, projects, and passion.
+          Welcome to my digital workshop where ideas become reality.
         </h1>
         <div className="flex flex-col gap-1 mb-4">
           <p className="mb-4 text-lg text-foreground">
-            I am an incoming Software Engineering student at the University of Waterloo with a passion for full-stack development and human-computer interaction. I love building things that make life simpler and more meaningful.
+            I'm an incoming Software Engineering student at the University of Waterloo who builds full-stack applications that solve real problems. I believe that great software comes from understanding both the technical challenges and the human needs behind them.
           </p>
           <p className="mb-4 text-lg text-foreground">
-            I am always learning something new and turning ideas into real, usable projects. Whether it is a hackathon or a personal tool, I am driven by curiosity and the hope to make a difference.
+            I love learning new things every day, even if it's just a small improvement. When I'm not coding, you'll find me playing table tennis, watching track and field events, or running/biking in the city roads.
           </p>
           <p className="mb-4 text-lg text-foreground">
-            Feel free to reach out!
+            I'm always up for meaningful tech chats and new challenges!
           </p>
         </div>
-        {/* Contact Buttons - responsive flex */}
-        {/* make the icon + text normal text without the btn, on hover change color to primary */}
+        {/* Contact Buttons */}
         <div className="flex flex-wrap gap-7 mb-2 justify-center">
           <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
             <IconBrandGithub stroke={2} className="w-5 h-5" />

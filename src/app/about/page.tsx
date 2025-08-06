@@ -40,30 +40,37 @@ export default function AboutPage() {
             <p className="leading-relaxed text-base md:text-lg text-foreground">
               My name is Ricky Tang, an incoming Software Engineering student at the University of Waterloo.
             </p>
-            
+
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I love building meaningful projects — the kind I genuinely enjoy making, and that just might help someone along the way. Whether it&apos;s at a hackathon or in my free time, I find joy in turning ideas into products that solve real problems.
+              I build apps that solve real problems. Whether it's a smart culinary app that adapts to your lifestyle or an AI-powered fitness companion that keeps you motivated, I want to create things that people actually use and enjoy.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              One of the things I value most is continuous improvement. I love to learn something new every day, even if it&apos;s small. I enjoy exploring the frontier of technology, staying curious, and keeping up with how the world is changing.
+              I love building meaningful projects — the kind I genuinely enjoy making, and that just might help someone along the way. Whether it's at a hackathon or in my free time, I find joy in turning ideas into products that solve real problems.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I&apos;ve participated in multiple hackathons, and each time I try to build something entirely new. It&apos;s not just about the end result — it&apos;s about growing creatively, technically, and personally through the challenge.
+              Improving day by day, even if it's tiny, is something I truly value. There's always something new to discover in tech, and I enjoy staying curious about how things work and how they could work better.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Beyond coding, I&apos;m a huge fan of table tennis, photography, and running. I love doing data analysis on track & field stats, solving Rubik&apos;s cubes, biking, and working out. I&apos;m also passionate about video editing and graphic design — creative outlets that help me express and recharge.
+              I've participated in multiple hackathons, and each time I try to build something entirely new. It's not just about the end result — it's about growing creatively, technically, and personally through the challenge.
             </p>
             
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I&apos;m always open to new opportunities and collaborations. Feel free to reach out to me!
+              Outside of coding, I love playing table tennis, watching track and field events (I've become so obsessed with it that I have been analyzing the data on my own for years), and playing Rubik's cubes. I've never been short of touching grass, whether it's running, biking, or just a walk in a nearby forest, I enjoy the persistence and enjoyment of the process, rather than chasing the perfection.
+            </p>
+            
+            <p className="leading-relaxed text-base md:text-lg text-foreground">
+              I'm also a hobbyist video editor and graphic designer. I enjoy creating digital artworks freely using different software and tools, contributing to my school community, and producing something meaningful along the way.
+            </p>
+            
+            <p className="leading-relaxed text-base md:text-lg text-foreground">
+              I'm always excited for opportunities to connect and learn. Feel free to reach out! Let's work on something amazing together.
             </p>
           </div>
           
-          {/* Contact Buttons - flex for responsiveness */}
-          {/* make the icon + text normal text without the btn, on hover change color to primary */}
+          {/* Contact Buttons */}
           <div className="flex flex-wrap gap-7 mb-2">
             <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
               <IconBrandGithub stroke={2} className="w-5 h-5" />
