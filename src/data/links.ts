@@ -3,4 +3,6 @@ export const externalLinks = {
   linkedin: "https://www.linkedin.com/in/ricky-tang-dev/",
   websiteRepo: "https://github.com/rickytang666/rickytang-website",
   email: "tangricky001@gmail.com",
+  devpost: "https://devpost.com/tangricky001",
+  leetcode: "https://leetcode.com/u/tangricky001/",
 };
