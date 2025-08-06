@@ -1,6 +1,8 @@
 import { externalLinks } from "@/data/links";
 import ProjectPreviewSection from './ProjectPreviewSection';
 import ViewMoreButton from './ViewMoreButton';
+import TechWheelPicker from '@/app/TechWheelPicker';
+import { languages, tools } from '@/data/techSkills';
 
 // Icons
 import {
@@ -59,49 +61,26 @@ export default function Home() {
       {/* Featured Projects Section (truncated) */}
       <ProjectPreviewSection />
 
-      {/* Tech Skills Section (full) */}
+      {/* Tech Skills Section with Wheel Picker */}
       <section className="mb-8">
         <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
           <IconTerminal2 stroke={2} className="w-8 h-8 text-primary" />
           Tech Skills
         </h2>
-        <div className="flex flex-col gap-4">
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-foreground">
-              <IconCode stroke={2} className="w-5 h-5 text-primary" />
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="flex-1 flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+              <IconCode stroke={2} className="w-6 h-6 text-primary" />
               Languages
             </h3>
-            <div className="flex flex-wrap gap-2">
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=cpp&theme=dark" className="w-10 h-10" alt="c++" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=dark" className="w-10 h-10" alt="python" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark" className="w-10 h-10" alt="processing" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=javascript&theme=dark" className="w-10 h-10" alt="javascript" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark" className="w-10 h-10" alt="typescript" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark" className="w-10 h-10" alt="html" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=css&theme=dark" className="w-10 h-10" alt="css" />
-            </div>
+            <TechWheelPicker skills={languages} />
           </div>
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-foreground">
-              <IconTool stroke={2} className="w-5 h-5 text-primary" />
+          <div className="flex-1 flex flex-col items-center">
+            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+              <IconTool stroke={2} className="w-6 h-6 text-primary" />
               Tools / Technologies
             </h3>
-            <div className="flex flex-wrap gap-2">
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=react&theme=dark" className="w-10 h-10" alt="react" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark" className="w-10 h-10" alt="nextjs" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=nodejs&theme=dark" className="w-10 h-10" alt="nodejs" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=express&theme=dark" className="w-10 h-10" alt="express" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=dark" className="w-10 h-10" alt="postgresql" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=supabase&theme=dark" className="w-10 h-10" alt="supabase" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark" className="w-10 h-10" alt="tailwind" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=daisyui&theme=dark" className="w-10 h-10" alt="daisyui" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=shadcn&theme=dark" className="w-10 h-10" alt="shadcn" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=git&theme=dark" className="w-10 h-10" alt="git" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=github&theme=dark" className="w-10 h-10" alt="github" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark" className="w-10 h-10" alt="vercel" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=figma&theme=dark" className="w-10 h-10" alt="figma" />
-              <img src="https://go-skill-icons.vercel.app/api/icons?i=latex&theme=dark" className="w-10 h-10" alt="latex" />
-            </div>
+            <TechWheelPicker skills={tools} />
           </div>
         </div>
       </section>
