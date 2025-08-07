@@ -17,16 +17,16 @@ import {
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-4 py-20 flex flex-col gap-15">
+    <main className="max-w-5xl mx-auto flex flex-col gap-15">
 
-      <h1 className="text-5xl font-bold text-center mb-12 text-foreground">Hello! 👋 I&apos;m Ricky.</h1>
+      <h1 className="text-5xl font-bold text-center mb-16 text-foreground">Hello! 👋 I&apos;m Ricky.</h1>
 
       {/* About Section (truncated) */}
       <section className="mb-8">
-        <h1 className="text-3xl font-bold mb-8 text-foreground">
+        <h1 className="text-3xl font-bold mb-15 text-foreground">
           Welcome to my digital workshop where ideas become reality.
         </h1>
-        <div className="flex flex-col gap-1 mb-4">
+        <div className="flex flex-col gap-1 mb-15">
           <p className="mb-4 text-lg text-foreground">
             I'm an incoming Software Engineering student at the University of Waterloo who builds <strong>full-stack applications</strong> that solve real problems.
           </p>
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </div>
         {/* Contact Buttons */}
-        <div className="flex flex-wrap gap-7 mb-2 justify-center">
+        <div className="flex flex-wrap gap-7 mb-15 justify-center">
           <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
@@ -49,7 +49,7 @@ export default function Home() {
             Resume
           </a>
         </div>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center">
           <ViewMoreButton href="/about" children="More about me" />
         </div>
       </section>

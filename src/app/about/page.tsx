@@ -13,7 +13,7 @@ import { externalLinks } from '@/data/links';
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-20 lg:max-w-[85%]">
+    <div className="container mx-auto lg:max-w-[85%]">
       <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2 text-foreground">
         <IconUser stroke={2.5} className="w-10 h-10 text-primary" />
         About Me

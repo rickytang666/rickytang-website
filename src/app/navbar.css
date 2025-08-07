@@ -6,7 +6,7 @@
 
 /* Light mode - 3D drop shadow effect */
 .group:hover .neon {
-  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 /* Dark mode glow - bright white light spread out */

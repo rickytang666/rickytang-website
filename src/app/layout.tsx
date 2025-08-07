@@ -65,12 +65,12 @@ export default function RootLayout({
       </head>
       <body style={{ margin: 0, paddingTop: '6rem' }} className="flex flex-col justify-center items-center">
         <Navbar />
-        <div className="flex flex-col min-h-screen w-full">
+        <div className="flex flex-col min-h-screen w-full px-4 pt-30 pb-10">
           <div className="flex-1">
             {children}
           </div>
-          <Footer />
         </div>
+        <Footer />
       </body>
     </html>
   );

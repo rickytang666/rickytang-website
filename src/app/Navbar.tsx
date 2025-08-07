@@ -46,7 +46,7 @@ export default function Navbar() {
         {/* make the increase blur when hovered */}
         <div className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5">
           <div className="lg:mx-auto lg:w-[85%]">
-            <div className="navbar z-[3] h-20 bg-sidebar/50 backdrop-blur-xs group hover:bg-sidebar/70 hover:backdrop-blur-lg transition-all duration-300 lg:rounded-full lg:px-10 dark:drop-shadow-xl dark:drop-shadow-white/30 dark:hover:drop-shadow-white/50 drop-shadow-xl drop-shadow-black/30 hover:drop-shadow-black/50">
+            <div className="navbar z-[1000] h-20 bg-sidebar/65 backdrop-blur-xs group hover:bg-sidebar transition-all duration-300 lg:rounded-full lg:px-10 dark:drop-shadow-xl border-transparent border-2 hover:border-primary/30 dark:drop-shadow-white/30 dark:hover:drop-shadow-white/50 drop-shadow-xl drop-shadow-black/30 hover:drop-shadow-black/50">
               <div className="navbar-start">
                 <Link href="/" className="px-2">
                   <Image
@@ -113,7 +113,7 @@ export default function Navbar() {
           />
           
           {/* Menu panel */}
-          <div className="absolute right-0 top-0 h-full w-[250px] bg-sidebar shadow-xl border-l border-sidebar-border">
+          <div className="absolute right-0 top-0 h-full w-[170px] bg-sidebar shadow-xl border-l border-sidebar-border">
             {/* Close button */}
             <div className="flex justify-end p-4">
               <button
@@ -125,10 +125,10 @@ export default function Navbar() {
             </div>
             
             {/* Menu items - with icons*/}
-            <div className="flex flex-col p-6 space-y-4 bg-sidebar">
+            <div className="flex flex-col p-6 space-y-4 justify-items-center">
               <Link 
                 href="/" 
-                className="flex items-center gap-3 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconHome stroke={2} className="w-5 h-5" />
@@ -136,7 +136,7 @@ export default function Navbar() {
               </Link>
               <Link 
                 href="/about" 
-                className="flex items-center gap-3 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconUser stroke={2} className="w-5 h-5" />
@@ -144,7 +144,7 @@ export default function Navbar() {
               </Link>
               <Link 
                 href="/projects" 
-                className="flex items-center gap-3 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconFolders stroke={2} className="w-5 h-5" />
@@ -154,7 +154,7 @@ export default function Navbar() {
                 href="/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200"
+                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconFileCv stroke={2} className="w-5 h-5" />
@@ -162,8 +162,7 @@ export default function Navbar() {
               </a>
               
               {/* Theme Toggle in Mobile Menu */}
-              <div className="flex items-center gap-3 text-lg text-sidebar-foreground">
-                <span>Theme</span>
+              <div className="flex items-center text-lg text-sidebar-foreground justify-center">
                 <ThemeToggle />
               </div>
             </div>

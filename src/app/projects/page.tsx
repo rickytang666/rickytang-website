@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="container mx-auto px-2 sm:px-4 py-20">
+    <div className="container mx-auto">
       <h1 className="text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2 text-foreground">
         <IconFolders stroke={2} className="w-10 h-10 text-primary" />
         My Projects
