@@ -130,54 +130,54 @@ export default function ProjectCard({ project, imgIdx, onImageClick, containerHe
         <div className="flex flex-wrap gap-2 mb-4 align-middle">
           {project.id === '1' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=supabase" alt="supabase" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=vercel" alt="Vercel" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark" alt="Next.js" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=supabase&theme=dark" alt="supabase" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark" alt="Vercel" width={40} height={40} className="w-10 h-10" unoptimized />
               <Image src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark" alt="Gemini" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '2' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=processing" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '3' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=postgresql" alt="PostgreSQL" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=express" alt="Express" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=react" alt="React" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=dark" alt="PostgreSQL" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=express&theme=dark" alt="Express" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=nodejs&theme=dark" alt="Node.js" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=react&theme=dark" alt="React" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark" alt="Tailwind CSS" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '4' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=html" alt="html" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=css" alt="css" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=javascript" alt="javascript" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark" alt="html" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=css&theme=dark" alt="css" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=javascript&theme=dark" alt="javascript" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '5' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=processing" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '6' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=python" alt="Python" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=dark" alt="Python" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '7' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=express" alt="Express" width={40} height={40} className="w-10 h-10" unoptimized />
-              <Image src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=nodejs&theme=dark" alt="Node.js" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=express&theme=dark" alt="Express" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=mongodb&theme=dark" alt="MongoDB" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
           {project.id === '8' && (
             <>
-              <Image src="https://skillicons.dev/icons?i=processing" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
+              <Image src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark" alt="Processing" width={40} height={40} className="w-10 h-10" unoptimized />
             </>
           )}
         </div>

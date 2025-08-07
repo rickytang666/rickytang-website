@@ -1,50 +1,68 @@
 import { externalLinks } from "@/data/links";
-import ProjectPreviewSection from './ProjectPreviewSection';
-import ViewMoreButton from './ViewMoreButton';
-import TechWheelPicker from '@/app/TechWheelPicker';
-import { languages, tools } from '@/data/techSkills';
+import ProjectPreviewSection from "./ProjectPreviewSection";
+import ViewMoreButton from "./ViewMoreButton";
+import TechWheelPicker from "@/app/TechWheelPicker";
+import { languages, tools } from "@/data/techSkills";
 
 // Icons
 import {
-   IconBrandGithub,
-   IconBrandLinkedin,
-   IconFileCv,
-   IconTerminal2,
-   IconCode,
-   IconTool,
-   IconAward,
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconFileCv,
+  IconTerminal2,
+  IconCode,
+  IconTool,
+  IconAward,
 } from "@tabler/icons-react";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto flex flex-col gap-15">
-
-      <h1 className="text-5xl font-bold text-center mb-16 text-foreground">Hello! 👋 I&apos;m Ricky.</h1>
+    <main className="max-w-5xl mx-auto flex flex-col gap-25">
+      <h1 className="text-5xl font-bold text-center mb-5 text-foreground">
+        Hello! 👋 I&apos;m Ricky.
+      </h1>
 
       {/* About Section (truncated) */}
-      <section className="mb-8">
+      <section>
         <h1 className="text-3xl font-bold mb-15 text-foreground">
           Welcome to my digital workshop where ideas become reality.
         </h1>
-        <div className="flex flex-col gap-1 mb-15">
+        <div className="flex flex-col gap-1 mb-10">
           <p className="mb-4 text-lg text-foreground">
-            I'm an incoming Software Engineering student at the University of Waterloo who builds <strong>full-stack applications</strong> that solve real problems.
+            I'm an incoming Software Engineering student at the University of
+            Waterloo who builds <strong>full-stack applications</strong> that
+            solve real problems.
           </p>
           <p className="mb-4 text-lg text-foreground">
-            I focus on user experience and creating tools that people actually want to use. I believe in chasing small improvements day by day is the key to thrive in this tech-driven world, and I truly value persistence in everything I do.
+            I focus on user experience and creating tools that people actually
+            want to use. I believe in chasing small improvements day by day is
+            the key to thrive in this tech-driven world, and I truly value
+            persistence in everything I do.
           </p>
         </div>
         {/* Contact Buttons */}
-        <div className="flex flex-wrap gap-7 mb-15 justify-center">
-          <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+        <div className="flex flex-wrap gap-7 mb-10 justify-center">
+          <a
+            href={externalLinks.github}
+            target="_blank"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+          >
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
           </a>
-          <a href={externalLinks.linkedin} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+          <a
+            href={externalLinks.linkedin}
+            target="_blank"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+          >
             <IconBrandLinkedin stroke={2} className="w-5 h-5" />
             LinkedIn
           </a>
-          <a href="/resume.pdf" target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+          >
             <IconFileCv stroke={2} className="w-5 h-5" />
             Resume
           </a>
@@ -58,8 +76,8 @@ export default function Home() {
       <ProjectPreviewSection />
 
       {/* Tech Skills Section with Wheel Picker */}
-      <section className="mb-8">
-        <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
+      <section>
+        <h2 className="text-3xl font-bold mb-15 flex items-center gap-2 text-foreground">
           <IconTerminal2 stroke={2} className="w-8 h-8 text-primary" />
           Tech Skills
         </h2>
@@ -82,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Awards Section (full) */}
-      <section className="mb-8">
+      <section>
         <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
           <IconAward stroke={2} className="w-8 h-8 text-primary" />
           Awards
