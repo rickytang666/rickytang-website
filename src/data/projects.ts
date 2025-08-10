@@ -12,7 +12,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'FitSage',
     description: [
-      'FitSage is a smart, minimalist fitness web app designed to help casual exercisers track workouts, journal their fitness journey, and gain meaningful insights with the help of Google Gemini AI. It offers an intuitive, distraction-free interface, a personal dashboard for tracking progress, and a secure, quick sign-in with Google. FitSage transforms free-form diary entries into structured summaries and suggestions, giving users clarity without the clutter—all while keeping their data private and in their control.'
+      'An intelligent fitness companion that transforms natural diary entries into structured workout insights using Google Gemini AI. The app recognizes 40+ workout types from casual diaries, automatically evaluates duration and calories, and provides personalized workout recommendations based on user progress. Built with a minimalist design philosophy, it eliminates the friction of traditional fitness tracking by allowing users to write freely about their workouts while the AI handles all the data structuring and analysis. FitSage helps users build consistent fitness habits and level up fitness enjoyment, while maintaining a focus on progress and intelligent workout planning.'
     ],
     images: [
       '/projects/fit1.png',
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     id: '2',
     title: 'CheFlow',
     description: [
-      'CheFlow is an interactive app designed to help students and young adults take control of their cooking habits by making meal planning smarter and more engaging. It allows users to store and organize recipes, track fridge inventory, and receive personalized recipe recommendations based on available ingredients and time constraints. With built-in analytics like heatmaps and math regressions, CheFlow offers insights into your cooking patterns and ingredient usage—making it easier to plan meals, reduce waste, and grow culinary skills over time.'
+      'A lightweight desktop app that revolutionizes recipe management through intelligent recipe matching and data-driven cooking insights. It features a smart recommendation algorithm that analyzes your fridge inventory against recipe and time requirements, prioritizing either ingredient availability or time constraints based on user preferences. CheFlow keeps track of cooking activities, generating heatmaps and applying mathematical regression models to reveal cooking habits and trends. By combining practical meal planning tools with comprehensive analytics, CheFlow helps users build consistent cooking habits while reducing food waste through data-informed grocery decisions.'
     ],
     images: [
       '/projects/chef1.png',
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     id: '3',
     title: 'EcoHub',
     description: [
-      'EcoHub is a gamified web app designed to make sustainability engaging and rewarding by encouraging users to complete eco-friendly challenges and compete for prizes. Inspired by Hack Club and built with a focus on fun and motivation, EcoHub uses a challenge-based system to promote environmental actions through friendly competition. The platform blends interactive visuals with a strong user experience, offering features like activity tracking and upcoming user insights to analyze long-term dedication. With future plans to expand globally and enhance its visual appeal, EcoHub aims to turn everyday sustainable choices into meaningful progress—one challenge at a time.'
+      'A gamified web app designed to make sustainability engaging and rewarding by encouraging users to complete eco-friendly challenges and earn points for prizes. Inspired by Hack Club and built with a focus on fun and motivation, EcoHub uses a incentive-based system to promote environmental actions through friendly competition. The platform blends interactive visuals with a strong user experience, offering features like activity tracking and prizes shop to analyze long-term dedication. With future plans to expand globally and enhance its user insights, EcoHub turns everyday sustainable choices into meaningful progress.'
     ],
     images: [
       '/projects/eco1.png',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'Vanilla Flashcards',
     description: [
-      'Vanilla Flashcards is a lightweight, responsive flashcard app built with vanilla JavaScript that lets users create, edit, and study flashcards directly in the browser. It features a simple practice mode with a 0–4 grading system to reinforce memory through spaced repetition. Users can navigate efficiently using keyboard shortcutsand utilize storage to persist their flashcards across sessions, making it ideal for quick, effective studying on both desktop and mobile devices.'
+      'A lightweight, responsive flashcard web app that lets users create, edit, and study flashcards directly in the browser. It features a focused practice mode with a 5-point grading system (0-4) to track retention progress. Users can navigate efficiently using keyboard shortcuts and manage their collection through an intuitive list interface. The app automatically prioritizes cards with lower retention scores during practice sessions, making it ideal for quick, effective studying on both desktop and mobile devices.'
     ],
     images: [
       '/projects/van1.png',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     id: '5',
     title: 'SwiftNotes',
     description: [
-      'SwiftNotes is an open-source, user-friendly note-taking app designed to make writing secure, customizable, and even fun. It features an incentives system that rewards productivity with gold coins, font and interface customization (including dark mode), and a tabbed layout for managing multiple notes with ease. Notes are automatically saved to local storage with every keystroke, and optional password encryption ensures privacy. Ideal for students, professionals, or anyone who wants an organized, secure, and engaging note-taking experience.'
+      'An lightweight, feature-rich note-taking desktop app that transforms the traditional note-taking experience through gamified productivity incentives, advanced customization options, and enterprise-grade security. Built with a modern tabbed interface, the app features an innovative reward system that motivates consistent usage, comprehensive theming capabilities including dark mode and multi-font support, and real-time local storage with optional AES encryption. Designed for productivity-focused users who demand both functionality and security in their digital workspace.'
     ],
     images: [
       '/projects/swift1.png',
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     id: '6',
     title: '2-Player Tank Battle Game',
     description: [
-      '2-Player Tank Battle Game is a fast-paced local multiplayer game built with Python and Tkinter, where two players control tanks and battle until one runs out of health. Each tank starts with limited fuel, ammo, and 100 health points. Players must manage resources carefully — moving, shooting, and even time all consume fuel. Attacks deal damage only within range, and collisions cause continuous health loss. The game includes unique special abilities like faster speed, auto-aiming, extra ammo, or self-healing through movement. It\'s a strategic and competitive game with real-time mechanics and a variety of playstyles, offering a fun and challenging experience.'
+      'A local multiplayer tank battle game built with Python Tkinter for the GUI. Players control tanks with limited fuel, ammo, and health points, requiring strategic resource management. The game features real-time collision detection, damage calculation based on proximity, and continuous health loss mechanics. It also implemented special abilities including but not limited to: auto-aiming systems, improved mobility, and regenerative healing through movement. With object-oriented programming and event-driven architecture, the game is beginner-friendly and able to extend with new features and mechanics.'
     ],
     images: [
       '/projects/tank1.png',
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     id: '7',
     title: 'Movie Review Station',
     description: [
-      'The Movie Review Website is a dynamic web application designed to provide users with a platform to browse, search, and review movies. Built with a modern tech stack, the site allows users to explore detailed information about films, read and write reviews, and rate their favorite titles. With a user-friendly interface and responsive design, the platform aims to foster a vibrant community of movie enthusiasts, enabling engaging discussions and insightful feedback on the latest releases as well as timeless classics. Whether you\'re looking to discover new films or share your opinions, the Movie Review Website offers a comprehensive and interactive experience for all cinema lovers.'
+      'A full-stack movie review platform where users can browse countless movies from the TMDB, read community reviews, and share their own ratings/reviews. This web app features trending movie browsing, searching and navigation functionality, and a collaborative review system.'
     ],
     images: [
       '/projects/movie1.png',
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     id: '8',
     title: 'World Championship 100m Sim',
     description: [
-      'The World Championship 100m Simulator is an object-oriented programming project that models the excitement and intensity of the Men’s 100m sprint event. Built entirely in Processing, this simulation recreates race scenarios using real or simulated athlete data, allowing users to visualize, analyze, and compare performances in a dynamic environment. The project not only runs the virtual races but also provides comprehensive data analysis and generates detailed results, giving insights into athlete performance and event outcomes. Designed for educational and analytical purposes, this tool offers an engaging way to explore the nuances of sprint competitions and the factors influencing race results.'
+      'A comprehensive 100m dash simulator that accurately models the Men’s 100m sprint event using real-world athlete performance data and dynamic environmental factors, outputting results in detailed animations. The system implements Dr. Jonas Mureika’s models for sprint data analysis, incorporating biomechanical principles and environmental effects on race outcomes. The simulator features realistic weather impact modeling and comprehensive performance analytics, allowing users to simulate and analyze races with authentic dynamics. The simulator provides detailed performance comparisons and outcome evaluation, making it a useful tool for sports analytics and competitive analysis.'
     ],
     images: [
       '/projects/sim1.png',
