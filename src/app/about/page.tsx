@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 // Icons
 import {
@@ -9,7 +9,7 @@ import {
   IconMail,
 } from "@tabler/icons-react";
 
-import { externalLinks } from '@/data/links';
+import { externalLinks } from "@/data/links";
 
 export default function AboutPage() {
   return (
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <IconUser stroke={2.5} className="w-10 h-10 text-primary" />
         About Me
       </h1>
-      
+
       <div className="flex flex-col xl:flex-row gap-6 items-center">
         {/* Image Section */}
         <div className="flex xl:flex-shrink-0 items-center justify-center w-full xl:w-auto">
@@ -38,41 +38,75 @@ export default function AboutPage() {
           {/* About Me - Paragraphs */}
           <div className="space-y-5">
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              My name is Ricky Tang — an incoming Software Engineering student at the University of Waterloo who builds <strong>full-stack applications</strong> that solve real problems.
+              My name is Ricky Tang — an incoming Software Engineering student
+              at the University of Waterloo who builds{" "}
+              <strong>full-stack applications</strong> that solve real problems.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I focus on creating tools that people use and enjoy, whether it's a smart culinary app that adapts to your lifestyle, or an AI-powered fitness companion that keeps you motivated.
+              I focus on creating tools that people use and enjoy, whether it's
+              a smart culinary app that adapts to your lifestyle, or an
+              AI-powered fitness companion that keeps you motivated.
             </p>
-            
+
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I've participated in multiple hackathons, each time pushing myself to touch something entirely new and learning to turn ideas into working products in dozens of hours. I love the challenge of rapid shipping and seeing projects come to life.
+              I've participated in multiple hackathons, each time pushing myself
+              to touch something entirely new and learning to turn ideas into
+              working products in dozens of hours. I love the challenge of rapid
+              shipping and seeing projects come to life.
             </p>
-            
+
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Outside of coding, I love playing table tennis, watching track & field and analyzing its statistics, and solving Rubik's cubes. I enjoy running, biking, and exploring the city — there's something about the rhythm of movement that helps me think through complex problems.
+              Outside of coding, I love playing table tennis, watching track &
+              field and analyzing its statistics, and solving Rubik's cubes. I
+              enjoy running, biking, and exploring the city — there's something
+              about the rhythm of movement that helps me think through complex
+              problems.
             </p>
-            
+
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I'm also a hobbyist video editor and graphic designer, creating digital artworks and contributing to my school community. Feel free to reach out if you'd like to connect!
+              I'm also a hobbyist video editor and graphic designer, creating
+              miscellaneous digital artworks. I enjoy the process of learning
+              new software/tools upon every new project and use them to
+              contribute to my school community.
+            </p>
+
+            <p className="leading-relaxed text-base md:text-lg text-foreground">
+              Feel free to reach out if you'd like to connect!
             </p>
           </div>
-          
+
           {/* Contact Buttons */}
           <div className="flex flex-wrap gap-7 pt-4">
-            <a href={externalLinks.github} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+            <a
+              href={externalLinks.github}
+              target="_blank"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            >
               <IconBrandGithub stroke={2} className="w-5 h-5" />
               GitHub
             </a>
-            <a href={externalLinks.linkedin} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+            <a
+              href={externalLinks.linkedin}
+              target="_blank"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            >
               <IconBrandLinkedin stroke={2} className="w-5 h-5" />
               LinkedIn
             </a>
-            <a href="/resume.pdf" target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            >
               <IconFileCv stroke={2} className="w-5 h-5" />
               Resume
             </a>
-            <a href={`mailto:${externalLinks.email}`} target="_blank" className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200">
+            <a
+              href={`mailto:${externalLinks.email}`}
+              target="_blank"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            >
               <IconMail stroke={2} className="w-5 h-5" />
               Email
             </a>

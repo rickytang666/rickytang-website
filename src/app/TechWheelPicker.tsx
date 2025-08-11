@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from 'react';
-import { WheelPicker, WheelPickerWrapper } from '@/components/wheel-picker';
-import { cn } from '@/lib/utils';
+import React, { useState, useEffect } from "react";
+import { WheelPicker, WheelPickerWrapper } from "@/components/wheel-picker";
+import { cn } from "@/lib/utils";
 
 interface TechSkill {
   name: string;
@@ -15,7 +15,10 @@ interface TechWheelPickerProps {
   className?: string;
 }
 
-export default function TechWheelPicker({ skills, className }: TechWheelPickerProps) {
+export default function TechWheelPicker({
+  skills,
+  className,
+}: TechWheelPickerProps) {
   const [selectedValue, setSelectedValue] = useState("");
   const [isClient, setIsClient] = useState(false);
 
@@ -24,14 +27,14 @@ export default function TechWheelPicker({ skills, className }: TechWheelPickerPr
     setSelectedValue(skills[0]?.name || "");
   }, [skills]);
 
-  const options = skills.map(skill => ({
+  const options = skills.map((skill) => ({
     value: skill.name,
     label: (
       <div className="flex items-center gap-2">
         <img src={skill.icon} alt={skill.alt} className="w-10 h-10" />
         <span>{skill.name}</span>
       </div>
-    )
+    ),
   }));
 
   if (!isClient) {
@@ -41,15 +44,15 @@ export default function TechWheelPicker({ skills, className }: TechWheelPickerPr
   return (
     <div className={cn("w-7/10 sm:w-1/2 md:w-3/4", className)}>
       <WheelPickerWrapper>
-        <WheelPicker 
-          options={options} 
-          value={selectedValue} 
+        <WheelPicker
+          options={options}
+          value={selectedValue}
           onValueChange={setSelectedValue}
           visibleCount={16}
-          dragSensitivity={8}
+          dragSensitivity={20}
           optionItemHeight={65}
         />
       </WheelPickerWrapper>
     </div>
   );
-} 
+}

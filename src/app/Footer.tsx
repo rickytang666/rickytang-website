@@ -111,21 +111,25 @@ export default function Footer() {
         <p>Made with</p>
         <div className="flex items-center gap-1">
           <img
+            title="Next.js"
             src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark"
             className="w-6 h-6"
             alt="nextjs"
           />
           <img
+            title="Tailwind CSS"
             src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark"
             className="w-6 h-6"
             alt="tailwind"
           />
           <img
+            title="shadcn/ui"
             src="https://go-skill-icons.vercel.app/api/icons?i=shadcn&theme=dark"
             className="w-6 h-6"
             alt="shadcn"
           />
           <img
+            title="daisyUI"
             src="https://go-skill-icons.vercel.app/api/icons?i=daisyui&theme=dark"
             className="w-6 h-6"
             alt="daisyui"
