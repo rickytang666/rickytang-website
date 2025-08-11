@@ -148,20 +148,22 @@ export default function ProjectCard({
         )}
       </div>
 
-      <div className="card-body px-4 sm:px-8 py-6">
+      <div className="card-body px-4 sm:px-8 py-6 flex flex-col">
         <h3 className="card-title text-2xl mb-2 text-card-foreground">
           {project.title}
         </h3>
-        {project.description.map((para, idx) => (
-          <p
-            key={idx}
-            className="text-base mb-2 leading-relaxed text-foreground"
-          >
-            {para}
-          </p>
-        ))}
+        <div className="flex-grow">
+          {project.description.map((para, idx) => (
+            <div
+              key={idx}
+              className="text-base mb-2 leading-relaxed text-foreground"
+            >
+              {para}
+            </div>
+          ))}
+        </div>
         {/* Tech Stack Section */}
-        <div className="flex flex-wrap gap-2 mb-4 align-middle">
+        <div className="flex flex-wrap gap-2 mb-3 align-middle">
           {project.id === "1" && (
             <>
               <Image
@@ -355,7 +357,7 @@ export default function ProjectCard({
             </>
           )}
         </div>
-        <div className="card-actions mt-4">
+        <div className="card-actions">
           <a
             href={project.github}
             target="_blank"
