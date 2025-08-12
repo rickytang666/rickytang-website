@@ -34,14 +34,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html 
-      lang="en" 
-      className={`${figtree.variable} ${jetbrainsMono.variable} ${spectral.variable}`} 
+    <html
+      lang="en"
+      className={`${figtree.variable} ${jetbrainsMono.variable} ${spectral.variable}`}
       suppressHydrationWarning
-      style={{ transition: 'background-color 0.5s ease-in-out, color 0.5s ease-in-out' }}
+      style={{
+        transition: "background-color 0.5s ease-in-out, color 0.5s ease-in-out",
+      }}
     >
       <head>
-        <link rel="icon" href="/favicon.ico" /> 
+        <link rel="icon" href="/favicon.ico" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -63,12 +65,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body style={{ margin: 0, paddingTop: '6rem' }} className="flex flex-col justify-center items-center">
+      <body
+        style={{ margin: 0, paddingTop: "6rem" }}
+        className="flex flex-col justify-center items-center"
+      >
         <Navbar />
-        <div className="flex flex-col min-h-screen w-full px-4 pt-30 pb-10">
-          <div className="flex-1">
-            {children}
-          </div>
+        <div className="flex flex-col min-h-screen w-full px-10 xl:px-4 pt-30 pb-10">
+          <div className="flex-1">{children}</div>
         </div>
         <Footer />
       </body>

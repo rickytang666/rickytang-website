@@ -113,18 +113,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Awards Section (full) */}
+      {/* Awards Section (cards) */}
       <section>
         <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
           <IconAward stroke={2} className="w-8 h-8 text-primary" />
           Awards
         </h2>
-        <ul className="list-disc pl-6 space-y-2 text-foreground">
-          <li>3rd Place in the 2025 Canadian Team Mathematics Competition</li>
-          <li>Top 5% in the 2025 Euclid Mathematics Contest</li>
-          <li>Top 2% in the 2024 Canadian Senior Mathematics Contest</li>
-          <li>Top 2% in the 2024 Fermat Mathematics Contest (Honour Roll)</li>
-        </ul>
+        <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+          <div className="card bg-card hover:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] transition-all duration-300 w-full rounded-xl border-1 border-border hover:border-primary flex p-5 gap-4 justify-center items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Centre_for_Education_in_Mathematics_and_Computing_logo.svg/1600px-Centre_for_Education_in_Mathematics_and_Computing_logo.svg.png?20221128005800"
+              alt="Canadian Team Mathematics Competition"
+              className="w-[80%]"
+            />
+            <h4 className="text-lg font-semibold flex justify-center items-center gap-2 text-foreground text-center">
+              2025 Canadian Team Mathematics Competition
+            </h4>
+            <h3 className="text-2xl font-bold flex justify-center items-center gap-2 text-primary">
+              3rd Place
+            </h3>
+          </div>
+          <div className="card bg-card hover:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] transition-all duration-300 w-full rounded-xl border-1 border-border hover:border-primary flex p-5 gap-4 justify-center items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Centre_for_Education_in_Mathematics_and_Computing_logo.svg/1600px-Centre_for_Education_in_Mathematics_and_Computing_logo.svg.png?20221128005800"
+              alt="Canadian Team Mathematics Competition"
+              className="w-[80%]"
+            />
+            <h4 className="text-lg font-semibold flex justify-center items-center gap-2 text-foreground text-center">
+              2025 Euclid Mathematics Contest
+            </h4>
+            <h3 className="text-2xl font-bold flex justify-center items-center gap-2 text-primary">
+              Top 5%
+            </h3>
+          </div>
+          <div className="card bg-card hover:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] transition-all duration-300 w-full rounded-xl border-1 border-border hover:border-primary flex p-5 gap-4 justify-center items-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Centre_for_Education_in_Mathematics_and_Computing_logo.svg/1600px-Centre_for_Education_in_Mathematics_and_Computing_logo.svg.png?20221128005800"
+              alt="Canadian Team Mathematics Competition"
+              className="w-[80%]"
+            />
+            <h4 className="text-lg font-semibold flex justify-center items-center gap-2 text-foreground text-center">
+              2024 Canadian Senior Mathematics Contest
+            </h4>
+            <h3 className="text-2xl font-bold flex justify-center items-center gap-2 text-primary">
+              Top 2%
+            </h3>
+          </div>
+        </div>
       </section>
     </main>
   );
