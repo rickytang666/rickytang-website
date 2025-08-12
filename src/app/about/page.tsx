@@ -38,9 +38,10 @@ export default function AboutPage() {
           {/* About Me - Paragraphs */}
           <div className="space-y-5">
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              My name is Ricky Tang — an incoming Software Engineering student
-              at the University of Waterloo who builds{" "}
-              <strong>full-stack applications</strong> that solve real problems.
+              My name is Ricky Tang, an aspiring software engineer with a
+              genuine love for full stack applications and human-machine
+              interaction. I am striving to merge tech into daily life for
+              simplicity and pure joy.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
@@ -65,10 +66,16 @@ export default function AboutPage() {
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I'm also a hobbyist video editor and graphic designer, creating
-              miscellaneous digital artworks. I enjoy the process of learning
-              new software/tools upon every new project and use them to
-              contribute to my school community.
+              I'm also a hobbyist video editor and graphic designer, creating{" "}
+              <a
+                className="link font-semibold"
+                href={externalLinks.videoGraphic}
+                target="_blank"
+              >
+                miscellaneous digital artworks
+              </a>
+              . I enjoy the process of learning new software/tools upon every
+              new project and use them to contribute to my school community.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">

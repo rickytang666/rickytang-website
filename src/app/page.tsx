@@ -29,9 +29,23 @@ export default function Home() {
         </h1>
         <div className="flex flex-col gap-1 mb-10">
           <p className="mb-4 text-lg text-foreground">
-            I'm an incoming Software Engineering student at the University of
-            Waterloo who builds <strong>full-stack applications</strong> that
-            solve real problems.
+            I'm an incoming{" "}
+            <a
+              className="link font-semibold"
+              href={externalLinks.softwareEngineering}
+              target="_blank"
+            >
+              Software Engineering
+            </a>{" "}
+            student at the University of Waterloo who builds{" "}
+            <a
+              className="link font-semibold"
+              href={externalLinks.github}
+              target="_blank"
+            >
+              full-stack applications
+            </a>{" "}
+            that solve real problems.
           </p>
           <p className="mb-4 text-lg text-foreground">
             I focus on user experience and creating tools that people actually

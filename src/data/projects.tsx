@@ -16,15 +16,22 @@ export const projects: Project[] = [
     description: [
       <>
         An intelligent fitness companion that transforms natural diary entries
-        into structured workout insights using Google Gemini AI. The app
-        recognizes 40+ workout types from casual diaries, automatically
-        evaluates duration and calories, and provides personalized workout
-        recommendations based on user progress. Built with a minimalist design
-        philosophy, it eliminates the friction of traditional fitness tracking
-        by allowing users to write freely about their workouts while the AI
-        handles all the data structuring and analysis. FitSage helps users build
-        consistent fitness habits and level up fitness enjoyment, while
-        maintaining a focus on progress and intelligent workout planning.
+        into structured workout insights using{" "}
+        <a
+          className="link font-semibold"
+          href="https://gemini.google/about/"
+          target="_blank"
+        >
+          Google Gemini AI
+        </a>
+        . The app recognizes 40+ workout types from casual diaries,
+        automatically evaluates duration and calories, and provides personalized
+        workout recommendations based on user progress. Built with a minimalist
+        design philosophy, it eliminates the friction of traditional fitness
+        tracking by allowing users to write freely about their workouts while
+        the AI handles all the data structuring and analysis. FitSage helps
+        users build consistent fitness habits and level up fitness enjoyment,
+        while maintaining a focus on progress and intelligent workout planning.
       </>,
     ],
     images: [
@@ -67,13 +74,21 @@ export const projects: Project[] = [
       <>
         A gamified web app designed to make sustainability engaging and
         rewarding by encouraging users to complete eco-friendly challenges and
-        earn points for prizes. Inspired by Hack Club and built with a focus on
-        fun and motivation, EcoHub uses a incentive-based system to promote
-        environmental actions through friendly competition. The platform blends
-        interactive visuals with a strong user experience, offering features
-        like activity tracking and prizes shop to analyze long-term dedication.
-        With future plans to expand globally and enhance its user insights,
-        EcoHub turns everyday sustainable choices into meaningful progress.
+        earn points for prizes. Inspired by{" "}
+        <a
+          className="link font-semibold"
+          href="https://hackclub.com/"
+          target="_blank"
+        >
+          Hack Club
+        </a>{" "}
+        and built with a focus on fun and motivation, EcoHub uses a
+        incentive-based system to promote environmental actions through friendly
+        competition. The platform blends interactive visuals with a strong user
+        experience, offering features like activity tracking and prizes shop to
+        analyze long-term dedication. With future plans to expand globally and
+        enhance its user insights, EcoHub turns everyday sustainable choices
+        into meaningful progress.
       </>,
     ],
     images: ["/projects/eco1.png"],
@@ -142,10 +157,17 @@ export const projects: Project[] = [
     description: [
       <>
         A full-stack movie review platform where users can browse countless
-        movies from the TMDB, read community reviews, and share their own
-        ratings/reviews. This web app features trending movie browsing,
-        searching and navigation functionality, and a collaborative review
-        system.
+        movies from{" "}
+        <a
+          className="link font-semibold"
+          href="https://www.themoviedb.org/"
+          target="_blank"
+        >
+          The Movie Database (TMDB)
+        </a>
+        , read community reviews, and share their own ratings/reviews. This web
+        app features trending movie browsing, searching and navigation
+        functionality, and a collaborative review system.
       </>,
     ],
     images: ["/projects/movie1.png"],
@@ -160,13 +182,21 @@ export const projects: Project[] = [
         A comprehensive 100m dash simulator that accurately models the Men's
         100m sprint event using real-world athlete performance data and dynamic
         environmental factors, outputting results in detailed animations. The
-        system implements Dr. Jonas Mureika's models for sprint data analysis,
-        incorporating biomechanical principles and environmental effects on race
-        outcomes. The simulator features realistic weather impact modeling and
-        comprehensive performance analytics, allowing users to simulate and
-        analyze races with authentic dynamics. The simulator provides detailed
-        performance comparisons and outcome evaluation, making it a useful tool
-        for sports analytics and competitive analysis.
+        system implements{" "}
+        <a
+          className="link font-semibold"
+          href="https://jmureika.lmu.build/track/index.html"
+          target="_blank"
+        >
+          Dr. Jonas Mureika's models
+        </a>{" "}
+        for sprint data analysis, incorporating biomechanical principles and
+        environmental effects on race outcomes. The simulator features realistic
+        weather impact modeling and comprehensive performance analytics,
+        allowing users to simulate and analyze races with authentic dynamics.
+        The simulator provides detailed performance comparisons and outcome
+        evaluation, making it a useful tool for sports analytics and competitive
+        analysis.
       </>,
     ],
     images: ["/projects/sim1.png", "/projects/sim2.png"],

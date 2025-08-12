@@ -1,6 +1,6 @@
 <div align="center">
     <img src="/public/logo_ricfinity.png" alt="RicFinity" width="150" />
-    <h1 style="font-family: 'Georgia'; font-size: 36px; background-image: linear-gradient(to right, rgb(114,236,246), rgb(38,117,246), rgb(209,65,255), rgb(209,65,255), rgb(38,117,246), rgb(114,236,246)); background-clip: text; -webkit-background-clip: text; color: transparent;">
+    <h1>
         Ricky Tang's Personal Website
     </h1>
     <p>

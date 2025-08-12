@@ -6,4 +6,5 @@ export const externalLinks = {
   devpost: "https://devpost.com/tangricky001",
   leetcode: "https://leetcode.com/u/tangricky001/",
   softwareEngineering: "https://uwaterloo.ca/future-students/programs/software-engineering",
+  videoGraphic: "https://sites.google.com/wrdsb.ca/rickytang-portfolio/skills",
 };
