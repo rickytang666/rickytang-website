@@ -192,7 +192,7 @@ body {
 /* Custom CSS */
 
 .link {
-  @apply text-primary underline decoration-primary decoration-dashed decoration-2 underline-offset-4 hover:bg-primary/50 hover:text-foreground hover:no-underline transition-colors duration-300;
+  @apply text-primary underline decoration-primary decoration-dashed decoration-[1.5] underline-offset-6 hover:bg-primary/50 hover:text-foreground hover:no-underline transition-colors duration-300;
 }
 
 /* Hide scrollbars for wheel picker */
