@@ -2,9 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import "./navbar.css";
 import { ThemeToggle } from "@/components/theme-toggle";
-import LiquidGlass from "liquid-glass-react";
 
 // Icons
 import {
@@ -44,62 +42,69 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5">
-        <div className="navbar z-[1000] h-20 bg-sidebar/65 backdrop-blur-xs group hover:bg-sidebar transition-all duration-300 lg:rounded-full lg:px-10 lg:mx-auto lg:w-[85%] dark:drop-shadow-xl border-transparent border-2 hover:border-primary/30 dark:drop-shadow-white/30 dark:hover:drop-shadow-white/50 drop-shadow-xl drop-shadow-black/30 hover:drop-shadow-black/50">
-          <div className="navbar-start">
-            <Link href="/" className="px-2">
-              <Image
-                src="/logo_ricfinity.svg"
-                alt="Logo"
-                width={200}
-                height={200}
-                className="h-10 lg:h-12 w-auto opacity-90 saturate-80 transition-all duration-300 neon group-hover:opacity-100 group-hover:saturate-200"
-              />
-            </Link>
-          </div>
-
-          <div className="navbar-end">
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <Link
-                href="/"
-                className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold"
-              >
-                Home
+      <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5 flex justify-center">
+        <div className="w-[75%]">
+          <div className="flex items-center justify-between h-20 px-6 lg:px-10 rounded-full bg-white/10 backdrop-blur-md border border-sidebar-border/30 hover:border-primary/40 shadow-xl shadow-foreground hover:shadow-3xl hover:shadow-black/30 transition-all duration-300 group relative overflow-hidden">
+            {/* 3D depth overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-full"></div>
+            {/* Inner glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5 rounded-full"></div>
+            {/* Content with relative positioning for 3D layering */}
+            <div className="relative z-10 flex items-center">
+              <Link href="/" className="px-2">
+                <Image
+                  src="/logo_ricfinity.svg"
+                  alt="Logo"
+                  width={200}
+                  height={200}
+                  className="h-10 lg:h-12 w-auto saturate-80 transition-all duration-300 group-hover:saturate-150"
+                />
               </Link>
-              <Link
-                href="/about"
-                className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold"
-              >
-                About
-              </Link>
-              <Link
-                href="/projects"
-                className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold"
-              >
-                Projects
-              </Link>
-              <Link
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold"
-              >
-                Resume
-              </Link>
-              <ThemeToggle />
             </div>
 
-            {/* Mobile menu button */}
-            <button
-              className="btn btn-ghost lg:hidden"
-              onClick={() => setIsMobileMenuOpen(true)}
-            >
-              <IconLayoutSidebarRightExpandFilled
-                stroke={2}
-                className="w-8 h-8"
-              />
-            </button>
+            <div className="relative z-10 flex items-center gap-8">
+              {/* Desktop Navigation */}
+              <div className="hidden lg:flex items-center gap-8">
+                <Link
+                  href="/"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold drop-shadow-md hover:drop-shadow-lg"
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/about"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold drop-shadow-md hover:drop-shadow-lg"
+                >
+                  About
+                </Link>
+                <Link
+                  href="/projects"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold drop-shadow-md hover:drop-shadow-lg"
+                >
+                  Projects
+                </Link>
+                <Link
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-bold drop-shadow-md hover:drop-shadow-lg"
+                >
+                  Resume
+                </Link>
+                <ThemeToggle />
+              </div>
+
+              {/* Mobile menu button */}
+              <button
+                className="lg:hidden p-2 hover:bg-white/20 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
+                onClick={() => setIsMobileMenuOpen(true)}
+              >
+                <IconLayoutSidebarRightExpandFilled
+                  stroke={2}
+                  className="w-8 h-8 text-foreground drop-shadow-md"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </nav>
