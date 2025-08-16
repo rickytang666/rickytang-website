@@ -44,6 +44,22 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZY5XWJ2B3D"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZY5XWJ2B3D');
+              console.log('Google tag (gtag.js) loaded');
+            `,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
