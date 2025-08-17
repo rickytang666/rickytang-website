@@ -14,7 +14,8 @@ import { externalLinks } from "@/data/links";
 
 export const metadata: Metadata = {
   title: "About - Ricky Tang",
-  description: "Learn more about Ricky Tang.",
+  description:
+    "Learn more about Ricky Tang, a full stack developer with a habit of curiosity and consistently building. Improvement is a precious power, even if it's small, and he is here to chase it.",
 };
 
 export default function AboutPage() {

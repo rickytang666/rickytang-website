@@ -17,9 +17,9 @@ import {
 } from "@tabler/icons-react";
 
 export const metadata: Metadata = {
-  title: "Home -Ricky Tang",
+  title: "Home - Ricky Tang",
   description:
-    "Meet Ricky Tang, an incoming Software Engineering student at the University of Waterloo",
+    "Meet Ricky Tang, software engineering student at the University of Waterloo & aspiring software engineer.",
 };
 
 export default function Home() {
