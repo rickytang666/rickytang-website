@@ -44,7 +44,7 @@ export default function Navbar() {
       {/* Desktop navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5 flex justify-center overflow-hidden">
         <div className="w-full lg:w-[75%] max-w-full">
-          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative overflow-hidden">
+          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative overflow-hidden">
             {/* 3D depth overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-none lg:rounded-full"></div>
             {/* Inner glow effect */}
@@ -96,7 +96,7 @@ export default function Navbar() {
 
               {/* Mobile menu button */}
               <button
-                className="lg:hidden p-2 hover:bg-white/20 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
+                className="lg:hidden p-2 hover:bg-white/20 rounded-lg transition-all duration-200"
                 onClick={() => setIsMobileMenuOpen(true)}
               >
                 <IconLayoutSidebarRightExpandFilled
