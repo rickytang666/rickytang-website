@@ -42,9 +42,9 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5 flex justify-center overflow-hidden">
+      <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5 py-5 flex justify-center">
         <div className="w-full lg:w-[75%] max-w-full">
-          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative overflow-hidden">
+          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative">
             {/* 3D depth overlay */}
             <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-none lg:rounded-full"></div>
             {/* Inner glow effect */}
@@ -67,19 +67,19 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center gap-6">
                 <Link
                   href="/"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold drop-shadow-foreground/30 drop-shadow-xs hover:drop-shadow-primary/50"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
                 >
                   Home
                 </Link>
                 <Link
                   href="/about"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold  drop-shadow-foreground/30 drop-shadow-xs hover:drop-shadow-primary/50"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
                 >
                   About
                 </Link>
                 <Link
                   href="/projects"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold drop-shadow-foreground/30 drop-shadow-xs hover:drop-shadow-primary/50"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
                 >
                   Projects
                 </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold drop-shadow-foreground/30 drop-shadow-xs hover:drop-shadow-primary/50"
+                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
                 >
                   Resume
                 </Link>
