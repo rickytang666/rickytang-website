@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 lg:mt-5 lg:px-5 py-5 flex justify-center">
+      <nav className="fixed top-0 left-0 right-0 z-50 lg:px-5 lg:py-5 flex justify-center">
         <div className="w-full lg:w-[75%] max-w-full">
           <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative">
             {/* 3D depth overlay */}
