@@ -3,6 +3,7 @@ import ProjectPreviewSection from "./ProjectPreviewSection";
 import ViewMoreButton from "./ViewMoreButton";
 import TechWheelPicker from "@/app/TechWheelPicker";
 import { languages, tools } from "@/data/techSkills";
+import type { Metadata } from "next";
 
 // Icons
 import {
@@ -14,6 +15,12 @@ import {
   IconTool,
   IconAward,
 } from "@tabler/icons-react";
+
+export const metadata: Metadata = {
+  title: "Home -Ricky Tang",
+  description:
+    "Meet Ricky Tang, an incoming Software Engineering student at the University of Waterloo",
+};
 
 export default function Home() {
   return (

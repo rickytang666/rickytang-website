@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { Metadata } from "next";
 
 // Icons
 import {
@@ -10,6 +11,11 @@ import {
 } from "@tabler/icons-react";
 
 import { externalLinks } from "@/data/links";
+
+export const metadata: Metadata = {
+  title: "About - Ricky Tang",
+  description: "Learn more about Ricky Tang.",
+};
 
 export default function AboutPage() {
   return (

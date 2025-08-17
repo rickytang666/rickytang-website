@@ -1,46 +1,12 @@
-"use client";
-import React, { useState } from "react";
-import { projects } from "../../data/projects";
-import ProjectCard from "../ProjectCard";
+import type { Metadata } from "next";
+import ProjectsClient from "@/app/projects/ProjectsClient";
 
-// Icons
-import { IconFolders } from "@tabler/icons-react";
+export const metadata: Metadata = {
+  title: "Projects - Ricky Tang",
+  description:
+    "Explore Ricky's projects, from AI-powered fitness companions to sustainable living tools.",
+};
 
 export default function ProjectsPage() {
-  const [imageIndexes, setImageIndexes] = useState<{ [id: string]: number }>(
-    {}
-  );
-
-  const handleImageClick = (projectId: string, dir: 1 | -1) => {
-    setImageIndexes((prev) => {
-      const current = prev[projectId] || 0;
-      const project = projects.find((p) => p.id === projectId);
-      if (!project) return prev;
-      const total = project.images.length;
-      const next = (current + dir + total) % total;
-      return { ...prev, [projectId]: next };
-    });
-  };
-
-  return (
-    <div className="container mx-auto">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-12 text-center flex items-center justify-center gap-2 text-foreground">
-        <IconFolders
-          stroke={2}
-          className="w-8 h-8 sm:w-10 sm:h-10 text-primary"
-        />
-        My Projects
-      </h1>
-      <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            imgIdx={imageIndexes[project.id] || 0}
-            onImageClick={(dir: 1 | -1) => handleImageClick(project.id, dir)}
-          />
-        ))}
-      </div>
-    </div>
-  );
+  return <ProjectsClient />;
 }
