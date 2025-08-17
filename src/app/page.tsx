@@ -18,13 +18,13 @@ import {
 export default function Home() {
   return (
     <main className="max-w-5xl mx-auto flex flex-col gap-25">
-      <h1 className="text-5xl font-bold text-center mb-5 text-foreground">
+      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-5 text-foreground">
         Hello! 👋 I&apos;m Ricky.
       </h1>
 
       {/* About Section (truncated) */}
       <section>
-        <h1 className="text-3xl font-bold mb-15 text-foreground">
+        <h1 className="text-2xl sm:text-3xl text-center font-bold mb-15 text-foreground">
           Welcome to my digital workshop where ideas become reality.
         </h1>
         <div className="flex flex-col gap-1 mb-10">

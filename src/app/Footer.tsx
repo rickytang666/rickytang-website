@@ -11,10 +11,10 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="min-w-full bg-muted text-foreground px-4 py-6 flex flex-col gap-6 items-center mt-auto">
+    <footer className="w-full bg-muted text-foreground px-5 py-5 flex flex-col gap-6 items-center mt-auto">
       <p className="text-lg">© {new Date().getFullYear()} Ricky Tang</p>
 
-      <div className="flex gap-6 items-center">
+      <div className="flex gap-5 items-center">
         {/* this svg is slightly too big 😫 */}
         <a
           href={externalLinks.websiteRepo}
