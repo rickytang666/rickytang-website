@@ -362,7 +362,7 @@ export default function ProjectCard({
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-md btn-outline border-primary text-foreground hover:bg-primary hover:text-primary-foreground rounded-full align-middle"
+            className="btn btn-md btn-outline border-primary text-foreground hover:bg-primary active:bg-primary focus:bg-primary hover:text-primary-foreground active:text-primary-foreground focus:text-primary-foreground rounded-full align-middle"
           >
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
@@ -373,7 +373,7 @@ export default function ProjectCard({
               href={project.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-md btn-outline border-fuchsia-500 text-foreground hover:bg-fuchsia-500 hover:text-white rounded-full align-middle"
+              className="btn btn-md btn-outline border-fuchsia-500 text-foreground hover:bg-fuchsia-500 active:bg-fuchsia-500 focus:bg-fuchsia-500 hover:text-white active:text-white focus:text-white rounded-full align-middle"
             >
               <IconDeviceDesktop stroke={2} className="w-5 h-5" />
               Website

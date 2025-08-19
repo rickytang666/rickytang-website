@@ -32,12 +32,12 @@ export default function AboutPage() {
       <div className="flex flex-col xl:flex-row gap-6 items-center">
         {/* Image Section */}
         <div className="flex xl:flex-shrink-0 items-center justify-center w-full xl:w-auto">
-          <div className="relative w-full aspect-square max-w-[300px] sm:max-w-[400px] md:max-w-[500px] xl:w-[550px] xl:h-[550px] overflow-hidden opacity-80 hover:opacity-100 transition-all duration-300">
+          <div className="relative w-full aspect-square max-w-[300px] [@media(min-width:500px)]:max-w-[400px] md:max-w-[600px] xl:w-[550px] xl:h-[550px] overflow-hidden saturate-120 transition-all duration-300">
             <Image
               src="/about/myself.jpg"
               alt="Ricky Tang"
               fill
-              className="object-contain hover:saturate-150 transition-all duration-300"
+              className="object-contain transition-all duration-300"
               priority
             />
           </div>
@@ -98,7 +98,7 @@ export default function AboutPage() {
             <a
               href={externalLinks.github}
               target="_blank"
-              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
             >
               <IconBrandGithub stroke={2} className="w-5 h-5" />
               GitHub
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <a
               href={externalLinks.linkedin}
               target="_blank"
-              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
             >
               <IconBrandLinkedin stroke={2} className="w-5 h-5" />
               LinkedIn
@@ -114,7 +114,7 @@ export default function AboutPage() {
             <a
               href="/resume.pdf"
               target="_blank"
-              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
             >
               <IconFileCv stroke={2} className="w-5 h-5" />
               Resume
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <a
               href={`mailto:${externalLinks.email}`}
               target="_blank"
-              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+              className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
             >
               <IconMail stroke={2} className="w-5 h-5" />
               Email

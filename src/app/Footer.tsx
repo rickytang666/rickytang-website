@@ -44,7 +44,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="github"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <IconBrandGithub stroke={2} className="w-6 h-6" />
         </a>
@@ -53,7 +53,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="linkedin"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <IconBrandLinkedin stroke={2} className="w-6 h-6" />
         </a>
@@ -62,7 +62,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="resume"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <IconFileCv stroke={2} className="w-6 h-6" />
         </a>
@@ -71,7 +71,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="email"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <IconMail stroke={2} className="w-6 h-6" />
         </a>
@@ -80,7 +80,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="devpost"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <svg
             width="20"
@@ -101,7 +101,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           title="leetcode"
-          className="flex items-center hover:text-primary transition-colors duration-200"
+          className="flex items-center hover:text-primary active:text-primary focus:text-primary"
         >
           <IconBrandLeetcode stroke={2} className="w-6 h-6" />
         </a>
