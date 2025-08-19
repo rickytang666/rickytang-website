@@ -24,18 +24,18 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto flex flex-col gap-25">
-      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-5 text-foreground">
+    <main className="w-full max-w-4xl lg:max-w-5xl mx-auto flex flex-col gap-16 sm:gap-18 md:gap-21 lg:gap-25">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-5 text-foreground">
         Hello! 👋 I&apos;m Ricky.
       </h1>
 
       {/* About Section (truncated) */}
       <section>
-        <h1 className="text-2xl sm:text-3xl text-center font-bold mb-15 text-foreground">
+        <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 text-foreground">
           Welcome to my digital workshop where ideas become reality.
         </h1>
-        <div className="flex flex-col gap-1 mb-10">
-          <p className="mb-4 text-lg text-foreground">
+        <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10">
+          <p className="mb-4 text-base sm:text-lg text-foreground">
             I'm an incoming{" "}
             <a
               className="link font-semibold"
@@ -54,7 +54,7 @@ export default function Home() {
             </a>{" "}
             that solve real problems.
           </p>
-          <p className="mb-4 text-lg text-foreground">
+          <p className="mb-4 text-base sm:text-lg text-foreground">
             I focus on user experience and creating tools that people actually
             want to use. I believe in chasing small improvements day by day is
             the key to thrive in this tech-driven world, and I truly value
@@ -62,7 +62,7 @@ export default function Home() {
           </p>
         </div>
         {/* Contact Buttons */}
-        <div className="flex flex-wrap gap-7 mb-10 justify-center">
+        <div className="flex flex-wrap gap-6 sm:gap-7 md:gap-8 mb-6 sm:mb-8 md:mb-10 justify-center">
           <a
             href={externalLinks.github}
             target="_blank"
@@ -98,20 +98,20 @@ export default function Home() {
 
       {/* Tech Skills Section with Wheel Picker */}
       <section>
-        <h2 className="text-3xl font-bold mb-15 flex items-center gap-2 text-foreground">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 flex items-center gap-2 text-foreground">
           <IconTerminal2 stroke={2} className="w-8 h-8 text-primary" />
           Tech Skills
         </h2>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
           <div className="flex-1 flex flex-col items-center">
-            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 flex justify-center items-center gap-2 text-foreground">
               <IconCode stroke={2} className="w-6 h-6 text-primary" />
               Languages
             </h3>
             <TechWheelPicker skills={languages} />
           </div>
           <div className="flex-1 flex flex-col items-center">
-            <h3 className="text-xl font-semibold mb-4 flex justify-center items-center gap-2 text-foreground">
+            <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 flex justify-center items-center gap-2 text-foreground">
               <IconTool stroke={2} className="w-6 h-6 text-primary" />
               Tools / Technologies
             </h3>

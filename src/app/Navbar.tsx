@@ -119,12 +119,12 @@ export default function Navbar() {
           />
 
           {/* Menu panel */}
-          <div className="absolute right-0 top-0 h-full w-[170px] bg-sidebar shadow-xl border-l border-sidebar-border">
+          <div className="absolute right-0 top-0 h-full w-[170px] bg-sidebar shadow-xl border-2 border-sidebar-border/30">
             {/* Close button */}
             <div className="flex justify-end p-4">
               <button
                 onClick={closeMobileMenu}
-                className="text-sidebar-foreground hover:text-primary transition-colors duration-200"
+                className="text-foreground transition-colors duration-200"
               >
                 <IconX stroke={2} className="w-6 h-6" />
               </button>
@@ -134,7 +134,7 @@ export default function Navbar() {
             <div className="flex flex-col p-6 space-y-4 justify-items-center">
               <Link
                 href="/"
-                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
+                className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconHome stroke={2} className="w-5 h-5" />
@@ -142,7 +142,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/about"
-                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
+                className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconUser stroke={2} className="w-5 h-5" />
@@ -150,7 +150,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/projects"
-                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
+                className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconFolders stroke={2} className="w-5 h-5" />
@@ -160,7 +160,7 @@ export default function Navbar() {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-lg text-sidebar-foreground hover:text-primary transition-colors duration-200 justify-center text-center"
+                className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
                 onClick={closeMobileMenu}
               >
                 <IconFileCv stroke={2} className="w-5 h-5" />
@@ -168,7 +168,7 @@ export default function Navbar() {
               </a>
 
               {/* Theme Toggle in Mobile Menu */}
-              <div className="flex items-center text-lg text-sidebar-foreground justify-center">
+              <div className="flex items-center text-lg text-foreground justify-center">
                 <ThemeToggle />
               </div>
             </div>
