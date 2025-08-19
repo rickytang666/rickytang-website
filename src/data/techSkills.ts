@@ -39,7 +39,12 @@ export const languages: TechSkill[] = [
     name: "CSS",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=css&theme=dark",
     alt: "css"
-  }
+  },
+  {
+    name: "LaTeX",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=latex&theme=dark",
+    alt: "latex"
+  },
 ];
 
 export const tools: TechSkill[] = [
@@ -108,9 +113,4 @@ export const tools: TechSkill[] = [
     icon: "https://go-skill-icons.vercel.app/api/icons?i=figma&theme=dark",
     alt: "figma"
   },
-  {
-    name: "LaTeX",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=latex&theme=dark",
-    alt: "latex"
-  }
 ]; 
