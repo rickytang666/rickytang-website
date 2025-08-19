@@ -78,7 +78,7 @@ export default function ProjectCard({
   const slides = project.images.map((src) => ({ src }));
 
   return (
-    <div className="card bg-card hover:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] transition-all duration-300 w-full rounded-xl border-1 border-border hover:border-primary">
+    <div className="card bg-card hover:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] active:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] focus:shadow-[0_10px_20px_-10px_rgba(94,234,212,0.4)] transition-all duration-500 w-full rounded-xl border-1 border-border hover:border-primary active:border-primary focus:border-primary">
       <div
         ref={containerRef}
         className="p-3 overflow-hidden"

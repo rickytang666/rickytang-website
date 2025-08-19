@@ -192,7 +192,57 @@ body {
 /* Custom CSS */
 
 .link {
-  @apply text-primary underline decoration-primary decoration-dashed decoration-[1.5] underline-offset-6 hover:bg-primary/50 hover:text-foreground hover:no-underline transition-colors duration-300;
+  /* Base styles for all devices */
+  @apply text-primary underline decoration-primary decoration-dashed decoration-[1.5] underline-offset-6;
+}
+
+/* Desktop: devices that support hover */
+@media (hover: hover) {
+  .link {
+    @apply hover:bg-primary/50 hover:text-foreground hover:no-underline transition-all duration-300;
+  }
+}
+
+/* Mobile: devices that don't support hover (touch devices) */
+@media (hover: none) {
+  .link {
+    @apply active:bg-primary/50 active:text-foreground active:no-underline focus:bg-primary/50 focus:text-foreground focus:no-underline;
+    /* No transition for instant feedback on mobile */
+  }
+}
+
+/* View More Button */
+@media (hover: hover) {
+  .view-more-btn {
+    @apply hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-200 hover:pr-8;
+  }
+  
+  .view-more-arrow {
+    /* Arrow hidden by default on desktop, only shows on hover */
+    @apply translate-x-2 opacity-0;
+  }
+  
+  /* Desktop hover state for arrow */
+  .view-more-btn:hover .view-more-arrow {
+    @apply translate-x-0 opacity-100;
+  }
+}
+
+@media (hover: none) {
+  .view-more-btn {
+    @apply active:bg-primary active:border-primary active:text-primary-foreground focus:bg-primary focus:border-primary focus:text-primary-foreground focus:pr-8 active:pr-8;
+  }
+  
+  .view-more-arrow {
+    /* Arrow hidden by default on mobile, only shows on active/focus */
+    @apply translate-x-2 opacity-0;
+  }
+  
+  /* Mobile active/focus states for arrow */
+  .view-more-btn:active .view-more-arrow,
+  .view-more-btn:focus .view-more-arrow {
+    @apply translate-x-0 opacity-100;
+  }
 }
 
 /* Hide scrollbars for wheel picker */

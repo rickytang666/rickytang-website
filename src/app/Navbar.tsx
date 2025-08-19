@@ -130,7 +130,7 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* Menu items - with icons*/}
+            {/* Menu items */}
             <div className="flex flex-col p-6 space-y-4 justify-items-center">
               <Link
                 href="/"

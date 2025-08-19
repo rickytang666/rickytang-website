@@ -66,7 +66,7 @@ export default function Home() {
           <a
             href={externalLinks.github}
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
@@ -74,7 +74,7 @@ export default function Home() {
           <a
             href={externalLinks.linkedin}
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconBrandLinkedin stroke={2} className="w-5 h-5" />
             LinkedIn
@@ -82,7 +82,7 @@ export default function Home() {
           <a
             href="/resume.pdf"
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary transition-colors duration-200"
+            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconFileCv stroke={2} className="w-5 h-5" />
             Resume
