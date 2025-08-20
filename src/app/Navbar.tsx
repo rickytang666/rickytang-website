@@ -123,9 +123,9 @@ export default function Navbar() {
             className="absolute right-0 top-0 h-full w-[170px] bg-sidebar"
             style={{
               WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 40px)",
+                "linear-gradient(to right, rgb(from var(--sidebar) r g b / 0) 0px, rgb(from var(--sidebar) r g b / 1) 50px)",
               maskImage:
-                "linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 40px)",
+                "linear-gradient(to right, rgb(from var(--sidebar) r g b / 0) 0px, rgb(from var(--sidebar) r g b / 1) 50px)",
             }}
           >
             {/* Close button */}
@@ -139,7 +139,7 @@ export default function Navbar() {
             </div>
 
             {/* Menu items */}
-            <div className="flex flex-col pr-6 pl-12 space-y-4 justify-items-center">
+            <div className="flex flex-col pr-6 pl-16 space-y-4 justify-items-center">
               <Link
                 href="/"
                 className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
