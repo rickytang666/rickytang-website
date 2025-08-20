@@ -71,7 +71,7 @@ export function ThemeToggle() {
         className={`p-2 rounded-full transition-all duration-300 ${
           currentTheme === "system"
             ? "bg-primary text-primary-foreground shadow-sm"
-            : "text-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+            : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
         }`}
         aria-label="System theme"
         title="Use system theme"
@@ -85,7 +85,7 @@ export function ThemeToggle() {
         className={`p-2 rounded-full transition-all duration-300 ${
           currentTheme === "light"
             ? "bg-primary text-primary-foreground shadow-sm"
-            : "text-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+            : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
         }`}
         aria-label="Light theme"
         title="Light theme"
@@ -99,7 +99,7 @@ export function ThemeToggle() {
         className={`p-2 rounded-full transition-all duration-300 ${
           currentTheme === "dark"
             ? "bg-primary text-primary-foreground shadow-sm"
-            : "text-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+            : "text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
         }`}
         aria-label="Dark theme"
         title="Dark theme"
