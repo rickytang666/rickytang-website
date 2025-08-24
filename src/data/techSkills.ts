@@ -104,6 +104,26 @@ export const tools: TechSkill[] = [
     alt: "github"
   },
   {
+    name: "Hugging Face",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=huggingface&theme=dark",
+    alt: "huggingface"
+  },
+  {
+    name: "CMake",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=cmake&theme=dark",
+    alt: "cmake"
+  },
+  {
+    name: "Qt",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=qt&theme=dark",
+    alt: "qt"
+  },
+  {
+    name: "Pandas",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=pandas&theme=dark",
+    alt: "pandas"
+  },
+  {
     name: "Vercel",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark",
     alt: "vercel"

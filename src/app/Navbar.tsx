@@ -2,7 +2,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/theme-toggle";
+import "./globals.css";
 
 // Icons
 import {
@@ -15,6 +17,7 @@ import {
 } from "@tabler/icons-react";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -67,19 +70,23 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center gap-6">
                 <Link
                   href="/"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
+                  className={pathname === "/" ? "navlink-active" : "navlink"}
                 >
                   Home
                 </Link>
                 <Link
                   href="/about"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
+                  className={
+                    pathname === "/about" ? "navlink-active" : "navlink"
+                  }
                 >
                   About
                 </Link>
                 <Link
                   href="/projects"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
+                  className={
+                    pathname === "/projects" ? "navlink-active" : "navlink"
+                  }
                 >
                   Projects
                 </Link>
@@ -87,7 +94,7 @@ export default function Navbar() {
                   href="/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground hover:text-primary transition-colors duration-200 text-2xl font-semibold"
+                  className="navlink"
                 >
                   Resume
                 </Link>

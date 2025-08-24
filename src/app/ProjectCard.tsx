@@ -206,6 +206,14 @@ export default function ProjectCard({
                 className="w-10 h-10"
                 unoptimized
               />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=huggingface&theme=dark"
+                alt="Hugging Face"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
             </>
           )}
           {project.id === "2" && (
