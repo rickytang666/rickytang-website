@@ -13,14 +13,12 @@ import { IconBrandGithub, IconDeviceDesktop } from "@tabler/icons-react";
 interface ProjectCardProps {
   project: Project;
   imgIdx: number;
-  onImageClick: (dir: 1 | -1) => void;
   containerHeight?: number;
 }
 
 export default function ProjectCard({
   project,
   imgIdx,
-  onImageClick,
   containerHeight = 400,
 }: ProjectCardProps) {
   const [naturalMap, setNaturalMap] = useState<

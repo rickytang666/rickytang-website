@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -44,42 +45,6 @@ export default function RootLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZY5XWJ2B3D"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ZY5XWJ2B3D');
-              console.log('Google tag (gtag.js) loaded');
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                // Check for saved theme preference
-                var savedTheme = localStorage.getItem('rickytang-theme');
-                
-                if (savedTheme === 'light') {
-                  document.documentElement.classList.remove('dark');
-                } else if (savedTheme === 'dark') {
-                  document.documentElement.classList.add('dark');
-                } else {
-                  // Default to system theme
-                  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-                  document.documentElement.classList.toggle('dark', systemTheme === 'dark');
-                }
-              })();
-            `,
-          }}
-        />
       </head>
       <body
         style={{ margin: 0, paddingTop: "6rem" }}
@@ -90,6 +55,41 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
         </div>
         <Footer />
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZY5XWJ2B3D"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ZY5XWJ2B3D');
+            console.log('Google tag (gtag.js) loaded');
+          `}
+        </Script>
+
+        {/* Theme initialization script */}
+        <Script id="theme-init" strategy="beforeInteractive">
+          {`
+            (function() {
+              // Check for saved theme preference
+              var savedTheme = localStorage.getItem('rickytang-theme');
+              
+              if (savedTheme === 'light') {
+                document.documentElement.classList.remove('dark');
+              } else if (savedTheme === 'dark') {
+                document.documentElement.classList.add('dark');
+              } else {
+                // Default to system theme
+                var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.classList.toggle('dark', systemTheme === 'dark');
+              }
+            })();
+          `}
+        </Script>
       </body>
     </html>
   );

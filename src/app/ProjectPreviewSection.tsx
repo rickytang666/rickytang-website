@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { projects } from "../data/projects";
 import ProjectCard from "../app/ProjectCard";
 import ViewMoreButton from "../app/ViewMoreButton";
@@ -9,20 +9,6 @@ import { IconFolders } from "@tabler/icons-react";
 
 export default function ProjectPreviewSection() {
   const previewProjects = projects.slice(0, 2);
-  const [imageIndexes, setImageIndexes] = useState<{ [id: string]: number }>(
-    {}
-  );
-
-  const handleImageClick = (projectId: string, dir: 1 | -1) => {
-    setImageIndexes((prev) => {
-      const current = prev[projectId] || 0;
-      const project = previewProjects.find((p) => p.id === projectId);
-      if (!project) return prev;
-      const total = project.images.length;
-      const next = (current + dir + total) % total;
-      return { ...prev, [projectId]: next };
-    });
-  };
 
   return (
     <section className="w-full">
@@ -32,16 +18,11 @@ export default function ProjectPreviewSection() {
       </h2>
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mb-6 sm:mb-8 md:mb-10">
         {previewProjects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            imgIdx={imageIndexes[project.id] || 0}
-            onImageClick={(dir: 1 | -1) => handleImageClick(project.id, dir)}
-          />
+          <ProjectCard key={project.id} project={project} imgIdx={0} />
         ))}
       </div>
       <div className="flex justify-center">
-        <ViewMoreButton href="/projects" children="View more projects" />
+        <ViewMoreButton href="/projects">View more projects</ViewMoreButton>
       </div>
     </section>
   );

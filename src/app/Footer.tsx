@@ -1,4 +1,5 @@
 import { externalLinks } from "../data/links";
+import Image from "next/image";
 
 // icons
 import {
@@ -110,28 +111,32 @@ export default function Footer() {
       <div className="text-base flex items-center justify-items-center gap-1">
         <p>Made with</p>
         <div className="flex items-center gap-1">
-          <img
+          <Image
             title="Next.js"
+            width={24}
+            height={24}
             src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark"
-            className="w-6 h-6"
             alt="nextjs"
           />
-          <img
+          <Image
             title="Tailwind CSS"
+            width={24}
+            height={24}
             src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark"
-            className="w-6 h-6"
             alt="tailwind"
           />
-          <img
+          <Image
             title="shadcn/ui"
+            width={24}
+            height={24}
             src="https://go-skill-icons.vercel.app/api/icons?i=shadcn&theme=dark"
-            className="w-6 h-6"
             alt="shadcn"
           />
-          <img
+          <Image
             title="daisyUI"
+            width={24}
+            height={24}
             src="https://go-skill-icons.vercel.app/api/icons?i=daisyui&theme=dark"
-            className="w-6 h-6"
             alt="daisyui"
           />
         </div>

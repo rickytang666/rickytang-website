@@ -179,16 +179,16 @@ export const projects: Project[] = [
     title: "World Championship 100m Sim",
     description: [
       <>
-        A comprehensive 100m dash simulator that accurately models the Men's
-        100m sprint event using real-world athlete performance data and dynamic
-        environmental factors, outputting results in detailed animations. The
-        system implements{" "}
+        A comprehensive 100m dash simulator that accurately models the
+        Men&apos;s 100m sprint event using real-world athlete performance data
+        and dynamic environmental factors, outputting results in detailed
+        animations. The system implements{" "}
         <a
           className="link font-semibold"
           href="https://jmureika.lmu.build/track/index.html"
           target="_blank"
         >
-          Dr. Jonas Mureika's models
+          Dr. Jonas Mureika&apos;s models
         </a>{" "}
         for sprint data analysis, incorporating biomechanical principles and
         environmental effects on race outcomes. The simulator features realistic

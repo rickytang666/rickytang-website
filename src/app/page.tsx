@@ -37,7 +37,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10">
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            I'm an incoming{" "}
+            I&apos;m an incoming{" "}
             <a
               className="link font-semibold"
               href={externalLinks.softwareEngineering}
@@ -90,7 +90,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex justify-center">
-          <ViewMoreButton href="/about" children="More about me" />
+          <ViewMoreButton href="/about">More about me</ViewMoreButton>
         </div>
       </section>
 

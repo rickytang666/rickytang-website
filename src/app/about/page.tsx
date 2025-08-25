@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 // Icons
 import {
@@ -55,28 +55,29 @@ export default function AboutPage() {
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I focus on creating tools that people use and enjoy, whether it's
-              a smart culinary app that adapts to your lifestyle, or an
-              AI-powered fitness companion that keeps you motivated.
+              I focus on creating tools that people use and enjoy, whether
+              it&apos;s a smart culinary app that adapts to your lifestyle, or
+              an AI-powered fitness companion that keeps you motivated.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I've participated in multiple hackathons, each time pushing myself
-              to touch something entirely new and learning to turn ideas into
-              working products in dozens of hours. I love the challenge of rapid
-              shipping and seeing projects come to life.
+              I&apos;ve participated in multiple hackathons, each time pushing
+              myself to touch something entirely new and learning to turn ideas
+              into working products in dozens of hours. I love the challenge of
+              rapid shipping and seeing projects come to life.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
               Outside of coding, I love playing table tennis, watching track &
-              field and analyzing its statistics, and solving Rubik's cubes. I
-              enjoy running, biking, and exploring the city — there's something
-              about the rhythm of movement that helps me think through complex
-              problems.
+              field and analyzing its statistics, and solving Rubik&apos;s
+              cubes. I enjoy running, biking, and exploring the city —
+              there&apos;s something about the rhythm of movement that helps me
+              think through complex problems.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I'm also a hobbyist video editor and graphic designer, creating{" "}
+              I&apos;m also a hobbyist video editor and graphic designer,
+              creating{" "}
               <a
                 className="link font-semibold"
                 href={externalLinks.videoGraphic}
@@ -89,7 +90,7 @@ export default function AboutPage() {
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Feel free to reach out if you'd like to connect!
+              Feel free to reach out if you&apos;d like to connect!
             </p>
           </div>
 

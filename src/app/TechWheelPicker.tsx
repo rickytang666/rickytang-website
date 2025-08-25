@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { WheelPicker, WheelPickerWrapper } from "@/components/wheel-picker";
 import { cn } from "@/lib/utils";
 
@@ -31,7 +32,7 @@ export default function TechWheelPicker({
     value: skill.name,
     label: (
       <div className="flex items-center gap-2">
-        <img src={skill.icon} alt={skill.alt} className="w-10 h-10" />
+        <Image src={skill.icon} alt={skill.alt} width={40} height={40} />
         <span>{skill.name}</span>
       </div>
     ),
