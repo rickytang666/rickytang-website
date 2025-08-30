@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "@/styles/components.css";
 
 // Icons
 import { IconArrowRight } from "@tabler/icons-react";

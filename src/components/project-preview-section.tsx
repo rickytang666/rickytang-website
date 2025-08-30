@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { projects } from "../data/projects";
-import ProjectCard from "../app/ProjectCard";
-import ViewMoreButton from "../app/ViewMoreButton";
+import ProjectCard from "./project-card";
+import ViewMoreButton from "./view-more-button";
 
 // Icons
 import { IconFolders } from "@tabler/icons-react";

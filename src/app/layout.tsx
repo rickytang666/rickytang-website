@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -58,6 +58,7 @@ export default function RootLayout({
 
         {/* Google Analytics */}
         <Script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-ZY5XWJ2B3D"
           strategy="afterInteractive"
         />

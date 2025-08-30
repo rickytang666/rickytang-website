@@ -1,6 +1,7 @@
 /* stylelint-disable */
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "../styles/components.css";
 
 @custom-variant dark (&:is(.dark *));
 @plugin "daisyui";
@@ -187,114 +188,4 @@ body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
-}
-
-/* Custom CSS */
-
-.link {
-  /* Base styles for all devices */
-  @apply text-primary underline decoration-primary decoration-dashed decoration-[1.5] underline-offset-6;
-}
-
-/* Desktop: devices that support hover */
-@media (hover: hover) {
-  .link {
-    @apply hover:bg-primary/50 hover:text-foreground hover:no-underline transition-all duration-300;
-  }
-}
-
-/* Mobile: devices that don't support hover (touch devices) */
-@media (hover: none) {
-  .link {
-    @apply active:bg-primary/50 active:text-foreground active:no-underline focus:bg-primary/50 focus:text-foreground focus:no-underline;
-    /* No transition for instant feedback on mobile */
-  }
-}
-
-/* View More Button */
-@media (hover: hover) {
-  .view-more-btn {
-    @apply hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-200 hover:pr-8;
-  }
-  
-  .view-more-arrow {
-    /* Arrow hidden by default on desktop, only shows on hover */
-    @apply translate-x-2 opacity-0;
-  }
-  
-  /* Desktop hover state for arrow */
-  .view-more-btn:hover .view-more-arrow {
-    @apply translate-x-0 opacity-100;
-  }
-}
-
-@media (hover: none) {
-  .view-more-btn {
-    @apply active:bg-primary active:border-primary active:text-primary-foreground focus:bg-primary focus:border-primary focus:text-primary-foreground focus:pr-8 active:pr-8;
-  }
-  
-  .view-more-arrow {
-    /* Arrow hidden by default on mobile, only shows on active/focus */
-    @apply translate-x-2 opacity-0;
-  }
-  
-  /* Mobile active/focus states for arrow */
-  .view-more-btn:active .view-more-arrow,
-  .view-more-btn:focus .view-more-arrow {
-    @apply translate-x-0 opacity-100;
-  }
-}
-
-/* Hide scrollbars for wheel picker */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.navlink {
-  @apply text-foreground text-xl font-semibold relative cursor-pointer;
-  transition: all 0.3s ease-out;
-}
-
-.navlink:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px;
-  background: linear-gradient(90deg, 
-  var(--primary) 0%, 
-  var(--primary) 20%, 
-  #46ecd5 25%, 
-  #46ecd5 35%, 
-  var(--primary) 40%, 
-  var(--primary) 100%
-  );
-  background-size: 200% 100%;
-  background-position: -100% 0;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: slideGradient 2s linear infinite;
-}
-
-@keyframes slideGradient {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: -100% 0;
-  }
-}
-
-/* Active page indicator */
-.navlink-active {
-  @apply text-primary text-xl font-semibold relative;
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
-  text-underline-offset: 6px;
-  text-decoration-thickness: 1.5px;
 }

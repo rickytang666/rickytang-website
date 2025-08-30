@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import ProjectsClient from "@/app/projects/ProjectsClient";
+import ProjectsClient from "@/components/projects-client";
+
+// separated this and projects-client to use metadata here
 
 export const metadata: Metadata = {
   title: "Projects - Ricky Tang",

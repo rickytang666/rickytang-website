@@ -1,9 +1,9 @@
 import { externalLinks } from "@/data/links";
-import ProjectPreviewSection from "./ProjectPreviewSection";
-import ViewMoreButton from "./ViewMoreButton";
-import TechWheelPicker from "@/app/TechWheelPicker";
-import AwardCard from "@/app/AwardCard";
-import { languages, tools } from "@/data/techSkills";
+import ProjectPreviewSection from "@/components/project-preview-section";
+import ViewMoreButton from "@/components/view-more-button";
+import TechWheelPicker from "@/components/tech-skill-wheel-picker";
+import AwardCard from "@/components/award-card";
+import { languages, tools } from "@/data/tech-skills";
 import type { Metadata } from "next";
 
 // Icons

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { projects } from "@/data/projects";
-import ProjectCard from "@/app/ProjectCard";
+import ProjectCard from "@/components/project-card";
 
 // Icons
 import { IconFolders } from "@tabler/icons-react";
