@@ -19,8 +19,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Home - Ricky Tang",
-  description:
-    "Meet Ricky Tang, software engineering student at the University of Waterloo & aspiring software engineer.",
+  description: "Meet Ricky Tang, an aspiring software engineer.",
 };
 
 export default function Home() {
@@ -37,7 +36,7 @@ export default function Home() {
         </h1>
         <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10">
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            I&apos;m an incoming{" "}
+            I&apos;m a{" "}
             <a
               className="link font-semibold"
               href={externalLinks.softwareEngineering}
@@ -53,7 +52,7 @@ export default function Home() {
             >
               full-stack applications
             </a>{" "}
-            that solve real problems.
+            that improve our lives.
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
             I focus on user experience and creating tools that people actually

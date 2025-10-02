@@ -45,6 +45,48 @@ export const projects: Project[] = [
   },
   {
     id: "2",
+    title: "Post-It",
+    description: [
+      <>
+        An augmented reality experience that brings back the joy of urban
+        exploration by turning everyday spaces into a shared discovery canvas.
+        Built for{" "}
+        {
+          <a
+            className="link font-semibold"
+            href="https://spectacles.com/"
+            target="_blank"
+          >
+            Snap Spectacles
+          </a>
+        }
+        , Post-It lets you anchor 3D sticky notes to real locations, leaving
+        playful messages for others to discover. Each note transforms into
+        symbolic icons that guide explorers to hidden gems. Users can tap icons
+        to reveal messages and switch between text and visual modes. With
+        gesture and voice controls, Post-It makes city exploration social and
+        serendipitous—guiding people to rooftop gardens, underground
+        restaurants, and perfect photo spots. Shipped in 32 hours and achieved
+        semi-finalist in{" "}
+        <a
+          className="link font-semibold"
+          href="https://hackthenorth.com/"
+          target="_blank"
+        >
+          Hack the North 2025
+        </a>
+        .
+      </>,
+    ],
+    images: [
+      "/projects/post1.jpg",
+      "/projects/post2.jpg",
+      "/projects/post3.jpg",
+    ],
+    github: "https://github.com/rickytang666/post-it",
+  },
+  {
+    id: "3",
     title: "CheFlow",
     description: [
       <>
@@ -68,7 +110,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/cheflow",
   },
   {
-    id: "3",
+    id: "4",
     title: "EcoHub",
     description: [
       <>
@@ -95,7 +137,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/ecohub",
   },
   {
-    id: "4",
+    id: "5",
     title: "Vanilla Flashcards",
     description: [
       <>
@@ -114,7 +156,7 @@ export const projects: Project[] = [
     website: "https://vanilla-flashcards.vercel.app/",
   },
   {
-    id: "5",
+    id: "6",
     title: "SwiftNotes",
     description: [
       <>
@@ -133,7 +175,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/swiftnotes",
   },
   {
-    id: "6",
+    id: "7",
     title: "2-Player Tank Battle Game",
     description: [
       <>
@@ -152,7 +194,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/2p-tank-battle",
   },
   {
-    id: "7",
+    id: "8",
     title: "Movie Review Station",
     description: [
       <>
@@ -175,7 +217,7 @@ export const projects: Project[] = [
     website: "https://movie-review-website-plum.vercel.app/",
   },
   {
-    id: "8",
+    id: "9",
     title: "World Championship 100m Sim",
     description: [
       <>

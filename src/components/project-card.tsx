@@ -217,8 +217,24 @@ export default function ProjectCard({
           {project.id === "2" && (
             <>
               <Image
-                src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark"
-                alt="Processing"
+                src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark"
+                alt="TypeScript"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://images.ctfassets.net/ub38vssza5h3/7xS0t5I5x02i9CmxVAKSpU/9ccb1c9adf7f4b9ee2a95a9213123e7b/Icon_Center_Image_Artwork.svg"
+                alt="Lens Studio"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://developers.snap.com/img/spectacles/spectacles-app-logo.png"
+                alt="Snap Spectacles"
                 width={40}
                 height={40}
                 className="w-10 h-10"
