@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -56,23 +57,7 @@ export default function RootLayout({
         </div>
         <Footer />
 
-        {/* Google Analytics */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZY5XWJ2B3D"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-ZY5XWJ2B3D');
-            console.log('Google tag (gtag.js) loaded');
-          `}
-        </Script>
-
-        {/* Theme initialization script */}
+        {/* Theme initialization */}
         <Script id="theme-init" strategy="beforeInteractive">
           {`
             (function() {
@@ -92,6 +77,8 @@ export default function RootLayout({
           `}
         </Script>
       </body>
+      {/* Google Analytics (next third parties) */}
+      <GoogleAnalytics gaId="G-ZY5XWJ2B3D" />
     </html>
   );
 }
