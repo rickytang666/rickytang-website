@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+
+// fonts
+import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -25,9 +27,70 @@ const spectral = Spectral({
   display: "swap",
 });
 
+// metadata
+
 export const metadata: Metadata = {
-  title: "Ricky Tang",
-  description: "Ricky Tang's personal website",
+  title: {
+    default: "Ricky Tang",
+    template: "%s | Ricky Tang",
+  },
+  description:
+    "meet ricky tang - software engineering student at university of waterloo. aspiring software engineer focusing full-stack development.",
+  keywords: [
+    "ricky tang",
+    "ricky tang uw",
+    "ricky tang uw se",
+    "swe",
+    "software engineering",
+    "software engineer",
+    "ricky tang portfolio",
+    "blog",
+    "uwaterloo software engineering",
+    "uwaterloo se",
+  ],
+  authors: [{ name: "Ricky Tang" }],
+  creator: "Ricky Tang",
+
+  metadataBase: new URL("https://www.rickyt.tech"),
+
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.rickyt.tech",
+    siteName: "rickyt.tech",
+    title: "Ricky Tang",
+    description:
+      "meet ricky tang - software engineering student at university of waterloo. aspiring software engineer focusing full-stack development.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ricky Tang",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ricky Tang",
+    description:
+      "meet ricky tang - software engineering student at university of waterloo. aspiring software engineer focusing full-stack development.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({

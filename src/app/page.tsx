@@ -6,7 +6,7 @@ import AwardCard from "@/components/award-card";
 import { languages, tools } from "@/data/tech-skills";
 import type { Metadata } from "next";
 
-// Icons
+// icons
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -29,7 +29,7 @@ export default function Home() {
         Hello! 👋 I&apos;m Ricky.
       </h1>
 
-      {/* About Section (truncated) */}
+      {/* short about */}
       <section>
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 text-foreground">
           Welcome to my digital workshop where ideas become reality.
@@ -93,10 +93,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Projects Section (truncated) */}
+      {/* featured projects */}
       <ProjectPreviewSection />
 
-      {/* Tech Skills Section with Wheel Picker */}
+      {/* tech skills */}
       <section>
         <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 flex items-center gap-2 text-foreground">
           <IconTerminal2 stroke={2} className="w-8 h-8 text-primary" />
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Awards Section (cards) */}
+      {/* awards */}
       <section>
         <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
           <IconAward stroke={2} className="w-8 h-8 text-primary" />
