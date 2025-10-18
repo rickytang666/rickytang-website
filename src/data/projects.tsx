@@ -12,36 +12,31 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "FitSage",
+    title: "BrainLattice",
     description: [
       <>
-        An intelligent fitness companion that transforms natural diary entries
-        into structured workout insights using{" "}
-        <a
-          className="link font-semibold"
-          href="https://gemini.google/about/"
-          target="_blank"
-        >
-          Google Gemini AI
-        </a>
-        . The app recognizes 40+ workout types from casual diaries,
-        automatically evaluates duration and calories, and provides personalized
-        workout recommendations based on user progress. Built with a minimalist
-        design philosophy, it eliminates the friction of traditional fitness
-        tracking by allowing users to write freely about their workouts while
-        the AI handles all the data structuring and analysis. FitSage helps
-        users build consistent fitness habits and level up fitness enjoyment,
-        while maintaining a focus on progress and intelligent workout planning.
+        A visual knowledge mapper that transforms textbooks into interactive
+        knowledge networks like Obsidian. Drop any PDF and watch Gemini and Grok
+        extract key concepts, discover connections, and render everything as a
+        navigable graph. &#8984;&#8679; + click on <em>ANY NODE</em> to drill
+        into explanations, formulas, relationships, etc. Generates one-page
+        condensed study guide and morning news via ElevenLabs for learning
+        anywhere. Built with Next.js and FastAPI, powered by multiple LLMs for
+        intelligent concept extraction. Flips traditional linear reading: see
+        the entire knowledge landscape first, then navigate to what matters.
+        Perfect for catching up on courses or prepping for exams without
+        drowning in 200 pages of sequential text.
       </>,
     ],
     images: [
-      "/projects/fit1.png",
-      "/projects/fit2.png",
-      "/projects/fit3.png",
-      "/projects/fit4.png",
+      "/projects/brain1.png",
+      "/projects/brain2.png",
+      "/projects/brain3.png",
+      "/projects/brain4.png",
+      "/projects/brain5.png",
     ],
-    github: "https://github.com/rickytang666/fitsage",
-    website: "https://fitsage.tech/",
+    github: "https://github.com/rickytang666/brainlattice",
+    website: "https://www.brainlattice.study/",
   },
   {
     id: "2",
@@ -87,6 +82,39 @@ export const projects: Project[] = [
   },
   {
     id: "3",
+    title: "FitSage",
+    description: [
+      <>
+        An intelligent fitness companion that transforms natural diary entries
+        into structured workout insights using{" "}
+        <a
+          className="link font-semibold"
+          href="https://gemini.google/about/"
+          target="_blank"
+        >
+          Google Gemini AI
+        </a>
+        . The app recognizes 40+ workout types from casual diaries,
+        automatically evaluates duration and calories, and provides personalized
+        workout recommendations based on user progress. Built with a minimalist
+        design philosophy, it eliminates the friction of traditional fitness
+        tracking by allowing users to write freely about their workouts while
+        the AI handles all the data structuring and analysis. FitSage helps
+        users build consistent fitness habits and level up fitness enjoyment,
+        while maintaining a focus on progress and intelligent workout planning.
+      </>,
+    ],
+    images: [
+      "/projects/fit1.png",
+      "/projects/fit2.png",
+      "/projects/fit3.png",
+      "/projects/fit4.png",
+    ],
+    github: "https://github.com/rickytang666/fitsage",
+    website: "https://www.fitsage.tech/",
+  },
+  {
+    id: "4",
     title: "CheFlow",
     description: [
       <>
@@ -110,7 +138,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/cheflow",
   },
   {
-    id: "4",
+    id: "5",
     title: "EcoHub",
     description: [
       <>
@@ -137,7 +165,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/ecohub",
   },
   {
-    id: "5",
+    id: "6",
     title: "Vanilla Flashcards",
     description: [
       <>
@@ -156,7 +184,7 @@ export const projects: Project[] = [
     website: "https://vanilla-flashcards.vercel.app/",
   },
   {
-    id: "6",
+    id: "7",
     title: "SwiftNotes",
     description: [
       <>
@@ -175,7 +203,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/swiftnotes",
   },
   {
-    id: "7",
+    id: "8",
     title: "2-Player Tank Battle Game",
     description: [
       <>
@@ -194,7 +222,7 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/2p-tank-battle",
   },
   {
-    id: "8",
+    id: "9",
     title: "Movie Review Station",
     description: [
       <>
@@ -217,7 +245,7 @@ export const projects: Project[] = [
     website: "https://movie-review-website-plum.vercel.app/",
   },
   {
-    id: "9",
+    id: "10",
     title: "World Championship 100m Sim",
     description: [
       <>

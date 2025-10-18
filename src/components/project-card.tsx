@@ -173,6 +173,94 @@ export default function ProjectCard({
                 unoptimized
               />
               <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=fastapi&theme=dark"
+                alt="FastAPI"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=firebase&theme=dark"
+                alt="Firebase"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=gcp&theme=dark"
+                alt="GCP"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=gemini&theme=dark"
+                alt="Gemini"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=tailwindcss&theme=dark"
+                alt="Tailwind CSS"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark"
+                alt="Vercel"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+            </>
+          )}
+          {project.id === "2" && (
+            <>
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark"
+                alt="TypeScript"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://images.ctfassets.net/ub38vssza5h3/7xS0t5I5x02i9CmxVAKSpU/9ccb1c9adf7f4b9ee2a95a9213123e7b/Icon_Center_Image_Artwork.svg"
+                alt="Lens Studio"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
+                src="https://developers.snap.com/img/spectacles/spectacles-app-logo.png"
+                alt="Snap Spectacles"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+            </>
+          )}
+          {project.id === "3" && (
+            <>
+              <Image
+                src="https://go-skill-icons.vercel.app/api/icons?i=nextjs&theme=dark"
+                alt="Next.js"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+                unoptimized
+              />
+              <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark"
                 alt="Tailwind CSS"
                 width={40}
@@ -214,27 +302,11 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "2" && (
+          {project.id === "4" && (
             <>
               <Image
-                src="https://go-skill-icons.vercel.app/api/icons?i=typescript&theme=dark"
-                alt="TypeScript"
-                width={40}
-                height={40}
-                className="w-10 h-10"
-                unoptimized
-              />
-              <Image
-                src="https://images.ctfassets.net/ub38vssza5h3/7xS0t5I5x02i9CmxVAKSpU/9ccb1c9adf7f4b9ee2a95a9213123e7b/Icon_Center_Image_Artwork.svg"
-                alt="Lens Studio"
-                width={40}
-                height={40}
-                className="w-10 h-10"
-                unoptimized
-              />
-              <Image
-                src="https://developers.snap.com/img/spectacles/spectacles-app-logo.png"
-                alt="Snap Spectacles"
+                src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark"
+                alt="Processing"
                 width={40}
                 height={40}
                 className="w-10 h-10"
@@ -242,7 +314,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "3" && (
+          {project.id === "5" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=dark"
@@ -286,7 +358,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "4" && (
+          {project.id === "6" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark"
@@ -314,7 +386,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "5" && (
+          {project.id === "7" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark"
@@ -326,7 +398,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "6" && (
+          {project.id === "8" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=python&theme=dark"
@@ -338,7 +410,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "7" && (
+          {project.id === "9" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=nodejs&theme=dark"
@@ -366,7 +438,7 @@ export default function ProjectCard({
               />
             </>
           )}
-          {project.id === "8" && (
+          {project.id === "10" && (
             <>
               <Image
                 src="https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark"
