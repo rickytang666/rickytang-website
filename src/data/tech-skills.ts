@@ -31,6 +31,16 @@ export const languages: TechSkill[] = [
     alt: "typescript"
   },
   {
+    name: "C",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=c&theme=dark",
+    alt: "c"
+  },
+  {
+    name: "SQL",
+    icon: "https://icons.veryicon.com/png/o/business/vscode-program-item-icon/database-80.png",
+    alt: "sql"
+  },
+  {
     name: "HTML",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark",
     alt: "html"
@@ -69,6 +79,26 @@ export const tools: TechSkill[] = [
     alt: "express"
   },
   {
+    name: "FastAPI",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=fastapi&theme=dark",
+    alt: "fastapi"
+  },
+  {
+    name: "GCP",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=gcp&theme=dark",
+    alt: "gcp"
+  },
+  {
+    name: "MongoDB",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=mongodb&theme=dark",
+    alt: "mongodb"
+  },
+  {
+    name: "Firebase",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=firebase&theme=dark",
+    alt: "firebase"
+  },
+  {
     name: "PostgreSQL",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=postgresql&theme=dark",
     alt: "postgresql"
@@ -99,9 +129,19 @@ export const tools: TechSkill[] = [
     alt: "git"
   },
   {
+    name: "Docker",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=docker&theme=dark",
+    alt: "docker"
+  },
+  {
     name: "GitHub",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=github&theme=dark",
     alt: "github"
+  },
+  {
+    name: "GitLab",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=gitlab&theme=dark",
+    alt: "gitlab"
   },
   {
     name: "Hugging Face",
@@ -122,15 +162,5 @@ export const tools: TechSkill[] = [
     name: "Pandas",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=pandas&theme=dark",
     alt: "pandas"
-  },
-  {
-    name: "Vercel",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=vercel&theme=dark",
-    alt: "vercel"
-  },
-  {
-    name: "Figma",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=figma&theme=dark",
-    alt: "figma"
   },
 ]; 
