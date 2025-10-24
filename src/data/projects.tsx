@@ -77,6 +77,7 @@ export const projects: Project[] = [
       "/projects/post1.jpg",
       "/projects/post2.jpg",
       "/projects/post3.jpg",
+      "/projects/post4.jpg",
     ],
     github: "https://github.com/rickytang666/post-it",
   },
