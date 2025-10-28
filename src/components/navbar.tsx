@@ -128,7 +128,7 @@ export default function Navbar() {
           {/* Menu panel */}
           <div className="absolute right-0 top-0 h-full w-[170px] bg-sidebar flex flex-col items-center">
             {/* Close button */}
-            <div className="flex w-full justify-end p-4 bg-red-500">
+            <div className="flex w-full justify-end p-4">
               <button
                 onClick={closeMobileMenu}
                 className="text-foreground transition-colors duration-200"
