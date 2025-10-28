@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-muted text-foreground mt-auto">
       <div className="max-w-2xl mx-auto py-3 xl:py-5 flex flex-col gap-5">
-        {/* First Row: Name (left) and Webring (right) */}
+        {/* first row: name (left) and webring (right) */}
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <p className="text-base lg:text-lg text-center lg:text-left">
             © {new Date().getFullYear()} Ricky Tang
@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* SE Webring */}
           <div className="flex items-center justify-center gap-1">
-            {/* Previous site */}
+            {/* previous site */}
             <a
               href="https://archangelinux.vercel.app/"
               target="_blank"
@@ -35,7 +35,7 @@ export default function Footer() {
               <IconArrowLeft stroke={2} className="w-5 h-5" />
             </a>
 
-            {/* SE Webring logo */}
+            {/* se webring logo */}
             <a
               href="https://se-webring.xyz/"
               target="_blank"
@@ -46,9 +46,9 @@ export default function Footer() {
               <SeWebringLogo width={38} height={38} />
             </a>
 
-            {/* Next site (current first in the list, wait for new PR) */}
+            {/* next site */}
             <a
-              href="https://www.simranthind.me/"
+              href="https://davidhua.ca/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-foreground hover:text-primary transition-colors duration-200"
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Second Row: Social Icons (left) and Made With (right) */}
+        {/* second row: social icons (left) and made with (right) */}
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           {/* Social Links */}
           <div className="flex gap-3 items-center justify-center lg:justify-start">
