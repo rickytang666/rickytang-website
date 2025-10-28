@@ -126,17 +126,9 @@ export default function Navbar() {
           />
 
           {/* Menu panel */}
-          <div
-            className="absolute right-0 top-0 h-full w-[170px] bg-sidebar"
-            style={{
-              WebkitMaskImage:
-                "linear-gradient(to right, rgb(from var(--sidebar) r g b / 0) 0px, rgb(from var(--sidebar) r g b / 1) 50px)",
-              maskImage:
-                "linear-gradient(to right, rgb(from var(--sidebar) r g b / 0) 0px, rgb(from var(--sidebar) r g b / 1) 50px)",
-            }}
-          >
+          <div className="absolute right-0 top-0 h-full w-[170px] bg-sidebar flex flex-col items-center">
             {/* Close button */}
-            <div className="flex justify-end p-4">
+            <div className="flex w-full justify-end p-4 bg-red-500">
               <button
                 onClick={closeMobileMenu}
                 className="text-foreground transition-colors duration-200"
@@ -146,7 +138,7 @@ export default function Navbar() {
             </div>
 
             {/* Menu items */}
-            <div className="flex flex-col pr-6 pl-16 space-y-4 justify-items-center">
+            <div className="flex w-full flex-col space-y-4 justify-items-center">
               <Link
                 href="/"
                 className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
