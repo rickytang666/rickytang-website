@@ -8,6 +8,7 @@ import {
   IconBrandLinkedin,
   IconFileCv,
   IconMail,
+  IconBrandX,
   IconBrandLeetcode,
   IconArrowLeft,
   IconArrowRight,
@@ -30,6 +31,7 @@ export default function Footer() {
               href="https://archangelinux.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
+              title="previous"
               className="flex items-center text-foreground hover:text-primary transition-colors duration-200"
             >
               <IconArrowLeft stroke={2} className="w-5 h-5" />
@@ -51,6 +53,7 @@ export default function Footer() {
               href="https://davidhua.ca/"
               target="_blank"
               rel="noopener noreferrer"
+              title="next"
               className="flex items-center text-foreground hover:text-primary transition-colors duration-200"
             >
               <IconArrowRight stroke={2} className="w-5 h-5" />
@@ -121,6 +124,15 @@ export default function Footer() {
               className="flex items-center hover:text-primary active:text-primary focus:text-primary"
             >
               <IconMail stroke={2} className="w-6 h-6" />
+            </a>
+            <a
+              href={externalLinks.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="x (twitter)"
+              className="flex items-center hover:text-primary active:text-primary focus:text-primary"
+            >
+              <IconBrandX stroke={2} className="w-6 h-6" />
             </a>
             <a
               href={externalLinks.devpost}
