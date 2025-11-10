@@ -149,6 +149,11 @@ export const tools: TechSkill[] = [
     alt: "huggingface"
   },
   {
+    name: "OpenCV",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=opencv&theme=dark",
+    alt: "opencv"
+  },
+  {
     name: "CMake",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=cmake&theme=dark",
     alt: "cmake"
