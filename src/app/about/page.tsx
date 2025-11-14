@@ -81,49 +81,47 @@ export default function AboutPage() {
               <ul className="list-disc list-inside space-y-1 ml-6">
                 <li>🏓 playing & watching table tennis</li>
                 <li>
-                  <span className="inline-flex items-center gap-1">
-                    tweaking{" "}
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1024px-2023_Obsidian_logo.svg.png?20230604143825"
-                      alt="⚒️"
-                      width={20}
-                      height={20}
-                      className="ml-1"
-                    />{" "}
-                    <Link href="https://obsidian.md">Obsidian plugins</Link>
-                  </span>
+                  tweaking{" "}
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1024px-2023_Obsidian_logo.svg.png?20230604143825"
+                    alt="⚒️"
+                    width={20}
+                    height={20}
+                    className="inline align-middle mx-1"
+                  />
+                  <Link href="https://obsidian.md">Obsidian plugins</Link>
                 </li>
                 <li>
-                  <span className="inline-flex items-center gap-1">
-                    watching
-                    <Image
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Diamond_League_Icon_logo.svg/409px-Diamond_League_Icon_logo.svg.png"
-                      alt="🏃"
-                      width={20}
-                      height={20}
-                      className="ml-1"
-                    />{" "}
-                    <Link href="https://worldathletics.org/records/all-time-toplists/sprints/100-metres/all/men/senior?regionType=world&timing=electronic&windReading=regular&page=1&bestResultsOnly=false&firstDay=1899-12-31&lastDay=2025-11-13&maxResultsByCountry=all&eventId=10229630&ageCategory=senior">
-                      track meets
-                    </Link>{" "}
-                    & collecting split times data (the goat usain bolt)
-                  </span>
+                  watching{" "}
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Diamond_League_Icon_logo.svg/409px-Diamond_League_Icon_logo.svg.png"
+                    alt="🏃"
+                    width={20}
+                    height={20}
+                    className="inline align-middle mx-1"
+                  />
+                  <Link href="https://worldathletics.org/records/all-time-toplists/sprints/100-metres/all/men/senior?regionType=world&timing=electronic&windReading=regular&page=1&bestResultsOnly=false&firstDay=1899-12-31&lastDay=2025-11-13&maxResultsByCountry=all&eventId=10229630&ageCategory=senior">
+                    track meets
+                  </Link>{" "}
+                  & collecting split times data (the goat usain bolt)
                 </li>
                 <li>
-                  <span className="inline-flex items-center gap-1">
-                    <span className="italic font-serif">&apos;doomscrolling&apos;</span>
+                  <span className="italic font-serif">
+                    &apos;doomscrolling&apos;
+                  </span>{" "}
+                  <span className="inline-block">
                     <Image
                       src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
                       alt="💻"
                       width={18}
                       height={18}
-                      className="ml-1"
-                    />{" "}
+                      className="inline align-middle mx-1"
+                    />
                     <Link href="https://github.com">
                       inspirational projects
-                    </Link>{" "}
-                    online
-                  </span>
+                    </Link>
+                  </span>{" "}
+                  online
                 </li>
               </ul>
             </div>

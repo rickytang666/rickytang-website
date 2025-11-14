@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "@/components/link";
+import Image from "next/image";
 
 export interface Project {
   id: string;
@@ -45,17 +47,8 @@ export const projects: Project[] = [
       <>
         An augmented reality experience that brings back the joy of urban
         exploration by turning everyday spaces into a shared discovery canvas.
-        Built for{" "}
-        {
-          <a
-            className="link font-semibold"
-            href="https://spectacles.com/"
-            target="_blank"
-          >
-            Snap Spectacles
-          </a>
-        }
-        , Post-It lets you anchor 3D sticky notes to real locations, leaving
+        Built for {<Link href="https://spectacles.com/">Snap Spectacles</Link>},
+        Post-It lets you anchor 3D sticky notes to real locations, leaving
         playful messages for others to discover. Each note transforms into
         symbolic icons that guide explorers to hidden gems. Users can tap icons
         to reveal messages and switch between text and visual modes. With
@@ -63,13 +56,16 @@ export const projects: Project[] = [
         serendipitous—guiding people to rooftop gardens, underground
         restaurants, and perfect photo spots. Shipped in 32 hours and achieved
         semi-finalist in{" "}
-        <a
-          className="link font-semibold"
-          href="https://hackthenorth.com/"
-          target="_blank"
-        >
-          Hack the North 2025
-        </a>
+        <span className="inline-block">
+          <Image
+            src="/projects/htn_logo.jpg"
+            alt="Hack the North"
+            width={18}
+            height={18}
+            className="inline align-middle mx-1"
+          />
+          <Link href="https://hackthenorth.com/">Hack the North 2025</Link>
+        </span>
         .
       </>,
     ],
@@ -88,21 +84,15 @@ export const projects: Project[] = [
       <>
         An intelligent fitness companion that transforms natural diary entries
         into structured workout insights using{" "}
-        <a
-          className="link font-semibold"
-          href="https://gemini.google/about/"
-          target="_blank"
-        >
-          Google Gemini AI
-        </a>
-        . The app recognizes 40+ workout types from casual diaries,
-        automatically evaluates duration and calories, and provides personalized
-        workout recommendations based on user progress. Built with a minimalist
-        design philosophy, it eliminates the friction of traditional fitness
-        tracking by allowing users to write freely about their workouts while
-        the AI handles all the data structuring and analysis. FitSage helps
-        users build consistent fitness habits and level up fitness enjoyment,
-        while maintaining a focus on progress and intelligent workout planning.
+        <Link href="https://gemini.google/about/">Google Gemini AI</Link>. The
+        app recognizes 40+ workout types from casual diaries, automatically
+        evaluates duration and calories, and provides personalized workout
+        recommendations based on user progress. Built with a minimalist design
+        philosophy, it eliminates the friction of traditional fitness tracking
+        by allowing users to write freely about their workouts while the AI
+        handles all the data structuring and analysis. FitSage helps users build
+        consistent fitness habits and level up fitness enjoyment, while
+        maintaining a focus on progress and intelligent workout planning.
       </>,
     ],
     images: [
@@ -146,20 +136,14 @@ export const projects: Project[] = [
         A gamified web app designed to make sustainability engaging and
         rewarding by encouraging users to complete eco-friendly challenges and
         earn points for prizes. Inspired by{" "}
-        <a
-          className="link font-semibold"
-          href="https://hackclub.com/"
-          target="_blank"
-        >
-          Hack Club
-        </a>{" "}
-        and built with a focus on fun and motivation, EcoHub uses a
-        incentive-based system to promote environmental actions through friendly
-        competition. The platform blends interactive visuals with a strong user
-        experience, offering features like activity tracking and prizes shop to
-        analyze long-term dedication. With future plans to expand globally and
-        enhance its user insights, EcoHub turns everyday sustainable choices
-        into meaningful progress.
+        <Link href="https://hackclub.com/">Hack Club</Link> and built with a
+        focus on fun and motivation, EcoHub uses a incentive-based system to
+        promote environmental actions through friendly competition. The platform
+        blends interactive visuals with a strong user experience, offering
+        features like activity tracking and prizes shop to analyze long-term
+        dedication. With future plans to expand globally and enhance its user
+        insights, EcoHub turns everyday sustainable choices into meaningful
+        progress.
       </>,
     ],
     images: ["/projects/eco1.png"],
@@ -229,13 +213,9 @@ export const projects: Project[] = [
       <>
         A full-stack movie review platform where users can browse countless
         movies from{" "}
-        <a
-          className="link font-semibold"
-          href="https://www.themoviedb.org/"
-          target="_blank"
-        >
+        <Link href="https://www.themoviedb.org/">
           The Movie Database (TMDB)
-        </a>
+        </Link>
         , read community reviews, and share their own ratings/reviews. This web
         app features trending movie browsing, searching and navigation
         functionality, and a collaborative review system.
@@ -254,13 +234,9 @@ export const projects: Project[] = [
         Men&apos;s 100m sprint event using real-world athlete performance data
         and dynamic environmental factors, outputting results in detailed
         animations. The system implements{" "}
-        <a
-          className="link font-semibold"
-          href="https://jmureika.lmu.build/track/index.html"
-          target="_blank"
-        >
+        <Link href="https://jmureika.lmu.build/track/index.html">
           Dr. Jonas Mureika&apos;s models
-        </a>{" "}
+        </Link>{" "}
         for sprint data analysis, incorporating biomechanical principles and
         environmental effects on race outcomes. The simulator features realistic
         weather impact modeling and comprehensive performance analytics,
