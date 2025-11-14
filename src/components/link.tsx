@@ -32,7 +32,7 @@ export default function Link({
       after:bottom-0
       after:h-[2px]
       after:w-full
-      after:bg-border
+      after:bg-primary
       after:z-[1]
       before:absolute
       before:left-0
