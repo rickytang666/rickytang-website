@@ -43,19 +43,19 @@ export default function Home() {
             >
               Software Engineering
             </a>{" "}
-            at Waterloo. I'm contributing to crafting drones that think for
+            at Waterloo. I&apos;m contributing to crafting drones that think for
             themselves at WARG.
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            The best software is invisible—you forget it's even there. I build
-            full-stack tools that orchestrate AI models through solid
-            architecture. Computer vision is my favorite—it makes computers
+            The best software is invisible—you forget it&apos;s even there. I
+            build full-stack tools that orchestrate AI models through solid
+            architecture. Computer vision is my favorite: it makes computers
             unstoppable.
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
             Coding fixes hits my dopamine center. Small details, big
-            problems—I'll craft the solution. The enjoyment compounds, little by
-            little.
+            problems—I&apos;ll craft the solution. The enjoyment compounds,
+            little by little.
           </p>
         </div>
         {/* Contact Buttons */}

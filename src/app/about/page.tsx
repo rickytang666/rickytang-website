@@ -55,9 +55,9 @@ export default function AboutPage() {
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Whenever I see a great tech stack I haven&apos;t tried, I can't
-              help myself but start a project with it immediately. I prefer
-              building something new instead of repeating the same techs.
+              Whenever I see a great tech stack I haven&apos;t tried, I
+              can&apos;t help myself but start a project with it immediately. I
+              prefer building something new instead of repeating the same techs.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
@@ -77,8 +77,8 @@ export default function AboutPage() {
             <p className="leading-relaxed text-base md:text-lg text-foreground">
               When I&apos;m not coding, you can find me playing table tennis,
               tweaking Obsidian plugins, watching track meets and analyzing
-              split times (I'm obsessed with it), doomscrolling inspirational
-              projects online.
+              split times (I&apos;m obsessed with it), doomscrolling
+              inspirational projects online.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
