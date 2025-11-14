@@ -27,6 +27,12 @@ const nextConfig: NextConfig = {
         hostname: 'icons.veryicon.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/wikipedia/en/thumb/**',
       }
     ],
   },

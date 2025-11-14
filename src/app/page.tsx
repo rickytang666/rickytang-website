@@ -1,4 +1,6 @@
 import { externalLinks } from "@/data/links";
+import Image from "next/image";
+import Link from "@/components/link";
 import ProjectPreviewSection from "@/components/project-preview-section";
 import ViewMoreButton from "@/components/view-more-button";
 import TechWheelPicker from "@/components/tech-skill-wheel-picker";
@@ -35,16 +37,24 @@ export default function Home() {
           Building isn&apos;t my hobby—it&apos;s my operating system.
         </h1>
         <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-15">
-          <p className="mb-4 text-base sm:text-lg text-foreground">
-            <a
-              className="link font-semibold"
-              href={externalLinks.softwareEngineering}
-              target="_blank"
-            >
-              Software Engineering
-            </a>{" "}
-            at Waterloo. I&apos;m contributing to crafting drones that think for
-            themselves at WARG.
+          <p className="flex items-center justify-center mb-4 text-base sm:text-lg text-foreground text-center">
+            Software Engineering at{" "}
+            <span className="inline-flex items-center gap-1 ml-2">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/500px-University_of_Waterloo_seal.svg.png?20181003010357"
+                alt="UWaterloo"
+                width={24}
+                height={24}
+              />
+              <Link href={externalLinks.softwareEngineering}>UWaterloo</Link>
+            </span>
+          </p>
+          <p className="flex items-center justify-center mb-4 text-base sm:text-lg text-foreground text-center">
+            Contributing to drones that think for themselves at
+            <span className="inline-flex items-center gap-1 ml-2">
+              <Image src="/home/warg.png" alt="WARG" width={20} height={20} />
+              <Link href={externalLinks.warg}>WARG</Link>
+            </span>
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
             The best software is invisible—you forget it&apos;s even there. I
