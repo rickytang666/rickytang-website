@@ -25,18 +25,17 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="w-full max-w-4xl lg:max-w-5xl mx-auto flex flex-col gap-16 sm:gap-18 md:gap-21 lg:gap-25">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-5 text-foreground">
-        Hello! 👋 I&apos;m Ricky.
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-foreground">
+        Hey, I&apos;m Ricky 👋
       </h1>
 
       {/* short about */}
       <section>
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 text-foreground">
-          Welcome to my digital workshop where ideas become reality.
+          Building isn&apos;t my hobby—it&apos;s my operating system.
         </h1>
-        <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10">
+        <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-15">
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            I&apos;m a{" "}
             <a
               className="link font-semibold"
               href={externalLinks.softwareEngineering}
@@ -44,21 +43,19 @@ export default function Home() {
             >
               Software Engineering
             </a>{" "}
-            student at the University of Waterloo who builds{" "}
-            <a
-              className="link font-semibold"
-              href={externalLinks.github}
-              target="_blank"
-            >
-              full-stack applications
-            </a>{" "}
-            that improve our lives.
+            at Waterloo. I'm contributing to crafting drones that think for
+            themselves at WARG.
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            I focus on user experience and creating tools that people actually
-            want to use. I believe in chasing small improvements day by day is
-            the key to thrive in this tech-driven world, and I truly value
-            persistence in everything I do.
+            The best software is invisible—you forget it's even there. I build
+            full-stack tools that orchestrate AI models through solid
+            architecture. Computer vision is my favorite—it makes computers
+            unstoppable.
+          </p>
+          <p className="mb-4 text-base sm:text-lg text-foreground">
+            Coding fixes hits my dopamine center. Small details, big
+            problems—I'll craft the solution. The enjoyment compounds, little by
+            little.
           </p>
         </div>
         {/* Contact Buttons */}

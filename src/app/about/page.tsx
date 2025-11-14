@@ -48,45 +48,37 @@ export default function AboutPage() {
           {/* About Me - Paragraphs */}
           <div className="space-y-5">
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              My name is Ricky Tang, an aspiring software engineer with a
-              genuine love for full stack applications and human-machine
-              interaction. I am striving to merge tech into daily life for
-              simplicity and pure joy.
+              My name is Ricky Tang, a Software Engineering student at Waterloo
+              working on autonomous drones at WARG. I build tools that solve
+              problems I actually encounter, and they become part of my daily
+              workflow.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I focus on creating tools that people use and enjoy, whether
-              it&apos;s a smart culinary app that adapts to your lifestyle, or
-              an AI-powered fitness companion that keeps you motivated.
+              Whenever I see a great tech stack I haven&apos;t tried, I can't
+              help myself but start a project with it immediately. I prefer
+              building something new instead of repeating the same techs.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I&apos;ve participated in multiple hackathons, each time pushing
-              myself to touch something entirely new and learning to turn ideas
-              into working products in dozens of hours. I love the challenge of
-              rapid shipping and seeing projects come to life.
+              Hackathons are where I thrive. I enjoy getting flow state to ship
+              something that works well and fix stuff with pressure. I&apos;m
+              not satisfied until my projects become tools I actually use every
+              day.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Outside of coding, I love playing table tennis, watching track &
-              field and analyzing its statistics, and solving Rubik&apos;s
-              cubes. I enjoy running, biking, and exploring the city —
-              there&apos;s something about the rhythm of movement that helps me
-              think through complex problems.
+              Computer vision is where I get especially excited about: object
+              detection, real-time image processing, spatial understanding.
+              There&apos;s something satisfying about making systems understand
+              the visual world through code.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              I&apos;m also a hobbyist video editor and graphic designer,
-              creating{" "}
-              <a
-                className="link font-semibold"
-                href={externalLinks.videoGraphic}
-                target="_blank"
-              >
-                miscellaneous digital artworks
-              </a>
-              . I enjoy the process of learning new software/tools upon every
-              new project and use them to contribute to my school community.
+              When I&apos;m not coding, you can find me playing table tennis,
+              tweaking Obsidian plugins, watching track meets and analyzing
+              split times (I'm obsessed with it), doomscrolling inspirational
+              projects online.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
