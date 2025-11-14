@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 // fonts
-import { Figtree, JetBrains_Mono, Spectral } from "next/font/google";
+import { Figtree, JetBrains_Mono, Bodoni_Moda } from "next/font/google";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -20,9 +20,9 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const spectral = Spectral({
+const bodoniModa = Bodoni_Moda({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-serif",
   display: "swap",
 });
@@ -108,7 +108,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${figtree.variable} ${jetbrainsMono.variable} ${spectral.variable}`}
+      className={`${figtree.variable} ${jetbrainsMono.variable} ${bodoniModa.variable}`}
       suppressHydrationWarning
       style={{
         transition: "background-color 0.5s ease-in-out, color 0.5s ease-in-out",
@@ -122,7 +122,7 @@ export default function RootLayout({
         className="flex flex-col justify-center items-center"
       >
         <Navbar />
-        <div className="flex flex-col min-h-screen w-full px-7 sm:px-10 md:px-12 lg:px-16 pt-16 sm:pt-20 md:pt-24 lg:pt-30 pb-6 sm:pb-8 md:pb-10">
+        <div className="flex flex-col min-h-screen w-full px-7 sm:px-10 md:px-12 lg:px-16 pt-14 sm:pt-16 md:pt-18 lg:pt-20 pb-6 sm:pb-8 md:pb-10">
           <div className="flex-1">{children}</div>
         </div>
         <Footer />

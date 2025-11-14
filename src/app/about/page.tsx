@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "@/components/link";
 
 // Icons
 import {
@@ -15,7 +16,7 @@ import { externalLinks } from "@/data/links";
 export const metadata: Metadata = {
   title: "About - Ricky Tang",
   description:
-    "Learn more about Ricky Tang, a full stack developer with a habit of curiosity and consistently building. Improvement is a precious power, even if it's small, and he is here to chase it.",
+    "learn more about ricky tangs, a full stack developer with a habit of curiosity and consistently building. improvement is a precious power, even if it's small, and he is here to chase it.",
 };
 
 export default function AboutPage() {
@@ -48,38 +49,84 @@ export default function AboutPage() {
           {/* About Me - Paragraphs */}
           <div className="space-y-5">
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              My name is Ricky Tang, a Software Engineering student at Waterloo
-              working on autonomous drones at WARG. I build tools that solve
-              problems I actually encounter, and they become part of my daily
-              workflow.
+              My name is Ricky Tang, a Software Engineering student at
+              University of Waterloo, working on autonomy team for drones at
+              Waterloo Aerial Robotics Group (WARG).
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Whenever I see a great tech stack I haven&apos;t tried, I
-              can&apos;t help myself but start a project with it immediately. I
-              prefer building something new instead of repeating the same techs.
+              I build tools that solve issues I actually encounter, and they
+              become part of my daily workflow. Whenever I see a cool and novel
+              tech stack, I can&apos;t help myself but start a project with it
+              immediately. I prefer building something new everytime, rather
+              than repeating the same techs.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
-              Hackathons are where I thrive. I enjoy getting flow state to ship
-              something that works well and fix stuff with pressure. I&apos;m
-              not satisfied until my projects become tools I actually use every
-              day.
+              Hackathons are where I thrive. I enjoy getting into flow state to
+              ship something that works well and fix stuff with pressure.
+              I&apos;m not satisfied until my projects become tools I actually
+              use every day.
             </p>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
               Computer vision is where I get especially excited about: object
               detection, real-time image processing, spatial understanding.
-              There&apos;s something satisfying about making systems understand
-              the visual world through code.
+              It&apos;s always satisfying to make machines understand the visual
+              world via code.
             </p>
 
-            <p className="leading-relaxed text-base md:text-lg text-foreground">
-              When I&apos;m not coding, you can find me playing table tennis,
-              tweaking Obsidian plugins, watching track meets and analyzing
-              split times (I&apos;m obsessed with it), doomscrolling
-              inspirational projects online.
-            </p>
+            <div className="leading-relaxed text-base md:text-lg text-foreground">
+              <p className="mb-2">Outside of school/coding, you can find me:</p>
+              <ul className="list-disc list-inside space-y-1 ml-6">
+                <li>🏓 playing & watching table tennis</li>
+                <li>
+                  <span className="inline-flex items-center gap-1">
+                    tweaking{" "}
+                    <Image
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/1024px-2023_Obsidian_logo.svg.png?20230604143825"
+                      alt="⚒️"
+                      width={20}
+                      height={20}
+                      className="ml-1"
+                    />{" "}
+                    <Link href="https://obsidian.md">Obsidian plugins</Link>
+                  </span>
+                </li>
+                <li>
+                  <span className="inline-flex items-center gap-1">
+                    watching
+                    <Image
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Diamond_League_Icon_logo.svg/409px-Diamond_League_Icon_logo.svg.png"
+                      alt="🏃"
+                      width={20}
+                      height={20}
+                      className="ml-1"
+                    />{" "}
+                    <Link href="https://worldathletics.org/records/all-time-toplists/sprints/100-metres/all/men/senior?regionType=world&timing=electronic&windReading=regular&page=1&bestResultsOnly=false&firstDay=1899-12-31&lastDay=2025-11-13&maxResultsByCountry=all&eventId=10229630&ageCategory=senior">
+                      track meets
+                    </Link>{" "}
+                    & collecting split times data (the goat usain bolt)
+                  </span>
+                </li>
+                <li>
+                  <span className="inline-flex items-center gap-1">
+                    <span className="italic font-serif">&apos;doomscrolling&apos;</span>
+                    <Image
+                      src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                      alt="💻"
+                      width={18}
+                      height={18}
+                      className="ml-1"
+                    />{" "}
+                    <Link href="https://github.com">
+                      inspirational projects
+                    </Link>{" "}
+                    online
+                  </span>
+                </li>
+              </ul>
+            </div>
 
             <p className="leading-relaxed text-base md:text-lg text-foreground">
               Feel free to reach out if you&apos;d like to connect!

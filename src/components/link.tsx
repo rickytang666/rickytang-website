@@ -40,7 +40,7 @@ export default function Link({
       before:h-[2px]
       before:w-full
       before:bg-[color-mix(in_srgb,var(--foreground)_20%,var(--primary)_80%)]
-      before:opacity-80
+      before:opacity-70
       before:z-[2]
       hover:before:bg-primary
       hover:before:opacity-100

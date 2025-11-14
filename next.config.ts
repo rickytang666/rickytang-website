@@ -33,6 +33,12 @@ const nextConfig: NextConfig = {
         hostname: 'upload.wikimedia.org',
         port: '',
         pathname: '/wikipedia/en/thumb/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.githubassets.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

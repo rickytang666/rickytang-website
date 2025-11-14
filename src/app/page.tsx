@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full max-w-4xl lg:max-w-5xl mx-auto flex flex-col gap-16 sm:gap-18 md:gap-21 lg:gap-25">
+    <main className="w-full max-w-4xl lg:max-w-5xl mx-auto flex flex-col gap-10 sm:gap-12 md:gap-14 lg:gap-16">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-foreground">
         Hey, I&apos;m Ricky 👋
       </h1>
@@ -37,7 +37,7 @@ export default function Home() {
           Building isn&apos;t my hobby—it&apos;s my operating system.
         </h1>
         <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-15">
-          <p className="flex items-center justify-center mb-4 text-base sm:text-lg text-foreground text-center">
+          <h3 className="flex items-center justify-center mb-4 text-lg sm:text-xl text-foreground text-center">
             Software Engineering at{" "}
             <span className="inline-flex items-center gap-1 ml-2">
               <Image
@@ -48,23 +48,23 @@ export default function Home() {
               />
               <Link href={externalLinks.softwareEngineering}>UWaterloo</Link>
             </span>
-          </p>
-          <p className="flex items-center justify-center mb-4 text-base sm:text-lg text-foreground text-center">
+          </h3>
+          <h3 className="flex items-center justify-center mb-4 text-lg sm:text-xl text-foreground text-center">
             Contributing to drones that think for themselves at
             <span className="inline-flex items-center gap-1 ml-2">
               <Image src="/home/warg.png" alt="WARG" width={20} height={20} />
               <Link href={externalLinks.warg}>WARG</Link>
             </span>
-          </p>
+          </h3>
           <p className="mb-4 text-base sm:text-lg text-foreground">
-            The best software is invisible—you forget it&apos;s even there. I
-            build full-stack tools that orchestrate AI models through solid
-            architecture. Computer vision is my favorite: it makes computers
-            unstoppable.
+            I focus on full-stack tools that orchestrate AI models through solid
+            architecture. I believe the best software should feel natural &
+            invisible—you forget it&apos;s even there. Computer vision is my
+            favorite: it makes computers unstoppable.
           </p>
           <p className="mb-4 text-base sm:text-lg text-foreground">
             Coding fixes hits my dopamine center. Small details, big
-            problems—I&apos;ll craft the solution. The enjoyment compounds,
+            problems—I&apos;ll craft the solution. The enjoyment just compounds,
             little by little.
           </p>
         </div>
