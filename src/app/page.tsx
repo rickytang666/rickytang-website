@@ -36,33 +36,33 @@ export default function Home() {
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 text-foreground">
           Building isn&apos;t my hobby—it&apos;s my operating system.
         </h1>
-        <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-15">
-          <h3 className="flex items-center justify-center mb-4 text-lg sm:text-xl text-foreground text-center">
-            Software Engineering at{" "}
-            <span className="inline-flex items-center gap-1 ml-2">
+        <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-2 sm:mx-5">
+          <h3 className="flex flex-wrap items-center justify-center mb-4 text-sm sm:text-lg md:text-lg lg:text-xl text-foreground text-center">
+            <span>Software Engineering at</span>
+            <div className="inline-flex items-center gap-1 ml-2">
               <Image
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/500px-University_of_Waterloo_seal.svg.png?20181003010357"
                 alt="UWaterloo"
-                width={24}
-                height={24}
+                width={22}
+                height={22}
               />
               <Link href={externalLinks.softwareEngineering}>UWaterloo</Link>
-            </span>
+            </div>
           </h3>
-          <h3 className="flex items-center justify-center mb-4 text-lg sm:text-xl text-foreground text-center">
-            Contributing to drones that think for themselves at
-            <span className="inline-flex items-center gap-1 ml-2">
-              <Image src="/home/warg.png" alt="WARG" width={20} height={20} />
+          <h3 className="flex flex-wrap gap-2 items-center justify-center mb-4 text-sm sm:text-lg md:text-lg lg:text-xl text-foreground text-center">
+            <span>Contributing to intelligent drones at</span>
+            <div className="inline-flex items-center gap-1">
+              <Image src="/home/warg.png" alt="WARG" width={18} height={18} />
               <Link href={externalLinks.warg}>WARG</Link>
-            </span>
+            </div>
           </h3>
-          <p className="mb-4 text-base sm:text-lg text-foreground">
+          <p className="mb-4 text-sm sm:text-base md:text-lg text-foreground text-center">
             I focus on full-stack tools that orchestrate AI models through solid
             architecture. I believe the best software should feel natural &
             invisible—you forget it&apos;s even there. Computer vision is my
             favorite: it makes computers unstoppable.
           </p>
-          <p className="mb-4 text-base sm:text-lg text-foreground">
+          <p className="mb-4 text-sm sm:text-base md:text-lg text-foreground text-center">
             Coding fixes hits my dopamine center. Small details, big
             problems—I&apos;ll craft the solution. The enjoyment just compounds,
             little by little.
@@ -73,7 +73,7 @@ export default function Home() {
           <a
             href={externalLinks.github}
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
+            className="text-sm sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconBrandGithub stroke={2} className="w-5 h-5" />
             GitHub
@@ -81,7 +81,7 @@ export default function Home() {
           <a
             href={externalLinks.linkedin}
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
+            className="text-sm sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconBrandLinkedin stroke={2} className="w-5 h-5" />
             LinkedIn
@@ -89,7 +89,7 @@ export default function Home() {
           <a
             href="/resume.pdf"
             target="_blank"
-            className="text-base sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
+            className="text-sm sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >
             <IconFileCv stroke={2} className="w-5 h-5" />
             Resume

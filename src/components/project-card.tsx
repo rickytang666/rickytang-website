@@ -154,7 +154,7 @@ export default function ProjectCard({
           {project.description.map((para, idx) => (
             <div
               key={idx}
-              className="text-base mb-2 leading-relaxed text-foreground"
+              className="text-sm sm:text-base mb-2 leading-relaxed text-foreground"
             >
               {para}
             </div>
