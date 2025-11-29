@@ -6,7 +6,7 @@
     <p>
         <em>My portfolio showcasing my projects and journey.</em>
     </p>
-    <a href="https://rickyt.tech">
+    <a href="https://rickytang.dev">
         <strong>🌐 Visit the site</strong>
     </a>
 </div>

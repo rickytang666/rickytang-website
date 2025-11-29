@@ -58,13 +58,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Ricky Tang" }],
   creator: "Ricky Tang",
 
-  metadataBase: new URL("https://www.rickyt.tech"),
+  metadataBase: new URL("https://www.rickytang.dev"),
 
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.rickyt.tech",
-    siteName: "rickyt.tech",
+    url: "https://www.rickytang.dev",
+    siteName: "rickytang.dev",
     title: "Ricky Tang",
     description:
       "meet ricky tang - software engineering student at university of waterloo. aspiring software engineer focusing full-stack development.",
