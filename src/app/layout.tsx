@@ -124,7 +124,7 @@ export default function RootLayout({
         className="flex flex-col justify-center items-center"
       >
         <Navbar />
-        <div className="flex flex-col min-h-screen w-full px-7 sm:px-10 md:px-12 lg:px-16 pt-14 sm:pt-16 md:pt-18 lg:pt-20 pb-6 sm:pb-8 md:pb-10">
+        <div className="flex flex-col min-h-screen w-full px-5 sm:px-10 md:px-12 lg:px-16 pt-14 sm:pt-16 md:pt-18 lg:pt-20 pb-6 sm:pb-8 md:pb-10">
           <div className="flex-1">{children}</div>
         </div>
         <Footer />

@@ -20,8 +20,8 @@ export default function AwardCard({
       <Image
         src={imgSrc}
         alt={imgAlt}
-        width={240}
-        height={240}
+        width={200}
+        height={200}
         className="mb-4 object-contain"
       />
       <h4 className="text-lg font-semibold flex justify-center items-center text-foreground text-center mb-1">

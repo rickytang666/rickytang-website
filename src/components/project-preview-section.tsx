@@ -12,7 +12,7 @@ export default function ProjectPreviewSection() {
 
   return (
     <section className="w-full">
-      <h2 className="text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-8 flex items-center gap-2 text-foreground">
         <IconFolders stroke={2} className="w-8 h-8 text-primary" />
         Featured Projects
       </h2>

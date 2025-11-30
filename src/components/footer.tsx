@@ -9,6 +9,7 @@ import {
   IconFileCv,
   IconMail,
   IconBrandX,
+  IconBrandInstagram,
   IconBrandLeetcode,
   IconArrowLeft,
   IconArrowRight,
@@ -64,7 +65,7 @@ export default function Footer() {
         {/* second row: social icons (left) and made with (right) */}
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           {/* Social Links */}
-          <div className="flex gap-3 items-center justify-center lg:justify-start">
+          <div className="flex gap-2 min-[370px]:gap-3 min-[420px]:gap-4 items-center justify-center lg:justify-start">
             {/* this svg is slightly too big 😫 */}
             <a
               href={externalLinks.websiteRepo}
@@ -133,6 +134,15 @@ export default function Footer() {
               className="flex items-center hover:text-primary active:text-primary focus:text-primary"
             >
               <IconBrandX stroke={2} className="w-6 h-6" />
+            </a>
+            <a
+              href={externalLinks.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="instagram"
+              className="flex items-center hover:text-primary active:text-primary focus:text-primary"
+            >
+              <IconBrandInstagram stroke={2} className="w-6 h-6" />
             </a>
             <a
               href={externalLinks.devpost}
