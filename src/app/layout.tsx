@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -149,6 +150,8 @@ export default function RootLayout({
       </body>
       {/* Google Analytics (next third parties) */}
       <GoogleAnalytics gaId="G-ZY5XWJ2B3D" />
+      {/* Vercel Analytics (just to test it out lol) */}
+      <Analytics />
     </html>
   );
 }
