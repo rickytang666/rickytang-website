@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/navbar";
@@ -152,6 +153,8 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-ZY5XWJ2B3D" />
       {/* Vercel Analytics (just to test it out lol) */}
       <Analytics />
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </html>
   );
 }
