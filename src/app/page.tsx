@@ -87,7 +87,7 @@ export default function Home() {
             LinkedIn
           </a>
           <a
-            href="/resume.pdf"
+            href="/Ricky_Tang_resume.pdf"
             target="_blank"
             className="text-sm sm:text-lg flex items-center gap-1 text-foreground hover:text-primary active:text-primary focus:text-primary"
           >

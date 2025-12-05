@@ -109,7 +109,7 @@ export default function Footer() {
               <IconBrandLinkedin stroke={2} className="w-6 h-6" />
             </a>
             <a
-              href="/resume.pdf"
+              href="/Ricky_Tang_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               title="resume"

@@ -91,7 +91,7 @@ export default function Navbar() {
                   Projects
                 </Link>
                 <Link
-                  href="/resume.pdf"
+                  href="/Ricky_Tang_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navlink"
@@ -164,7 +164,7 @@ export default function Navbar() {
                 Projects
               </Link>
               <a
-                href="/resume.pdf"
+                href="/Ricky_Tang_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-lg text-foreground transition-colors duration-200 justify-center text-center"
