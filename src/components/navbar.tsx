@@ -47,11 +47,11 @@ export default function Navbar() {
       {/* Desktop navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 lg:px-5 lg:py-5 flex justify-center">
         <div className="w-full lg:w-[75%] max-w-full">
-          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 backdrop-blur-sm hover:backdrop-blur-lg drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative">
+          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 dark:bg-black/10 backdrop-blur-md hover:backdrop-blur-xl drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative group">
             {/* 3D depth overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-none lg:rounded-full"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-none lg:rounded-full pointer-events-none"></div>
             {/* Inner glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5 rounded-none lg:rounded-full"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5 rounded-none lg:rounded-full pointer-events-none"></div>
             {/* Content with relative positioning for 3D layering */}
             <div className="relative z-10 flex items-center justify-center mr-8">
               <Link href="/" className="px-2">
@@ -60,7 +60,7 @@ export default function Navbar() {
                   alt="Logo"
                   width={200}
                   height={200}
-                  className="h-10 lg:h-12 w-auto saturate-120"
+                  className="h-10 lg:h-12 w-auto saturate-120 filter drop-shadow-lg"
                 />
               </Link>
             </div>
@@ -70,23 +70,22 @@ export default function Navbar() {
               <div className="hidden lg:flex items-center gap-6">
                 <Link
                   href="/"
-                  className={pathname === "/" ? "navlink-active" : "navlink"}
+                  className={`${pathname === "/" ? "navlink-active" : "navlink"
+                    } mix-blend-difference text-white dark:text-white/90 font-medium tracking-wide`}
                 >
                   Home
                 </Link>
                 <Link
                   href="/about"
-                  className={
-                    pathname === "/about" ? "navlink-active" : "navlink"
-                  }
+                  className={`${pathname === "/about" ? "navlink-active" : "navlink"
+                    } mix-blend-difference text-white dark:text-white/90 font-medium tracking-wide`}
                 >
                   About
                 </Link>
                 <Link
                   href="/projects"
-                  className={
-                    pathname === "/projects" ? "navlink-active" : "navlink"
-                  }
+                  className={`${pathname === "/projects" ? "navlink-active" : "navlink"
+                    } mix-blend-difference text-white dark:text-white/90 font-medium tracking-wide`}
                 >
                   Projects
                 </Link>
@@ -94,11 +93,13 @@ export default function Navbar() {
                   href="/Ricky_Tang_resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="navlink"
+                  className="navlink mix-blend-difference text-white dark:text-white/90 font-medium tracking-wide"
                 >
                   Resume
                 </Link>
-                <ThemeToggle />
+                <div className="mix-blend-normal">
+                  <ThemeToggle />
+                </div>
               </div>
 
               {/* Mobile menu button */}
