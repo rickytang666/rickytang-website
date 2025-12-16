@@ -47,11 +47,12 @@ export default function Navbar() {
       {/* Desktop navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 lg:px-5 lg:py-5 flex justify-center">
         <div className="w-full lg:w-[75%] max-w-full">
-          <div className="flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/10 dark:bg-black/10 backdrop-blur-md hover:backdrop-blur-xl drop-shadow-lg drop-shadow-transparent hover:drop-shadow-teal-200/50 border-none lg:border-2 border-sidebar-border/30 hover:border-primary/30 transition-all duration-300 relative group">
-            {/* 3D depth overlay */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-transparent to-black/10 rounded-none lg:rounded-full pointer-events-none"></div>
-            {/* Inner glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-transparent to-white/5 rounded-none lg:rounded-full pointer-events-none"></div>
+          <div className="relative flex items-center justify-between h-20 px-4 lg:px-10 rounded-none lg:rounded-full bg-white/5 dark:bg-black/10 backdrop-filter backdrop-blur-md backdrop-saturate-150 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] border border-white/20 dark:border-white/10 hover:border-teal-200/40 hover:shadow-[0_0_30px_rgba(94,234,212,0.3)] transition-all duration-500 group overflow-hidden">
+            {/* Specular highlight / Sheen */}
+            <div className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/10 to-transparent opacity-50 pointer-events-none" />
+
+            {/* Bottom reflections */}
+            <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-30 pointer-events-none" />
             {/* Content with relative positioning for 3D layering */}
             <div className="relative z-10 flex items-center justify-center mr-8">
               <Link href="/" className="px-2">
