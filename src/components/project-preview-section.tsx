@@ -17,8 +17,8 @@ export default function ProjectPreviewSection() {
         Featured Projects
       </h2>
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mb-6 sm:mb-8 md:mb-10">
-        {previewProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} imgIdx={0} />
+        {previewProjects.map((project, idx) => (
+          <ProjectCard key={project.title + idx} project={project} imgIdx={0} />
         ))}
       </div>
       <div className="flex justify-center">

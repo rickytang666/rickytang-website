@@ -17,8 +17,8 @@ export default function ProjectsClient() {
         My Projects
       </h1>
       <div className="grid gap-8 md:gap-12 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(450px,1fr))]">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} imgIdx={0} />
+        {projects.map((project, idx) => (
+          <ProjectCard key={project.title + idx} project={project} imgIdx={0} />
         ))}
       </div>
     </div>

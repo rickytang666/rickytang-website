@@ -3,18 +3,26 @@ import Link from "@/components/link";
 import Image from "next/image";
 
 export interface Project {
-  id: string;
   title: string;
   description: React.ReactNode[];
   images: string[];
+  stack: (string | { name: string; icon?: string })[];
   github: string;
   website?: string;
 }
 
 export const projects: Project[] = [
   {
-    id: "1",
     title: "BrainLattice",
+    stack: [
+      "nextjs",
+      "fastapi",
+      "firebase",
+      "gcp",
+      "gemini",
+      "tailwindcss",
+      "vercel",
+    ],
     description: [
       <>
         A tool that transforms 100+ pages of PDFs into interactive knowledge network for intuitive studying. Built with Next.js and FastAPI, utilizing multiple LLMs to extract concepts and map connections. You can click nodes for instant explanations or listen to auto-generated audio summaries while on the go.
@@ -31,8 +39,18 @@ export const projects: Project[] = [
     website: "https://www.brainlattice.study/",
   },
   {
-    id: "2",
     title: "Post-It",
+    stack: [
+      "typescript",
+      {
+        name: "Lens Studio",
+        icon: "https://images.ctfassets.net/ub38vssza5h3/7xS0t5I5x02i9CmxVAKSpU/9ccb1c9adf7f4b9ee2a95a9213123e7b/Icon_Center_Image_Artwork.svg",
+      },
+      {
+        name: "Snap Spectacles",
+        icon: "https://developers.snap.com/img/spectacles/spectacles-app-logo.png",
+      },
+    ],
     description: [
       <>
         AR social experience for{" "}
@@ -58,8 +76,15 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/post-it",
   },
   {
-    id: "3",
     title: "FitSage",
+    stack: [
+      "nextjs",
+      "tailwindcss",
+      "supabase",
+      "vercel",
+      "gemini",
+      "huggingface",
+    ],
     description: [
       <>
         Comprehensive fitness tracker that turns messy diary entries or verbal vents into structured
@@ -78,8 +103,8 @@ export const projects: Project[] = [
     website: "https://www.fitsage.tech/",
   },
   {
-    id: "4",
     title: "CheFlow",
+    stack: ["processing"],
     description: [
       <>
         Desktop recipe manager that suggests meals based on what&apos;s expiring
@@ -94,8 +119,8 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/cheflow",
   },
   {
-    id: "5",
     title: "EcoHub",
+    stack: ["postgresql", "express", "nodejs", "react", "tailwindcss"],
     description: [
       <>
         Gamified tracker that rewards eco-friendly actions with points and users can redeem prizes. Inspired
@@ -108,8 +133,8 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/ecohub",
   },
   {
-    id: "6",
     title: "Vanilla Flashcards",
+    stack: ["html", "css", "javascript"],
     description: [
       <>
         Keyboard-first flashcard app for rapid study. Uses a merit-based grading
@@ -122,8 +147,8 @@ export const projects: Project[] = [
     website: "https://vanilla-flashcards.vercel.app/",
   },
   {
-    id: "7",
     title: "SwiftNotes",
+    stack: ["processing"],
     description: [
       <>
         Local-first desktop notes app focused on speed and privacy. Saves
@@ -136,8 +161,8 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/swiftnotes",
   },
   {
-    id: "8",
     title: "2-Player Tank Battle Game",
+    stack: ["python"],
     description: [
       <>
         Zero-dependency multiplayer tank game built from scratch with Python Tkinter (no
@@ -149,8 +174,8 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/2p-tank-battle",
   },
   {
-    id: "9",
     title: "Movie Review Station",
+    stack: ["nodejs", "express", "mongodb"],
     description: [
       <>
         Movie discovery site powered by the{" "}
@@ -164,8 +189,8 @@ export const projects: Project[] = [
     website: "https://movie-review-website-plum.vercel.app/",
   },
   {
-    id: "10",
     title: "World Championship 100m Sim",
+    stack: ["processing"],
     description: [
       <>
         Sprint simulator based on{" "}
