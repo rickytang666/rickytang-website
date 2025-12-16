@@ -13,30 +13,65 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "BrainLattice",
+    title: "Tark",
     stack: [
       "nextjs",
       "fastapi",
-      "firebase",
-      "gcp",
-      "gemini",
+      "scipy",
+      "leaflet",
+      "numpy",
       "tailwindcss",
-      "vercel",
     ],
     description: [
       <>
-        A tool that transforms 100+ pages of PDFs into interactive knowledge network for intuitive studying. Built with Next.js and FastAPI, utilizing multiple LLMs to extract concepts and map connections. You can click nodes for instant explanations or listen to auto-generated audio summaries while on the go.
+        Google Earth for game devs. It converts ANY real-world location into a game-ready 3D mesh in seconds—process that normally takes weeks of manual modeling. It pulls elevation data, satellite imagery, and building footprints from {" "}
+        <span className="inline-block">
+          <Image src="/projects/mapbox_logo.png" className="inline align-middle mx-1" alt="mapbox logo" width={20} height={20} />
+          <Link href="https://mapbox.com/">Mapbox</Link>
+        </span>
+        {" "}
+        and
+        {" "}
+        <span className="inline-block">
+          <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/960px-Openstreetmap_logo.svg.png?20220919103849" className="inline align-middle mx-1" alt="osm logo" width={20} height={20} />
+          <Link href="https://openstreetmap.org/">OpenStreetMap</Link>
+        </span>
+        , then generates textured .obj files that work directly in Unity, Blender, and Unreal. Built with Next.js and FastAPI, it handles coordinate transformations, terrain mesh generation, and building extrusion to match real elevation data.
       </>,
     ],
     images: [
-      "/projects/brain1.png",
-      "/projects/brain2.png",
-      "/projects/brain3.png",
-      "/projects/brain4.png",
-      "/projects/brain5.png",
+      "/projects/tark1.png",
+      "/projects/tark2.png",
     ],
-    github: "https://github.com/rickytang666/brainlattice",
-    website: "https://www.brainlattice.study/",
+    github: "https://github.com/rickytang666/tark",
+  },
+  {
+    title: "Auralis",
+    stack: [
+      "nextjs",
+      "fastapi",
+      "cloudflare",
+      "threejs",
+      "railway",
+      "blender",
+      "tailwindcss",
+    ],
+    description: [
+      <>
+        An AI doctor that conducts real-time video consultations with a 3D avatar. It detects your facial expressions during the chatting and adapts itself based on how you're feeling, making medical consultations more personalized and empathetic. Rendered the avatar using Three.js, with ElevenLabs and Gemini powering the conversations and generating post-consultation summaries. 🏆 Won Best AI Application Bulit with Cloudflare at {" "}
+        <span className="inline-block">
+          <Image src="/projects/hackwestern_logo.jpg" className="inline align-middle mx-1" alt="hackwestern logo" width={20} height={20} />
+          <Link href="https://hackwestern.com/">Hack Western 2025.</Link>
+        </span>
+      </>,
+    ],
+    images: [
+      "/projects/auralis1.jpeg",
+      "/projects/auralis2.jpeg",
+      "/projects/auralis3.jpeg",
+      "/projects/auralis4.jpeg",
+    ],
+    github: "https://github.com/rickytang666/auralis",
   },
   {
     title: "Post-It",
@@ -76,14 +111,38 @@ export const projects: Project[] = [
     github: "https://github.com/rickytang666/post-it",
   },
   {
+    title: "BrainLattice",
+    stack: [
+      "nextjs",
+      "fastapi",
+      "firebase",
+      "gcp",
+      "gemini",
+      "tailwindcss",
+    ],
+    description: [
+      <>
+        A tool that transforms 100+ pages of PDFs into interactive knowledge network for intuitive studying. Built with Next.js and FastAPI, utilizing multiple LLMs to extract concepts and map connections. You can click nodes for instant explanations or listen to auto-generated audio summaries while on the go.
+      </>,
+    ],
+    images: [
+      "/projects/brain1.png",
+      "/projects/brain2.png",
+      "/projects/brain3.png",
+      "/projects/brain4.png",
+      "/projects/brain5.png",
+    ],
+    github: "https://github.com/rickytang666/brainlattice",
+    website: "https://www.brainlattice.study/",
+  },
+  {
     title: "FitSage",
     stack: [
       "nextjs",
-      "tailwindcss",
       "supabase",
-      "vercel",
       "gemini",
       "huggingface",
+      "tailwindcss",
     ],
     description: [
       <>
