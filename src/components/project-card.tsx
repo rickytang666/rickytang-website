@@ -182,26 +182,29 @@ export default function ProjectCard({
             );
           })}
         </div>
-        <div className="card-actions">
+        <div className="card-actions flex gap-2 mt-auto items-center justify-end pr-4">
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-md btn-outline border-primary text-foreground hover:bg-primary active:bg-primary focus:bg-primary hover:text-primary-foreground active:text-primary-foreground focus:text-primary-foreground rounded-full align-middle"
+            className="flex items-center gap-1 text-base font-bold text-[color-mix(in_oklch,var(--primary)_50%,var(--foreground)_50%)] px-4 py-2 rounded-lg hover:bg-primary/15 hover:text-primary transition-colors duration-200"
           >
-            <IconBrandGithub stroke={2} className="w-5 h-5" />
-            GitHub
+            <span>
+              <IconBrandGithub stroke={2} className="w-5 h-5" />
+            </span>
+            <span>Source</span>
           </a>
-          {/* what color is suitable for website? */}
           {project.website && (
             <a
               href={project.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-md btn-outline border-fuchsia-500 text-foreground hover:bg-fuchsia-500 active:bg-fuchsia-500 focus:bg-fuchsia-500 hover:text-white active:text-white focus:text-white rounded-full align-middle"
+              className="flex items-center gap-1 text-base font-bold text-[color-mix(in_srgb,#c026d3_50%,var(--foreground)_50%)] p-2 rounded-lg hover:bg-fuchsia-400/15 hover:text-fuchsia-400 transition-colors duration-200"
             >
-              <IconDeviceDesktop stroke={2} className="w-5 h-5" />
-              Website
+              <span>
+                <IconDeviceDesktop stroke={2} className="w-5 h-5" />
+              </span>
+              <span>Live Demo</span>
             </a>
           )}
         </div>

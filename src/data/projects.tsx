@@ -36,7 +36,7 @@ export const projects: Project[] = [
           <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Openstreetmap_logo.svg/960px-Openstreetmap_logo.svg.png?20220919103849" className="inline align-middle mx-1" alt="osm logo" width={20} height={20} />
           <Link href="https://openstreetmap.org/">OpenStreetMap</Link>
         </span>
-        , then generates textured .obj files that work directly in Unity, Blender, and Unreal. Built with Next.js and FastAPI, it handles coordinate transformations, terrain mesh generation, and building extrusion to match real elevation data.
+        , then generates textured .obj files that work directly in Unity/Blender/Unreal. Built with Next.js and FastAPI, it handles coordinate transformations, terrain mesh generation, and building extrusion to match real elevation data.
       </>,
     ],
     images: [
@@ -72,6 +72,7 @@ export const projects: Project[] = [
       "/projects/auralis4.jpeg",
     ],
     github: "https://github.com/rickytang666/auralis",
+    website: "https://stop-googling-symptoms.tech/",
   },
   {
     title: "Post-It",
