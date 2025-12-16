@@ -16,11 +16,6 @@ export const languages: TechSkill[] = [
     alt: "python"
   },
   {
-    name: "Processing",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark",
-    alt: "processing"
-  },
-  {
     name: "JavaScript",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=javascript&theme=dark",
     alt: "javascript"
@@ -41,6 +36,11 @@ export const languages: TechSkill[] = [
     alt: "sql"
   },
   {
+    name: "Bash",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=bash&theme=dark",
+    alt: "bash"
+  },
+  {
     name: "HTML",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=html&theme=dark",
     alt: "html"
@@ -49,6 +49,11 @@ export const languages: TechSkill[] = [
     name: "CSS",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=css&theme=dark",
     alt: "css"
+  },
+  {
+    name: "Processing",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=processing&theme=dark",
+    alt: "processing"
   },
   {
     name: "LaTeX",
@@ -84,9 +89,19 @@ export const tools: TechSkill[] = [
     alt: "fastapi"
   },
   {
+    name: "Flask",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=flask&theme=dark",
+    alt: "flask"
+  },
+  {
     name: "GCP",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=gcp&theme=dark",
     alt: "gcp"
+  },
+  {
+    name: "Cloudflare",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=cloudflare&theme=dark",
+    alt: "cloudflare"
   },
   {
     name: "MongoDB",
@@ -104,6 +119,11 @@ export const tools: TechSkill[] = [
     alt: "postgresql"
   },
   {
+    name: "MySQL",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=mysql&theme=dark",
+    alt: "mysql"
+  },
+  {
     name: "Supabase",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=supabase&theme=dark",
     alt: "supabase"
@@ -112,11 +132,6 @@ export const tools: TechSkill[] = [
     name: "Tailwind CSS",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=tailwind&theme=dark",
     alt: "tailwind"
-  },
-  {
-    name: "DaisyUI",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=daisyui&theme=dark",
-    alt: "daisyui"
   },
   {
     name: "shadcn/ui",
@@ -134,14 +149,9 @@ export const tools: TechSkill[] = [
     alt: "docker"
   },
   {
-    name: "GitHub",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=github&theme=dark",
-    alt: "github"
-  },
-  {
-    name: "GitLab",
-    icon: "https://go-skill-icons.vercel.app/api/icons?i=gitlab&theme=dark",
-    alt: "gitlab"
+    name: "PyTorch",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=pytorch&theme=dark",
+    alt: "pytorch"
   },
   {
     name: "Hugging Face",
