@@ -22,7 +22,7 @@ export default function Footer() {
         {/* first row: name (left) and webring (right) */}
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <p className="text-base lg:text-lg text-center lg:text-left">
-            © {new Date().getFullYear()} Ricky Tang
+            Ricky Tang <span className="text-lg font-black">·</span> {new Date().getFullYear()}
           </p>
 
           {/* SE Webring */}
