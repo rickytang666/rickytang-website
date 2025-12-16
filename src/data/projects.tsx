@@ -58,7 +58,7 @@ export const projects: Project[] = [
     ],
     description: [
       <>
-        An AI doctor that conducts real-time video consultations with a 3D avatar. It detects your facial expressions during the chatting and adapts itself based on how you're feeling, making medical consultations more personalized and empathetic. Rendered the avatar using Three.js, with ElevenLabs and Gemini powering the conversations and generating post-consultation summaries. 🏆 Won Best AI Application Bulit with Cloudflare at {" "}
+        An AI doctor that conducts real-time video consultations with a 3D avatar. It detects your facial expressions during the chatting and adapts itself based on how you&apos;re feeling, making medical consultations more personalized and empathetic. Rendered the avatar using Three.js, with ElevenLabs and Gemini powering the conversations and generating post-consultation summaries. 🏆 Won Best AI Application Bulit with Cloudflare at {" "}
         <span className="inline-block">
           <Image src="/projects/hackwestern_logo.jpg" className="inline align-middle mx-1" alt="hackwestern logo" width={20} height={20} />
           <Link href="https://hackwestern.com/">Hack Western 2025.</Link>

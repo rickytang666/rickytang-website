@@ -104,6 +104,11 @@ export const tools: TechSkill[] = [
     alt: "cloudflare"
   },
   {
+    name: "Railway",
+    icon: "https://go-skill-icons.vercel.app/api/icons?i=railway&theme=dark",
+    alt: "railway"
+  },
+  {
     name: "MongoDB",
     icon: "https://go-skill-icons.vercel.app/api/icons?i=mongodb&theme=dark",
     alt: "mongodb"
