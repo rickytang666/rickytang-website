@@ -17,17 +17,7 @@ export const projects: Project[] = [
     title: "BrainLattice",
     description: [
       <>
-        A visual knowledge mapper that transforms textbooks into interactive
-        knowledge networks like Obsidian. Drop any PDF and watch Gemini and Grok
-        extract key concepts, discover connections, and render everything as a
-        navigable graph. &#8984;&#8679; + click on <em>ANY NODE</em> to drill
-        into explanations, formulas, relationships, etc. Generates one-page
-        condensed study guide and morning news via ElevenLabs for learning
-        anywhere. Built with Next.js and FastAPI, powered by multiple LLMs for
-        intelligent concept extraction. Flips traditional linear reading: see
-        the entire knowledge landscape first, then navigate to what matters.
-        Perfect for catching up on courses or prepping for exams without
-        drowning in 200 pages of sequential text.
+        A tool that transforms 100+ pages of PDFs into interactive knowledge network for intuitive studying. Built with Next.js and FastAPI, utilizing multiple LLMs to extract concepts and map connections. You can click nodes for instant explanations or listen to auto-generated audio summaries while on the go.
       </>,
     ],
     images: [
@@ -45,28 +35,18 @@ export const projects: Project[] = [
     title: "Post-It",
     description: [
       <>
-        An augmented reality experience that brings back the joy of urban
-        exploration by turning everyday spaces into a shared discovery canvas.
-        Built for {<Link href="https://spectacles.com/">Snap Spectacles</Link>},
-        Post-It lets you anchor 3D sticky notes to real locations, leaving
-        playful messages for others to discover. Each note transforms into
-        symbolic icons that guide explorers to hidden gems. Users can tap icons
-        to reveal messages and switch between text and visual modes. With
-        gesture and voice controls, Post-It makes city exploration social and
-        serendipitous—guiding people to rooftop gardens, underground
-        restaurants, and perfect photo spots. Shipped in 32 hours and achieved
-        semi-finalist in{" "}
+        AR social experience for{" "}
         <span className="inline-block">
-          <Image
-            src="/projects/htn_logo.jpg"
-            alt="Hack the North"
-            width={18}
-            height={18}
-            className="inline align-middle mx-1"
-          />
-          <Link href="https://hackthenorth.com/">Hack the North 2025</Link>
+          <Image src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/960px-Snapchat_logo.svg.png?20190813231721" alt="Snap Logo" className="inline align-middle mx-1" width={20} height={20} />
+          <Link href="https://spectacles.com/">Snap Spectacles</Link>
+        </span> where you
+        leave persistent 3D notes in the real world. Includes spatial mapping
+        and voice controls so you can discover hidden messages from others.
+        Built in 32 hours; semi-finalist at{" "}
+        <span className="inline-block">
+          <Image src="/projects/htn_logo.jpg" alt="HTN Logo" className="inline align-middle mx-1" width={20} height={20} />
+          <Link href="https://hackthenorth.com/">Hack the North 2025.</Link>
         </span>
-        .
       </>,
     ],
     images: [
@@ -82,17 +62,10 @@ export const projects: Project[] = [
     title: "FitSage",
     description: [
       <>
-        An intelligent fitness companion that transforms natural diary entries
-        into structured workout insights using{" "}
-        <Link href="https://gemini.google/about/">Google Gemini AI</Link>. The
-        app recognizes 40+ workout types from casual diaries, automatically
-        evaluates duration and calories, and provides personalized workout
-        recommendations based on user progress. Built with a minimalist design
-        philosophy, it eliminates the friction of traditional fitness tracking
-        by allowing users to write freely about their workouts while the AI
-        handles all the data structuring and analysis. FitSage helps users build
-        consistent fitness habits and level up fitness enjoyment, while
-        maintaining a focus on progress and intelligent workout planning.
+        Comprehensive fitness tracker that turns messy diary entries or verbal vents into structured
+        workout data using, consolidating processes across multiple platforms. Recognizes 40+ activities automatically so you don&apos;t have to fiddle
+        with dropdowns. Designed to help build habits without the tracking
+        hassle.
       </>,
     ],
     images: [
@@ -109,22 +82,14 @@ export const projects: Project[] = [
     title: "CheFlow",
     description: [
       <>
-        A lightweight desktop app that revolutionizes recipe management through
-        intelligent recipe matching and data-driven cooking insights. It
-        features a smart recommendation algorithm that analyzes your fridge
-        inventory against recipe and time requirements, prioritizing either
-        ingredient availability or time constraints based on user preferences.
-        CheFlow keeps track of cooking activities, generating heatmaps and
-        applying mathematical regression models to reveal cooking habits and
-        trends. By combining practical meal planning tools with comprehensive
-        analytics, CheFlow helps users build consistent cooking habits while
-        reducing food waste through data-informed grocery decisions.
+        Desktop recipe manager that suggests meals based on what&apos;s expiring
+        in your fridge, built with Processing. Matches ingredients to recipes and tracks your cooking
+        habits with heatmaps. Helps you build up cooking habits and waste less food.
       </>,
     ],
     images: [
       "/projects/chef1.png",
       "/projects/chef2.png",
-      "/projects/chef3.png",
     ],
     github: "https://github.com/rickytang666/cheflow",
   },
@@ -133,17 +98,10 @@ export const projects: Project[] = [
     title: "EcoHub",
     description: [
       <>
-        A gamified web app designed to make sustainability engaging and
-        rewarding by encouraging users to complete eco-friendly challenges and
-        earn points for prizes. Inspired by{" "}
-        <Link href="https://hackclub.com/">Hack Club</Link> and built with a
-        focus on fun and motivation, EcoHub uses a incentive-based system to
-        promote environmental actions through friendly competition. The platform
-        blends interactive visuals with a strong user experience, offering
-        features like activity tracking and prizes shop to analyze long-term
-        dedication. With future plans to expand globally and enhance its user
-        insights, EcoHub turns everyday sustainable choices into meaningful
-        progress.
+        Gamified tracker that rewards eco-friendly actions with points and users can redeem prizes. Inspired
+        by <Link href="https://hackclub.com/">Hack Club</Link>, it makes
+        sustainability fun by letting you log activities and earn actual prizes.
+        Focuses on keeping motivation high.
       </>,
     ],
     images: ["/projects/eco1.png"],
@@ -154,14 +112,9 @@ export const projects: Project[] = [
     title: "Vanilla Flashcards",
     description: [
       <>
-        A lightweight, responsive flashcard web app that lets users create,
-        edit, and study flashcards directly in the browser. It features a
-        focused practice mode with a 5-point grading system (0-4) to track
-        retention progress. Users can navigate efficiently using keyboard
-        shortcuts and manage their collection through an intuitive list
-        interface. The app automatically prioritizes cards with lower retention
-        scores during practice sessions, making it ideal for quick, effective
-        studying on both desktop and mobile devices.
+        Keyboard-first flashcard app for rapid study. Uses a merit-based grading
+        system to show you the concepts you struggle with more often. Fully
+        responsive and browser-based for quick practice sessions.
       </>,
     ],
     images: ["/projects/van1.png", "/projects/van2.png"],
@@ -173,18 +126,13 @@ export const projects: Project[] = [
     title: "SwiftNotes",
     description: [
       <>
-        An lightweight, feature-rich note-taking desktop app that transforms the
-        traditional note-taking experience through gamified productivity
-        incentives, advanced customization options, and enterprise-grade
-        security. Built with a modern tabbed interface, the app features an
-        innovative reward system that motivates consistent usage, comprehensive
-        theming capabilities including dark mode and multi-font support, and
-        real-time local storage with optional AES encryption. Designed for
-        productivity-focused users who demand both functionality and security in
-        their digital workspace.
+        Local-first desktop notes app focused on speed and privacy. Saves
+        everything in real-time with optional encryption and supports full
+        theming. Includes a small gamification system to help you stay
+        productive.
       </>,
     ],
-    images: ["/projects/swift1.png", "/projects/swift2.png"],
+    images: ["/projects/swift1.png"],
     github: "https://github.com/rickytang666/swiftnotes",
   },
   {
@@ -192,18 +140,12 @@ export const projects: Project[] = [
     title: "2-Player Tank Battle Game",
     description: [
       <>
-        A local multiplayer tank battle game built with Python Tkinter for the
-        GUI. Players control tanks with limited fuel, ammo, and health points,
-        requiring strategic resource management. The game features real-time
-        collision detection, damage calculation based on proximity, and
-        continuous health loss mechanics. It also implemented special abilities
-        including but not limited to: auto-aiming systems, improved mobility,
-        and regenerative healing through movement. With object-oriented
-        programming and event-driven architecture, the game is beginner-friendly
-        and able to extend with new features and mechanics.
+        Zero-dependency multiplayer tank game built from scratch with Python Tkinter (no
+        game engines). Features custom physics for collisions and ballistics. A
+        fun project to learn event-driven architecture and OOP.
       </>,
     ],
-    images: ["/projects/tank1.png", "/projects/tank2.png"],
+    images: ["/projects/tank1.png"],
     github: "https://github.com/rickytang666/2p-tank-battle",
   },
   {
@@ -211,14 +153,10 @@ export const projects: Project[] = [
     title: "Movie Review Station",
     description: [
       <>
-        A full-stack movie review platform where users can browse countless
-        movies from{" "}
-        <Link href="https://www.themoviedb.org/">
-          The Movie Database (TMDB)
-        </Link>
-        , read community reviews, and share their own ratings/reviews. This web
-        app features trending movie browsing, searching and navigation
-        functionality, and a collaborative review system.
+        Movie discovery site powered by the{" "}
+        <Link href="https://www.themoviedb.org/">TMDB API</Link>. Browses
+        trending films, filters search results, and lets users leave ratings and
+        reviews. A simple place to find what to watch next.
       </>,
     ],
     images: ["/projects/movie1.png"],
@@ -230,23 +168,16 @@ export const projects: Project[] = [
     title: "World Championship 100m Sim",
     description: [
       <>
-        A comprehensive 100m dash simulator that accurately models the
-        Men&apos;s 100m sprint event using real-world athlete performance data
-        and dynamic environmental factors, outputting results in detailed
-        animations. The system implements{" "}
+        Sprint simulator based on{" "}
         <Link href="https://jmureika.lmu.build/track/index.html">
-          Dr. Jonas Mureika&apos;s models
+          Dr. Jonas Mureika&apos;s
         </Link>{" "}
-        for sprint data analysis, incorporating biomechanical principles and
-        environmental effects on race outcomes. The simulator features realistic
-        weather impact modeling and comprehensive performance analytics,
-        allowing users to simulate and analyze races with authentic dynamics.
-        The simulator provides detailed performance comparisons and outcome
-        evaluation, making it a useful tool for sports analytics and competitive
-        analysis.
+        physics models. Simulates a 100m race by accounting for wind, altitude, humidity,
+        and reaction times. Outputs realistic animations to visualize how
+        multiple different factors change the race.
       </>,
     ],
-    images: ["/projects/sim1.png", "/projects/sim2.png"],
+    images: ["/projects/sim1.png"],
     github: "https://github.com/rickytang666/world-championship-100m-sim",
   },
 ];
