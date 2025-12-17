@@ -34,7 +34,7 @@ export default function Home() {
       {/* short about */}
       <section>
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-bold mb-8 sm:mb-10 md:mb-12 lg:mb-15 text-foreground">
-          Building isn&apos;t my hobby—it&apos;s my operating system.
+          Building isn&apos;t just my hobby—it&apos;s my operating system.
         </h1>
         <div className="flex flex-col gap-1 mb-6 sm:mb-8 md:mb-10 mx-2 sm:mx-5">
           <h3 className="flex flex-wrap items-center justify-center mb-4 text-sm sm:text-lg md:text-lg lg:text-xl text-foreground text-center">
