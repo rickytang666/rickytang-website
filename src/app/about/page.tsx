@@ -78,7 +78,7 @@ export default function AboutPage() {
 
             <div className="leading-relaxed text-base md:text-lg text-foreground">
               <p className="mb-2">Outside of school/coding, you can find me:</p>
-              <ul className="list-disc list-inside space-y-1 ml-6">
+              <ul className="list-disc list-outside space-y-1 ml-6">
                 <li>🏓 playing & watching table tennis</li>
                 <li>
                   tweaking{" "}
@@ -132,7 +132,7 @@ export default function AboutPage() {
           </div>
 
           {/* Contact Buttons */}
-          <div className="flex flex-wrap gap-7 pt-4">
+          <div className="flex flex-wrap gap-4 sm:gap-7 pt-4">
             <a
               href={externalLinks.github}
               target="_blank"
